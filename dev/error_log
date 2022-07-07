@@ -1,0 +1,754 @@
+[01-Jul-2022 05:45:52 UTC] PHP Notice:  Undefined variable: email in /home/tharunat/videditor.tharunatwork.com/dev/index.php on line 197
+[01-Jul-2022 05:46:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 05:46:46 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 05:46:46 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 05:46:46 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 05:46:46 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 05:55:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 05:55:14 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 05:55:14 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 05:55:14 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 05:55:14 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 05:55:46 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:00:38 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:01:16 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:24:07 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:25:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:25:43 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:25:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:25:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:25:43 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:26:13 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:30:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:30:15 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:30:15 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:30:15 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:30:15 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:31:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:31:52 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:31:52 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:31:52 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:31:52 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:32:17 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:33:26 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:33:26 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:33:26 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:33:26 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:33:26 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:33:47 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:35:43 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:39:36 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:40:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:40:43 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:40:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:40:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:40:43 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:41:09 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:43:18 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:44:31 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 06:44:53 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 06:52:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:52:21 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:52:21 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:52:21 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:52:21 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 06:53:28 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 06:53:28 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 06:53:28 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 06:53:28 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 06:53:28 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:13:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:13:33 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:13:33 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:13:33 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:13:33 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:19:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:19:14 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:19:14 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:19:14 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:19:14 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:20:23 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:20:23 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:20:23 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:20:23 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:20:23 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:28:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:28:04 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:28:04 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:28:04 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:28:04 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:31:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:31:06 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:31:06 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:31:06 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:31:06 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:31:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:31:43 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:31:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:31:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:31:43 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:32:48 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:32:48 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:32:48 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:32:48 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:32:48 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:48:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:48:53 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:48:53 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:48:53 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:48:53 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:50:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:50:01 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:50:01 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:50:01 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:50:01 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:51:29 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:51:29 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:51:29 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:51:29 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:51:29 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:52:22 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:52:22 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:52:22 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:52:22 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:52:22 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:58:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:58:43 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:58:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:58:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:58:43 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 07:59:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 07:59:49 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 07:59:49 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 07:59:49 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 07:59:49 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:01:30 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:01:30 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:01:30 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:01:30 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:01:30 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:03:05 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:03:05 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:03:05 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:03:05 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:03:05 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:10:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:10:14 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:10:14 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:10:14 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:10:14 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:11:05 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:11:05 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:11:05 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:11:05 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:11:05 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:11:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:11:40 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:11:40 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:11:40 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:11:40 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:12:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:12:52 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:12:52 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:12:52 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:12:52 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:14:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:14:42 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:14:42 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:14:42 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:14:42 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 08:16:21 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 08:34:46 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 08:40:41 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 08:41:42 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 08:42:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:42:12 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:42:12 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:42:12 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:42:12 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:42:12 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 08:42:37 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 08:46:01 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 08:59:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 08:59:06 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 08:59:06 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 08:59:06 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 08:59:06 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:01:11 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:03:31 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:04:31 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:05:47 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:06:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:06:50 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:06:50 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:06:50 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:06:50 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:07:52 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:10:36 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:15:41 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:15:41 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:15:41 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:15:41 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:15:41 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:16:27 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:16:27 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:16:27 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:16:27 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:16:27 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:17:46 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:19:14 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:33:18 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:37:24 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:38:12 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:43:34 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:44:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:44:38 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:44:38 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:44:38 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:44:38 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:48:57 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:49:34 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 09:54:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:54:24 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:54:24 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:54:24 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:54:24 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:55:19 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:55:19 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:55:19 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:55:19 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:55:19 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 09:56:38 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 10:04:59 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 10:06:49 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 10:09:42 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 10:12:12 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[01-Jul-2022 10:17:22 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[04-Jul-2022 05:09:02 UTC] PHP Notice:  Undefined variable: email in /home/tharunat/videditor.tharunatwork.com/dev/index.php on line 197
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[04-Jul-2022 05:09:20 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[04-Jul-2022 05:13:20 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[04-Jul-2022 05:26:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[04-Jul-2022 05:26:04 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[04-Jul-2022 05:26:04 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[04-Jul-2022 05:26:04 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[04-Jul-2022 05:26:04 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[04-Jul-2022 05:26:05 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[04-Jul-2022 05:26:05 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[04-Jul-2022 05:26:05 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 05:29:34 UTC] PHP Notice:  Undefined variable: email in /home/tharunat/videditor.tharunatwork.com/dev/index.php on line 197
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 05:30:06 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 05:41:53 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 05:45:46 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 06:26:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 06:26:52 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 06:26:52 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 06:26:52 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 06:26:52 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 06:26:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 06:26:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 06:26:53 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 06:31:00 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 06:32:53 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 06:37:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 06:37:52 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 06:37:52 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 06:37:52 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 06:37:52 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 06:39:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 06:39:53 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 06:39:53 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 06:39:53 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 06:39:53 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 07:00:22 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 07:01:46 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 07:04:51 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 07:11:20 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 07:14:47 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:19:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:19:53 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:19:53 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:19:53 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:19:53 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:21:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:21:38 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:21:38 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:21:38 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:21:38 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:23:26 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:23:26 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:23:26 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:23:26 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:23:26 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:23:26 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:24:27 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:24:27 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:24:27 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:24:27 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:24:27 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:24:27 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 594
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  Undefined variable: status_layers_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 599
+[05-Jul-2022 07:25:59 UTC] PHP Notice:  Undefined variable: layer_length_legendary_bgm in /home/tharunat/videditor.tharunatwork.com/dev/player.php on line 600
+[05-Jul-2022 07:27:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[05-Jul-2022 07:27:11 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[05-Jul-2022 07:27:11 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[05-Jul-2022 07:27:11 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[05-Jul-2022 07:27:11 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:23:31 UTC] PHP Notice:  Undefined variable: email in /home/tharunat/videditor.tharunatwork.com/dev/index.php on line 197
+[06-Jul-2022 05:24:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:24:11 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:24:11 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:24:11 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:24:11 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:38:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:38:10 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:38:10 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:38:10 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:38:10 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:41:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:41:04 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:41:04 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:41:04 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:41:04 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:42:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:42:43 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:42:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:42:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:42:43 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:47:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:47:06 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:47:06 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:47:06 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:47:06 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:51:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:51:35 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:51:35 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:51:35 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:51:35 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:53:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:53:42 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:53:42 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:53:42 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:53:42 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 05:55:22 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 05:55:22 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 05:55:22 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 05:55:22 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 05:55:22 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:19:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:19:24 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:19:24 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:19:24 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:19:24 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:27:54 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:27:54 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:27:54 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:27:54 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:27:54 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:28:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:28:38 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:28:38 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:28:38 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:28:38 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:30:05 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:30:05 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:30:05 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:30:05 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:30:05 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:31:27 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:31:27 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:31:27 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:31:27 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:31:27 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:33:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:33:08 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:33:08 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:33:08 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:33:08 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:34:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:34:21 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:34:21 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:34:21 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:34:21 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:35:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:35:33 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:35:33 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:35:33 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:35:33 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:37:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:37:01 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:37:01 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:37:01 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:37:01 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:40:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:40:43 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:40:43 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:40:43 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:40:43 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13
+[06-Jul-2022 06:41:48 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 1
+[06-Jul-2022 06:41:48 UTC] PHP Notice:  Constant HOST already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 10
+[06-Jul-2022 06:41:48 UTC] PHP Notice:  Constant USERNAME already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 11
+[06-Jul-2022 06:41:48 UTC] PHP Notice:  Constant PASSWORD already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 12
+[06-Jul-2022 06:41:48 UTC] PHP Notice:  Constant DB already defined in /home/tharunat/videditor.tharunatwork.com/dev/db.php on line 13

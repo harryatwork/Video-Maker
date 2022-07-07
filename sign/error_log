@@ -1,0 +1,28 @@
+[01-Jul-2022 05:45:53 UTC] PHP Warning:  include(../head.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[01-Jul-2022 05:45:53 UTC] PHP Warning:  include(): Failed opening '../head.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[01-Jul-2022 05:45:53 UTC] PHP Notice:  Undefined index: redirect in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 3
+[01-Jul-2022 05:45:53 UTC] PHP Warning:  include(../header.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[01-Jul-2022 05:45:53 UTC] PHP Warning:  include(): Failed opening '../header.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[01-Jul-2022 05:45:53 UTC] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
+[01-Jul-2022 05:45:53 UTC] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
+[04-Jul-2022 05:09:02 UTC] PHP Warning:  include(../head.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[04-Jul-2022 05:09:02 UTC] PHP Warning:  include(): Failed opening '../head.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[04-Jul-2022 05:09:02 UTC] PHP Notice:  Undefined index: redirect in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 3
+[04-Jul-2022 05:09:02 UTC] PHP Warning:  include(../header.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[04-Jul-2022 05:09:02 UTC] PHP Warning:  include(): Failed opening '../header.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[04-Jul-2022 05:09:02 UTC] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
+[04-Jul-2022 05:09:02 UTC] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
+[05-Jul-2022 05:29:35 UTC] PHP Warning:  include(../head.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[05-Jul-2022 05:29:35 UTC] PHP Warning:  include(): Failed opening '../head.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[05-Jul-2022 05:29:35 UTC] PHP Notice:  Undefined index: redirect in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 3
+[05-Jul-2022 05:29:35 UTC] PHP Warning:  include(../header.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[05-Jul-2022 05:29:35 UTC] PHP Warning:  include(): Failed opening '../header.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[05-Jul-2022 05:29:35 UTC] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
+[05-Jul-2022 05:29:35 UTC] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
+[06-Jul-2022 05:23:31 UTC] PHP Warning:  include(../head.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[06-Jul-2022 05:23:31 UTC] PHP Warning:  include(): Failed opening '../head.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 1
+[06-Jul-2022 05:23:31 UTC] PHP Notice:  Undefined index: redirect in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 3
+[06-Jul-2022 05:23:31 UTC] PHP Warning:  include(../header.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[06-Jul-2022 05:23:31 UTC] PHP Warning:  include(): Failed opening '../header.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 404
+[06-Jul-2022 05:23:31 UTC] PHP Warning:  include(../footer.php): failed to open stream: No such file or directory in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
+[06-Jul-2022 05:23:31 UTC] PHP Warning:  include(): Failed opening '../footer.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/tharunat/videditor.tharunatwork.com/sign/index.php on line 824
