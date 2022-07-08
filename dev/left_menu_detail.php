@@ -1,26 +1,16 @@
 <?php include("db.php"); 
-      $v_m_id = $_SESSION["v_m_id"];
+      $v_m_id = $_POST["v_m_id"];
+	  $scene_id = $_POST["scene_id"];
 ?>
 
 <div class="card" id="msc-layer-placeholder-container" style="height: 100%;border:none;overflow-y: scroll;overflow-x: hidden;background: linear-gradient(to top, #4caf50 0%, #5c9ae4 100%);">
 	<div class="card-header" style="padding: 0px;">
 		<div class="card-title" id="card-title-layers"
-			style="width: 100%; display: inline-block; text-align: center;padding: 0.4rem 1.25rem;font-size: 12px;  margin-bottom: 0px; font-weight: 600; cursor: pointer;background: transparent; color: white;">
+			style="background: linear-gradient(to top, rgb(91, 154, 226) 0%, rgb(185, 217, 255) 100%);width: 48%; display: inline-block; text-align: center;padding: 0.4rem 1.25rem;font-size: 12px;  margin-bottom: 0px; font-weight: 600; cursor: pointer;color: white;">
 			Layers
 		</div>
-		<div class="card-title" id="card-title-media" style="width: 48%; display: none; text-align: center;padding: 0.4rem 1.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;">
+		<div class="card-title" id="card-title-media" style="display:inline-block;width: 48%; text-align: center;padding: 0.4rem 1.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;color:white;">
 			Media
-		</div>
-	</div>
-	
-	<div id="media_child" style="display:none;padding: 1% 4%;">
-		<div class="" id="media_child_uploads_btn"
-			style="width: 48%; display: inline-block; text-align: center;padding: 0.4rem 1.25rem;font-size: 12px;  margin-bottom: 0px; font-weight: 600; cursor: pointer;">
-			Uploads
-		</div>
-		<div class="" id="media_child_library_btn" 
-		    style="width: 48%; display: inline-block; text-align: center;padding: 0.4rem 1.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: transparent; color: white;">
-			Library
 		</div>
 	</div>
 
@@ -36,11 +26,11 @@
         
         
             <?php
-                $sql_layers_count = "SELECT COUNT(*) AS total FROM video_maker_layers WHERE p_id = '$v_m_id'";
+                $sql_layers_count = "SELECT COUNT(*) AS total FROM video_maker_layers WHERE p_id = '$v_m_id' AND scene_id = '$scene_id'";
 				$row_layers_count = mysqli_query($conn, $sql_layers_count);
 				$coun_layers_count = mysqli_fetch_assoc($row_layers_count);	
 				
-				$sql_layers_count = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' ORDER BY layer_count DESC LIMIT 1";
+				$sql_layers_count = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' AND scene_id = '$scene_id' ORDER BY layer_count DESC LIMIT 1";
 				$result_layers_count = $conn->query($sql_layers_count);
 				if ($result_layers_count->num_rows > 0) {   
 				while($row_layers_count = $result_layers_count->fetch_assoc()) { 
@@ -58,7 +48,7 @@
             <div id="sortable" class="layer_items">
     		   
     		<?php
-			    $sql_layers_main = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' AND layer != 'BGM' ORDER BY layer_count DESC";
+			    $sql_layers_main = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' AND scene_id = '$scene_id' AND layer != 'BGM' ORDER BY layer_count DESC";
 				$result_layers_main = $conn->query($sql_layers_main);
 				if ($result_layers_main->num_rows > 0) {   
 				while($row_layers_main = $result_layers_main->fetch_assoc()) { 
@@ -120,7 +110,7 @@
         		</div>
         		
         	<?php
-			    $sql_layers_legendary_bgm = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' AND layer = 'BGM' LIMIT 1";
+			    $sql_layers_legendary_bgm = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' AND scene_id = '$scene_id' AND layer = 'BGM' LIMIT 1";
 				$result_layers_legendary_bgm = $conn->query($sql_layers_legendary_bgm);
 				if ($result_layers_legendary_bgm->num_rows > 0) {   
 				while($row_layers_legendary_bgm = $result_layers_legendary_bgm->fetch_assoc()) { 
@@ -164,22 +154,48 @@
 	</div>
 
 	<div class="card-body2" id="card-body2" style="display: none;">
-		<br />
 		
 		<div class="media-div" id="templates-indi-div" style="display: none;">
-			<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
-				<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
+			<div class="media_child_library_btn" data-library="templates"
+				style="width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Library
 			</div>
-			<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
-				<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
-			</div>
-			<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
-				<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
+			<div class="data_library_templates">
+				<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
+					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
+				</div>
+				<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
+					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
+				</div>
+				<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
+					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
+				</div>
 			</div>
 		</div>
 		
+	<!-- ----------------------------------------------------- -->
+
 		<div class="media-div" id="images-indi-div" style="display: none;">
-		    <div class="indi-div-uploads" id="images-indi-div-uploads" style="display:none;">
+			
+			<div class="media_child_library_btn" data-library="images"
+				style="margin-top:1px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Library
+			</div>
+
+			<div class="indi-div-library data_library_images data_uploads_common">
+				
+				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
+				<!--	<img src="images-main/images/1.jpg" />-->
+				<!--</div>-->
+				
+			</div>
+
+			<div class="media_child_uploads_btn" data-library="images"
+				style="margin-top:3px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;  margin-bottom: 0px; font-weight: 600; cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Uploads
+			</div>
+
+		    <div class="indi-div-uploads data_uploads_images data_uploads_common" style="display:none;">
 		        
 		        <div id="uplaod_image_btn" style="width: 96%;margin: 5px; display: inline-block;padding: 5px;vertical-align: bottom;text-align: center;border-radius: 5px;cursor:pointer;border: 1px dashed white;">
 					<i class="fa fa-upload" aria-hidden="true" style="font-size: 40px;color:white;"></i>
@@ -201,18 +217,35 @@
 			<?php } } else { } ?>
 				
 		    </div>
-		    <div class="indi-div-library" id="images-indi-div-library">
-				
-				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
-				<!--	<img src="images-main/images/1.jpg" />-->
-				<!--</div>-->
-				
-			</div>
+
+		    
 		</div>
 		
+	<!-- ----------------------------------------------------- -->
+
 		<div class="media-div" id="videos-indi-div" style="display: none;">
 			
-			<div class="indi-div-uploads" id="videos-indi-div-uploads" style="display:none;">
+			<div class="media_child_library_btn" data-library="videos"
+				style="margin-top:1px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Library
+			</div>
+
+			<div class="indi-div-library data_library_videos data_uploads_common" id="videos-indi-div-library">
+				
+				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
+				<!--	<video style="width: 100%;">-->
+				<!--		<source src="images-main/videos/1.mp4" type="video/mp4" />-->
+				<!--	</video>-->
+				<!--</div>-->
+
+			</div>
+
+			<div class="media_child_uploads_btn" data-library="videos"
+				style="margin-top:3px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;  margin-bottom: 0px; font-weight: 600; cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Uploads
+			</div>
+
+			<div class="indi-div-uploads data_uploads_videos data_uploads_common" id="videos-indi-div-uploads" style="display:none;">
 			    
 			    <div id="uplaod_video_btn" style="width: 96%;margin: 5px; display: inline-block;padding: 5px;vertical-align: bottom;text-align: center;border-radius: 5px;cursor:pointer;border: 1px dashed white;">
 					<i class="fa fa-upload" aria-hidden="true" style="font-size: 40px;color:white;"></i>
@@ -236,19 +269,32 @@
 			<?php } } else { } ?>
 
 			</div>
-			<div class="indi-div-library" id="videos-indi-div-library">
-				
-				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
-				<!--	<video style="width: 100%;">-->
-				<!--		<source src="images-main/videos/1.mp4" type="video/mp4" />-->
-				<!--	</video>-->
-				<!--</div>-->
-
-			</div>
+			
 		</div>
 
+	<!-- ----------------------------------------------------- -->
+
 		<div class="media-div" id="backgrounds-indi-div" style="display: none;">
-			<div class="indi-div-uploads"  id="backgrounds-indi-div-uploads" style="display:none;">
+
+			<div class="media_child_library_btn" data-library="backgrounds"
+				style="margin-top:1px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Library
+			</div>
+
+			<div class="indi-div-library data_library_backgrounds data_uploads_common" id="backgrounds-indi-div-library">
+				
+				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
+				<!--	<img src="images-main/backgrounds/1.jpg" />-->
+				<!--</div>-->
+				
+			</div>
+			
+			<div class="media_child_uploads_btn" data-library="backgrounds"
+				style="margin-top:3px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;  margin-bottom: 0px; font-weight: 600; cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Uploads
+			</div>
+
+			<div class="indi-div-uploads data_uploads_backgrounds data_uploads_common"  id="backgrounds-indi-div-uploads" style="display:none;">
 			    
 				<div id="uplaod_background_btn" style="width: 96%;margin: 5px; display: inline-block;padding: 5px;vertical-align: bottom;text-align: center;border-radius: 5px;cursor:pointer;border: 1px dashed white;">
 					<i class="fa fa-upload" aria-hidden="true" style="font-size: 40px;color:white;"></i>
@@ -269,16 +315,11 @@
 			
 			<?php } } else { } ?>
 			</div>
-			<div class="indi-div-library" id="backgrounds-indi-div-library">
-				
-				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
-				<!--	<img src="images-main/backgrounds/1.jpg" />-->
-				<!--</div>-->
-				
-			</div>
+
+			
 		</div>
 		
-		
+	<!-- ----------------------------------------------------- -->
 		
 		<div class="media-div" id="fonts-indi-div" style="display: none;">
 			
@@ -292,12 +333,12 @@
 					$v_m_uploads_fonts_file = $row_v_m_uploads_fonts["file_name"];
 			?>
 			
-<style>
-@font-face {
-  font-family: <?= $v_m_uploads_fonts_name;?>;
-  src: url(images-main/fonts/<?= $v_m_uploads_fonts_file; ?>);
-}
-</style>
+				<style>
+					@font-face {
+						font-family: <?= $v_m_uploads_fonts_name;?>;
+						src: url(images-main/fonts/<?= $v_m_uploads_fonts_file; ?>);
+					}
+				</style>
 			
 			
 			<div class="draggable font" layer-type-id="<?= $v_m_uploads_fonts_id; ?>" font-id="<?= $v_m_uploads_fonts_name; ?>" style="width: 45%; display: inline-block;margin: 5px;padding: 5px;height: 52px;border: 1px solid white;text-align:center;border-radius: 5px;cursor:pointer;">
@@ -308,8 +349,29 @@
 			
 		</div>
 		
+
 		<div class="media-div" id="audio-indi-div" style="display: none;">
-		    <div class="indi-div-uploads" id="audio-indi-div-uploads" style="display:none;">
+
+			<div class="media_child_library_btn" data-library="audios"
+				style="margin-top:1px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Library
+			</div>
+
+			<div class="indi-div-library data_library_audios data_uploads_common" id="audio-indi-div-library">
+				
+				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
+				<!--	<img src="images-main/1.png" />-->
+				<!--	<p style="margin-bottom: 0px;font-size: 10px;text-align: center;line-height: 0.8em;">audio #1</p>-->
+				<!--</div>-->
+				
+			</div>
+
+			<div class="media_child_uploads_btn" data-library="audios"
+				style="margin-top:3px;width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;  margin-bottom: 0px; font-weight: 600; cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
+				Uploads
+			</div>
+
+		    <div class="indi-div-uploads data_uploads_audios data_uploads_common" id="audio-indi-div-uploads" style="display:none;">
 		        
 		        <div id="uplaod_audio_btn" style="width: 96%;margin: 5px; display: inline-block;padding: 5px;vertical-align: bottom;text-align: center;border-radius: 5px;cursor:pointer;border: 1px dashed white;">
 					<i class="fa fa-upload" aria-hidden="true" style="font-size: 40px;color:white;"></i>
@@ -324,15 +386,15 @@
 					$v_m_uploads_audios_title = $row_v_m_uploads_audios["title"];
 			?>
 				
-<script>
-var audioElement<?= $v_m_uploads_audios_id; ?> = document.createElement('audio');            
-audioElement<?= $v_m_uploads_audios_id; ?>.setAttribute('src','images-main/audio/<?= $v_m_uploads_audios_title; ?>');            
-audioElement<?= $v_m_uploads_audios_id; ?>.addEventListener("loadedmetadata", function(_event) {
-    let duratione = audioElement<?= $v_m_uploads_audios_id; ?>.duration;
-    let duration = parseInt(duratione);
-    $('.bgm_id_<?= $v_m_uploads_audios_id; ?>').attr('duration-id', duratione);
-});
-</script>
+				<script>
+					var audioElement<?= $v_m_uploads_audios_id; ?> = document.createElement('audio');            
+					audioElement<?= $v_m_uploads_audios_id; ?>.setAttribute('src','images-main/audio/<?= $v_m_uploads_audios_title; ?>');            
+					audioElement<?= $v_m_uploads_audios_id; ?>.addEventListener("loadedmetadata", function(_event) {
+						let duratione = audioElement<?= $v_m_uploads_audios_id; ?>.duration;
+						let duration = parseInt(duratione);
+						$('.bgm_id_<?= $v_m_uploads_audios_id; ?>').attr('duration-id', duratione);
+					});
+				</script>
 				
 				<div class="draggable_voice draggable_bgm bgm_id_<?= $v_m_uploads_audios_id; ?>" audio-layer-title="<?= $v_m_uploads_audios_title; ?>" layer-type-id="<?= $v_m_uploads_audios_id; ?>" bgm-id="<?= $v_m_uploads_audios_id; ?>" duration-id="" style="width: 45%; display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;vertical-align: super;border-radius:5px;text-align:center;">
 					<img src="images-main/audio/thumbnail.png" style="width:60px;" />
@@ -342,22 +404,13 @@ audioElement<?= $v_m_uploads_audios_id; ?>.addEventListener("loadedmetadata", fu
 			<?php } } else { } ?>
 				
 		    </div>
-		    <div class="indi-div-library" id="audio-indi-div-library">
-				
-				<!--<div style="width: 31%; display: inline-block; padding: 0px 0px 5px 0px;">-->
-				<!--	<img src="images-main/1.png" />-->
-				<!--	<p style="margin-bottom: 0px;font-size: 10px;text-align: center;line-height: 0.8em;">audio #1</p>-->
-				<!--</div>-->
-				
-			</div>
+
+		    
 		</div>
 
-		
+	<!-- ----------------------------------------------------- -->
 		
 		<div class="media-div" id="shapes-indi-div" style="display: none;">
-		    <div class="indi-div-uploads" id="shapes-indi-div-uploads" style="display:none;">
-	
-		    </div>
 		    <div class="indi-div-library" id="shapes-indi-div-library" style="overflow:auto;height:510px;width:110%;">
 			
 			<?php
@@ -383,12 +436,7 @@ audioElement<?= $v_m_uploads_audios_id; ?>.addEventListener("loadedmetadata", fu
 			</div>
 		</div>
 		<br/>
-		
-		
-		
-		
-		
-		
+
 		
 	</div>
 		

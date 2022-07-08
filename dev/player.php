@@ -181,7 +181,7 @@ body {
 			  <?php include("left_menu.php"); ?> 
 			  
 			  <div id="msc-layer-placeholder-wrapper" class="left_bar_menu_div"  style="width: 20%; vertical-align: top;position:absolute; display:none; margin-left: -0.5%; height: 87%;box-shadow: rgb(0 0 0 / 20%) 3px 0px 5px 1px;margin-top: -50px;">
-			    <?php include("left_menu_detail.php"); ?>
+			    
 			  </div>
 				
 
@@ -650,17 +650,17 @@ body {
 				</div>
 				<div style="width: 87%; display: inline-block;">
 					
-					<div style="width: 8%;display: inline-block;margin-right: 1%;">
+					<div class="scene_tab scene_tab_one" data-sceneid="1" style="width: 8%;display: inline-block;margin-right: 1%;">
 						<div style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
 						<p style="font-size: 10px; font-weight: normal; color: #a0a0a0; text-align: center;">screen #1</p>
 					</div>
 					
-					<div style="width: 8%;display: inline-block;margin-right: 1%;">
+					<div class="scene_tab" data-sceneid="2" style="width: 8%;display: inline-block;margin-right: 1%;">
 						<div style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
 						<p style="font-size: 10px; font-weight: normal; color: #a0a0a0; text-align: center;">screen #1</p>
 					</div>
 					
-					<div style="width: 8%;display: inline-block;margin-right: 1%;">
+					<div class="scene_tab" data-sceneid="3" style="width: 8%;display: inline-block;margin-right: 1%;">
 						<div style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
 						<p style="font-size: 10px; font-weight: normal; color: #a0a0a0; text-align: center;">screen #1</p>
 					</div>
