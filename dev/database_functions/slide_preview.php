@@ -1,13 +1,14 @@
 <?php
     include("../db.php"); 
     $p_id = $_POST["project_id"];
+	$scene_id = $_POST["scene_id"];
     
     $main_array_start;
     $main_array_end;
     $main_array_animation;
     $main_array_speed;
 
-    $sql_slide_preview_work_layers = "SELECT * FROM video_maker_layers WHERE p_id = '$p_id'";
+    $sql_slide_preview_work_layers = "SELECT * FROM video_maker_layers WHERE p_id = '$p_id' AND scene_id = '$scene_id'";
 	$result_slide_preview_work_layers = $conn->query($sql_slide_preview_work_layers);
 	if ($result_slide_preview_work_layers->num_rows > 0) {   
 	while($row_slide_preview_work_layers = $result_slide_preview_work_layers->fetch_assoc()) { 

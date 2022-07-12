@@ -60,17 +60,6 @@ body {
 				$v_m_title = $row_v_m["title"];
 			} } else { } 
 		?>
-		<?php
-            $sql_scene = "SELECT * FROM video_maker_scene WHERE id = '$scene_id'";
-        	$result_scene = $conn->query($sql_scene);
-        	if ($result_scene->num_rows > 0) {   
-        	while($row_scene = $result_scene->fetch_assoc()) { 
-        		$scene_background = $row_scene["background"];
-        		$scene_duration = $row_scene["duration"];
-        		$animation_drag_area_width = ($scene_duration*197)+77;
-        	} } else { } 
-        ?>
-		   
 		   
 	    <div id="msc-app" class="app-container" style="margin-top: 0%;">
 	    
@@ -193,277 +182,7 @@ body {
 							<div class="msc-slides-container" id="msc-slides-container" style="min-width: 700px;padding:50px;zoom: 0.40;">
 							   <div class="inner et-wrapper" id="work_area_div" style="width: 1920px; height: 1080px;background:white;">
 								  <div class="msc-slide et-page et-page-current" id="work_area_div_sub" style="background:<?= $scene_background; ?>;">
-								      
-        							<?php
-                            		    $sql_work_layers = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' AND scene_id = '$scene_id'";
-                            			$result_work_layers = $conn->query($sql_work_layers);
-                            			if ($result_work_layers->num_rows > 0) {   
-                            			while($row_work_layers = $result_work_layers->fetch_assoc()) { 
-                            			    $id_work_layers = $row_work_layers["id"];
-                            			    $title_work_layers = $row_work_layers["title"];
-                            			    $layer_id_work_layers = $row_work_layers["layer_id"];
-                            			    $layer_count_work_layers = $row_work_layers["layer_count"];
-                            			    $layer_work_layers = $row_work_layers["layer"];
-                            			    $content_work_layers = $row_work_layers["content"];
-                            		
-                                    		 if($layer_work_layers == 'image'){
-                                    		    
-                                    		    $sql_work_layers_image = "SELECT * FROM video_maker_images WHERE id = '$layer_id_work_layers'";
-                                    			$result_work_layers_image = $conn->query($sql_work_layers_image);
-                                    			if ($result_work_layers_image->num_rows > 0) {   
-                                    			while($row_work_layers_image = $result_work_layers_image->fetch_assoc()) { 
-                                    			    $image_work_layers_image = $row_work_layers_image["title"];
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_image_styles_main = '';
-                                    			$sql_work_layers_image_styles_main = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='parent'";
-                                    			$result_work_layers_image_styles_main = $conn->query($sql_work_layers_image_styles_main);
-                                    			if ($result_work_layers_image_styles_main->num_rows > 0) {   
-                                    			while($row_work_layers_image_styles_main = $result_work_layers_image_styles_main->fetch_assoc()) { 
-                                    			    $style_title_work_layers_image_styles_main = $row_work_layers_image_styles_main["style"];
-                                    			    $style_value_work_layers_image_styles_main = $row_work_layers_image_styles_main["value"];
-                                    			    $style_work_layers_image_styles_main = $style_work_layers_image_styles_main.$style_title_work_layers_image_styles_main.':'.$style_value_work_layers_image_styles_main.';';
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_image_styles_child = '';
-                                    			$sql_work_layers_image_styles_child = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='child'";
-                                    			$result_work_layers_image_styles_child = $conn->query($sql_work_layers_image_styles_child);
-                                    			if ($result_work_layers_image_styles_child->num_rows > 0) {   
-                                    			while($row_work_layers_image_styles_child = $result_work_layers_image_styles_child->fetch_assoc()) { 
-                                    			    $style_title_work_layers_image_styles_child = $row_work_layers_image_styles_child["style"];
-                                    			    $style_value_work_layers_image_styles_child = $row_work_layers_image_styles_child["value"];
-                                    			    $style_work_layers_image_styles_child = $style_work_layers_image_styles_child.$style_title_work_layers_image_styles_child.':'.$style_value_work_layers_image_styles_child.';';
-                                    			} } else { } 
-                                    			
-                                    		    $layer_data = '<div class="image ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_image_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="image" data-status="idle">
-                                                                   <img style="width: 99%; height: 99%; object-fit: fill;'.$style_work_layers_image_styles_child.'" src="images-main/images/'.$image_work_layers_image.'" >
-                                                                   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
-                                                                </div>';
-                                                                
-                                    		 } elseif($layer_work_layers == 'video'){
-                                    		    
-                                    		    $sql_work_layers_video = "SELECT * FROM video_maker_videos WHERE id = '$layer_id_work_layers'";
-                                    			$result_work_layers_video = $conn->query($sql_work_layers_video);
-                                    			if ($result_work_layers_video->num_rows > 0) {   
-                                    			while($row_work_layers_video = $result_work_layers_video->fetch_assoc()) { 
-                                    			    $image_work_layers_video = $row_work_layers_video["title"];
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_video_styles_main = '';
-                                    			$sql_work_layers_video_styles_main = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='parent'";
-                                    			$result_work_layers_video_styles_main = $conn->query($sql_work_layers_video_styles_main);
-                                    			if ($result_work_layers_video_styles_main->num_rows > 0) {   
-                                    			while($row_work_layers_video_styles_main = $result_work_layers_video_styles_main->fetch_assoc()) { 
-                                    			    $style_title_work_layers_video_styles_main = $row_work_layers_video_styles_main["style"];
-                                    			    $style_value_work_layers_video_styles_main = $row_work_layers_video_styles_main["value"];
-                                    			    $style_work_layers_video_styles_main = $style_work_layers_video_styles_main.$style_title_work_layers_video_styles_main.':'.$style_value_work_layers_video_styles_main.';';
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_video_styles_child = '';
-                                    			$sql_work_layers_video_styles_child = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='child'";
-                                    			$result_work_layers_video_styles_child = $conn->query($sql_work_layers_video_styles_child);
-                                    			if ($result_work_layers_video_styles_child->num_rows > 0) {   
-                                    			while($row_work_layers_video_styles_child = $result_work_layers_video_styles_child->fetch_assoc()) { 
-                                    			    $style_title_work_layers_video_styles_child = $row_work_layers_video_styles_child["style"];
-                                    			    $style_value_work_layers_video_styles_child = $row_work_layers_video_styles_child["value"];
-                                    			    $style_work_layers_video_styles_child = $style_work_layers_video_styles_child.$style_title_work_layers_video_styles_child.':'.$style_value_work_layers_video_styles_child.';';
-                                    			} } else { } 
-                                    			
-                                    		    $layer_data = '<div class="video ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_video_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="video" data-status="idle">
-                                                                   <video style="width: 99%; object-fit: fill; height: 99%;'.$style_work_layers_video_styles_child.'" controls="controls" oncontextmenu="false" disablepictureinpicture="true" controlslist="nodownload" disableplaybackspeed="true">
-                                                					  <source src="images-main/videos/'.$image_work_layers_video.'" type="video/mp4">
-                                                				   </video>
-                                                                   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
-                                                                </div>';
-                                                                
-                                    		} elseif($layer_work_layers == 'background'){
-                                    		    
-                                    		    $sql_work_layers_background = "SELECT * FROM video_maker_backgrounds WHERE id = '$layer_id_work_layers'";
-                                    			$result_work_layers_background = $conn->query($sql_work_layers_background);
-                                    			if ($result_work_layers_background->num_rows > 0) {   
-                                    			while($row_work_layers_background = $result_work_layers_background->fetch_assoc()) { 
-                                    			    $image_work_layers_background = $row_work_layers_background["title"];
-                                    			} } else { }
-                                    			
-                                    			$style_work_layers_background_styles_main = '';
-                                    			$sql_work_layers_background_styles_main = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='parent'";
-                                    			$result_work_layers_background_styles_main = $conn->query($sql_work_layers_background_styles_main);
-                                    			if ($result_work_layers_background_styles_main->num_rows > 0) {   
-                                    			while($row_work_layers_background_styles_main = $result_work_layers_background_styles_main->fetch_assoc()) { 
-                                    			    $style_title_work_layers_background_styles_main = $row_work_layers_background_styles_main["style"];
-                                    			    $style_value_work_layers_background_styles_main = $row_work_layers_background_styles_main["value"];
-                                    			    $style_work_layers_background_styles_main = $style_work_layers_background_styles_main.$style_title_work_layers_background_styles_main.':'.$style_value_work_layers_background_styles_main.';';
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_background_styles_child = '';
-                                    			$sql_work_layers_background_styles_child = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='child'";
-                                    			$result_work_layers_background_styles_child = $conn->query($sql_work_layers_background_styles_child);
-                                    			if ($result_work_layers_background_styles_child->num_rows > 0) {   
-                                    			while($row_work_layers_background_styles_child = $result_work_layers_background_styles_child->fetch_assoc()) { 
-                                    			    $style_title_work_layers_background_styles_child = $row_work_layers_background_styles_child["style"];
-                                    			    $style_value_work_layers_background_styles_child = $row_work_layers_background_styles_child["value"];
-                                    			    $style_work_layers_background_styles_child = $style_work_layers_background_styles_child.$style_title_work_layers_background_styles_child.':'.$style_value_work_layers_background_styles_child.';';
-                                    			} } else { } 
-                                    			
-                                    		    $layer_data = '<div class="background ui-draggable ui-draggable-handle draggable2 ui-resizable ui-resizable-disabled" layer-type-id="'.$layer_id_work_background.'" style="'.$style_work_layers_background_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="background" data-status="idle">
-                                                                   <img style="width: 100%; height: 100%; object-fit: cover;'.$style_work_layers_background_styles_child.'" src="images-main/backgrounds/'.$image_work_layers_background.'">
-                                                                   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
-                                                                </div>';
-                                                                
-                                                                
-                                    		} elseif($layer_work_layers == 'font'){
-                                    		    
-                                    		    $sql_work_layers_font = "SELECT * FROM video_maker_fonts WHERE id = '$layer_id_work_layers'";
-                                    			$result_work_layers_font = $conn->query($sql_work_layers_font);
-                                    			if ($result_work_layers_font->num_rows > 0) {   
-                                    			while($row_work_layers_font = $result_work_layers_font->fetch_assoc()) { 
-                                    			    $font_work_layers_font = $row_work_layers_font["font"];
-                                    			    $name_work_layers_font = $row_work_layers_font["name"];
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_font_styles_main = '';
-                                    			$sql_work_layers_font_styles_main = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='parent'";
-                                    			$result_work_layers_font_styles_main = $conn->query($sql_work_layers_font_styles_main);
-                                    			if ($result_work_layers_font_styles_main->num_rows > 0) {   
-                                    			while($row_work_layers_font_styles_main = $result_work_layers_font_styles_main->fetch_assoc()) { 
-                                    			    $style_title_work_layers_font_styles_main = $row_work_layers_font_styles_main["style"];
-                                    			    $style_value_work_layers_font_styles_main = $row_work_layers_font_styles_main["value"];
-                                    			    $style_work_layers_font_styles_main = $style_work_layers_font_styles_main.$style_title_work_layers_font_styles_main.':'.$style_value_work_layers_font_styles_main.';';
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_font_styles_child = '';
-                                    			$sql_work_layers_font_styles_child = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='child'";
-                                    			$result_work_layers_font_styles_child = $conn->query($sql_work_layers_font_styles_child);
-                                    			if ($result_work_layers_font_styles_child->num_rows > 0) {   
-                                    			while($row_work_layers_font_styles_child = $result_work_layers_font_styles_child->fetch_assoc()) { 
-                                    			    $style_title_work_layers_font_styles_child = $row_work_layers_font_styles_child["style"];
-                                    			    $style_value_work_layers_font_styles_child = $row_work_layers_font_styles_child["value"];
-                                    			    $style_work_layers_font_styles_child = $style_work_layers_font_styles_child.$style_title_work_layers_font_styles_child.':'.$style_value_work_layers_font_styles_child.';';
-                                    			} } else { } 
-                                    			
-                                    		    $layer_data = '<div class="font ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" font-id="'.$name_work_layers_font.'" style="'.$style_work_layers_font_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="font" data-status="selected">
-                                                                   <i class="fa fa-arrows font-arrow-mover" aria-hidden="true" style="position: absolute; top: -35%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; display: block;"></i>
-                                                                   <textarea type="text" class="font-input" style="font-family:'.$name_work_layers_font.';font-size:100px;text-align:center;width:100%;height:100%;overflow:hidden;background: transparent;resize: none;'.$style_work_layers_font_styles_child.'" spellcheck="false">'.$content_work_layers.'</textarea>
-                                                                   <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-                                                                   <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
-                                                                </div>';
-                                                                
-                                                                
-                                    		} elseif($layer_work_layers == 'shape'){
-                                    		    
-                                    		    $sql_work_layers_shape = "SELECT * FROM video_maker_shapes WHERE id = '$layer_id_work_layers'";
-                                    			$result_work_layers_shape = $conn->query($sql_work_layers_shape);
-                                    			if ($result_work_layers_shape->num_rows > 0) {   
-                                    			while($row_work_layers_shape = $result_work_layers_shape->fetch_assoc()) { 
-                                    			    $title_work_layers_shape = $row_work_layers_shape["title"];
-                                    			    $shape_work_layers_shape = $row_work_layers_shape["shape"];
-                                    			    $style_work_layers_shape = $row_work_layers_shape["style"];
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_shape_styles_main = '';
-                                    			$sql_work_layers_shape_styles_main = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='parent'";
-                                    			$result_work_layers_shape_styles_main = $conn->query($sql_work_layers_shape_styles_main);
-                                    			if ($result_work_layers_shape_styles_main->num_rows > 0) {   
-                                    			while($row_work_layers_shape_styles_main = $result_work_layers_shape_styles_main->fetch_assoc()) { 
-                                    			    $style_title_work_layers_shape_styles_main = $row_work_layers_shape_styles_main["style"];
-                                    			    $style_value_work_layers_shape_styles_main = $row_work_layers_shape_styles_main["value"];
-                                    			    $style_work_layers_shape_styles_main = $style_work_layers_shape_styles_main.$style_title_work_layers_shape_styles_main.':'.$style_value_work_layers_shape_styles_main.';';
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_shape_styles_child = '';
-                                    			$sql_work_layers_shape_styles_child = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='child'";
-                                    			$result_work_layers_shape_styles_child = $conn->query($sql_work_layers_shape_styles_child);
-                                    			if ($result_work_layers_shape_styles_child->num_rows > 0) {   
-                                    			while($row_work_layers_shape_styles_child = $result_work_layers_shape_styles_child->fetch_assoc()) { 
-                                    			    $style_title_work_layers_shape_styles_child = $row_work_layers_shape_styles_child["style"];
-                                    			    $style_value_work_layers_shape_styles_child = $row_work_layers_shape_styles_child["value"];
-                                    			    $style_work_layers_shape_styles_child = $style_work_layers_shape_styles_child.$style_title_work_layers_shape_styles_child.':'.$style_value_work_layers_shape_styles_child.';';
-                                    			} } else { } 
-                                    			
-                                    			$style_work_layers_shape_styles_grandchild = '';
-                                    			$sql_work_layers_shape_styles_grandchild = "SELECT * FROM video_maker_styles WHERE layer_id = '$id_work_layers' AND type='grandchild'";
-                                    			$result_work_layers_shape_styles_grandchild = $conn->query($sql_work_layers_shape_styles_grandchild);
-                                    			if ($result_work_layers_shape_styles_grandchild->num_rows > 0) {   
-                                    			while($row_work_layers_shape_styles_grandchild = $result_work_layers_shape_styles_grandchild->fetch_assoc()) { 
-                                    			    $style_title_work_layers_shape_styles_grandchild = $row_work_layers_shape_styles_grandchild["style"];
-                                    			    $style_value_work_layers_shape_styles_grandchild = $row_work_layers_shape_styles_grandchild["value"];
-                                    			    
-                                    			 
-                                    			     
-                                    			    $style_work_layers_shape_styles_grandchild = $style_work_layers_shape_styles_grandchild.$style_title_work_layers_shape_styles_grandchild.'="'.$style_value_work_layers_shape_styles_grandchild.'" ';
-                                    			     
-                                    			
-                                    			    
-                                    			} } else { } 
-                                    			
-                                    			if($title_work_layers_shape == 'Sqaure') {
-                                    			    
-                                    			    $layer_shape_data = '<rect '.$style_work_layers_shape_styles_grandchild.' />';
-                                    			    
-                                    			} elseif($title_work_layers_shape == 'Sqaure_Round') {
-                                    			    
-                                    			    $layer_shape_data = '<rect '.$style_work_layers_shape_styles_grandchild.' />';
-                                    			    
-                                    			} elseif($title_work_layers_shape == 'Circle') {
-                                    			    
-                                    			    $layer_shape_data = '<circle '.$style_work_layers_shape_styles_grandchild.' />';
-                                    			    
-                                    			} elseif($title_work_layers_shape == 'Elipse') {
-                                    			    
-                                    			    $layer_shape_data = '<ellipse '.$style_work_layers_shape_styles_grandchild.' />';
-                                    			    
-                                    			} elseif($title_work_layers_shape == 'Line') {
-                                    			    
-                                    			    $layer_shape_data = '<line '.$style_work_layers_shape_styles_grandchild.' />';
-                                    			    
-                                    			} elseif($title_work_layers_shape == 'Stroke') {
-                                    			    
-                                    			    $layer_shape_data = '<polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145" stroke="black" fill="transparent" stroke-width="5"/>';
-                                    			    
-                                    			} elseif($title_work_layers_shape == 'Star') {
-                                    			    
-                                    			    $layer_shape_data = '<polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180" stroke="black" fill="transparent" stroke-width="5"/>';
-                                    			    
-                                    			} else { }
-                                    			
-                                    		    $layer_data =  '<div class="shape '.$title_work_layers_shape.' ui-draggable ui-draggable-handle draggable2" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_shape_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="shape" data-status="selected">
-                                                                   <svg version="1.1" class="svg_rect" xmlns="http://www.w3.org/2000/svg" style="'.$style_work_layers_shape_styles_child.'">
-                                                                      '.$layer_shape_data.'
-                                                                   </svg>
-                                                                </div>';
-                                                                
-                                                                
-                                    		} else { }
-                            		
-                            		
-                            		        echo $layer_data;
-                            		        
-                            	
-                            	         } } else { } ?>
-								      
+								   
 								  </div>
 							   </div>
 							</div>
@@ -472,24 +191,8 @@ body {
 					  </div>
 					   
 					   
-					  <div class="card-footer" id="msc-slide-placeholder-container" style="padding: 0px 25px;min-height: 40px;">
-						 <div class="row">
-							<div class="col-3 col-sm-3 col-md-5 ">
-								<div class="msc-slides-buttons"> 
-								</div>
-							</div>
-							 
-							 <span id="slide_timeline_btn" class="app-container btn-outline-primary" style="font-size: 14px;padding: 3px 10px 3px 10px;cursor: pointer;width: auto;border: 1px solid #007bff;border-radius: 7px;margin: 7px 0 7px 0;">Animation Timeline</span>
-							 
-							<div class="col-6 col-sm-6 col-md-4 msc-slides-buttons-container">
-							   <div class="msc-slides-buttons"> 
-								   <span class="divider-vert"></span> 
-								   <button id="slide_time_minus" type="button" class="btn btn-outline-danger button-remove-slide" data-toggle="tooltip" title="Remove Time" style="height: 22px;padding: 2px 6px;font-size: 14px;"> <i class="fa fa-minus" aria-hidden="true"></i> </button> 
-								   <span id="slide_time" style="border: 1px solid gray;padding: 0px 7px 3px 7px;font-size: 13px;border-radius: 3px;"><?= $scene_duration; ?></span>
-								   <button id="slide_time_plus" type="button" class="btn btn-outline-primary button-add-slide" data-toggle="tooltip" title="Add Time" style="height: 22px;padding: 2px 6px;font-size: 14px;"> <i class="icon-plus3"></i> </button>
-								</div>
-							</div>
-						 </div>
+					  <div class="card-footer scene_action_buttons" id="msc-slide-placeholder-container" style="padding: 0px 25px;min-height: 40px;">
+						 
 					  </div>
 					   
 
@@ -515,113 +218,8 @@ body {
 								<div class="card-header" id="draggable_header2">
 									<h4 class="card-title" style="display: inline-block;"></h4>
 								</div>
-								<div class="card-body msc-options-container" style="padding:0px;overflow-x: scroll;white-space: nowrap;">
+								<div class="card-body msc-options-container animation_dragger_panel" style="padding:0px;overflow-x: scroll;white-space: nowrap;">
 								    
-								    <div id="timeline_dragger_div" style="height: 100%;margin-left: 11%;display:none;">
-								        <span id="timeline_dragger" style="width: 4px;height: 74%;background: #6a6a6a;z-index: 9;position: absolute;cursor:pointer;">
-								            <span style="width: 20px;height: 20px;background: #6a6a6a;position: absolute;margin-left: -8px;"></span>
-								            <span style="width: 14px;height: 14px;background: #6a6a6a;position: absolute;margin-left: -5px;margin-top: 13px;transform: rotate(45deg);"></span>
-								        </span>
-								    </div>
-
-									<div class="timeline_secs" style="height:20px;width:100%;margin-top: -8px;margin-bottom: 6px;">
-										<p class="animation_secs">| <span class="animation_secs_span">&nbsp;</span></p>
-									<?php for($scene_lenght = 0; $scene_lenght<=$scene_duration; $scene_lenght++) { ?>
-									     <p class="animation_secs">| <span class="animation_secs_span"><?= $scene_lenght; ?> Sec</span></p>
-									<?php } ?>
-									</div>
-
-                                    <div class="animation_drag_area" style="width:<?= $animation_drag_area_width; ?>px;">
-                                        
-                                    <?php
-                                        $sql_draggable_layers = "SELECT * FROM video_maker_draggable_layers WHERE p_id = '$v_m_id' ORDER BY id DESC";
-                                    	$result_draggable_layers = $conn->query($sql_draggable_layers);
-                                    	if ($result_draggable_layers->num_rows > 0) {   
-                                    	while($row_draggable_layers = $result_draggable_layers->fetch_assoc()) { 
-                                    	    $draggable_layers_id = $row_draggable_layers["id"];
-                                    	    $draggable_main_layers_id = $row_draggable_layers["main_layer_id"];
-                                    	    $draggable_layers_title = $row_draggable_layers["title"];
-                                    	    $draggable_layers_layer_count = $row_draggable_layers["layer_count"];
-                                    	    
-                                    	    $sql_draggable_layers_animation = "SELECT * FROM video_maker_layer_animations WHERE layer_id = '$draggable_main_layers_id'";
-                                        	$result_draggable_layers_animation = $conn->query($sql_draggable_layers_animation);
-                                        	if ($result_draggable_layers_animation->num_rows > 0) {   
-                                        	while($row_draggable_layers_animation = $result_draggable_layers_animation->fetch_assoc()) { 
-                                        	    $draggable_layers_animation_left = $row_draggable_layers_animation["margin_left"];
-                                        	    $draggable_layers_animation_width = $row_draggable_layers_animation["width"];
-                                        	    
-                                        	
-                                    ?>
-                                        <div class="animation_drag_area_indi_layer animation_drag_area_indi_layer_<?= $draggable_layers_layer_count; ?>">
-        									<div class="animation_drag_area_indi_layer_title" style="width: 200px;padding: 5px 10px; border: 1px solid #ececec; border-left: none; border-right: none;border-bottom: none;padding-top: 12px;font-size: 24px;font-weight: 700;display: inline-block;">
-        										<span data-draggableid="<?= $draggable_layers_id; ?>" data-mainlayerid="<?= $draggable_main_layers_id; ?>" data-mainlayercount="<?= $draggable_layers_layer_count; ?>" style="font-weight: 600; font-size: 17px;"><?= $draggable_layers_title; ?> <span id="layer_title" style="font-weight:normal;"> </span></span>
-        									</div>
-        									<div style="height: 34px;display:inline-block;width: 100%;" class="draggable_layer_containment_indi_common" id="layer_dragger_div_<?= $draggable_layers_layer_count; ?>">
-        										<div id="layer_dragger_<?= $draggable_layers_layer_count; ?>" data-mainlayeriddraggable="<?= $draggable_main_layers_id; ?>" data-animationdraggablelayercount="<?= $draggable_layers_layer_count; ?>" class="draggable_layer_indi_common" style="background: #d5e8ff;min-height:40px;height: 40px;width:<?= $draggable_layers_animation_width; ?>px;left:<?= $draggable_layers_animation_left; ?>;border-left:10px solid gray;border-left:16px double gray;border-right:16px double gray;border-top:1px solid gray;border-bottom:1px solid gray;border-radius:5px;">
-        										</div>
-        									</div>
-    									</div>
-                                    <?php
-                                           } } else { } 
-                                        } } else { } 
-                                    ?>
-                                        
-                                    <?php
-                        			    $sql_layers_legendary_bgm = "SELECT * FROM video_maker_layers WHERE p_id = '$v_m_id' AND layer = 'BGM' LIMIT 1";
-                        				$result_layers_legendary_bgm = $conn->query($sql_layers_legendary_bgm);
-                        				if ($result_layers_legendary_bgm->num_rows > 0) {   
-                        				while($row_layers_legendary_bgm = $result_layers_legendary_bgm->fetch_assoc()) { 
-                        					$id_layers_legendary_bgm = $row_layers_legendary_bgm["id"];
-                        					$title_layers_legendary_bgm = $row_layers_legendary_bgm["title"];
-                        					$layer_id_layers_legendary_bgm = $row_layers_legendary_bgm["layer_id"];
-                        					$layer_count_layers_legendary_bgm = $row_layers_legendary_bgm["layer_count"];
-                        					$layer_layers_legendary_bgm = $row_layers_legendary_bgm["layer"];
-                        					$status_layers_legendary_bgm = true;
-                        					
-                        					$sql_layers_legendary_bgm_draggable = "SELECT * FROM video_maker_draggable_layers WHERE main_layer_id = '$id_layers_legendary_bgm'";
-                            				$result_layers_legendary_bgm_draggable = $conn->query($sql_layers_legendary_bgm_draggable);
-                            				if ($result_layers_legendary_bgm_draggable->num_rows > 0) {   
-                            				while($row_layers_legendary_bgm_draggable = $result_layers_legendary_bgm_draggable->fetch_assoc()) { 
-                            				    $layer_length_legendary_bgm = $row_layers_legendary_bgm_draggable["layer_length"];
-                            				} } else { } 
-                        					
-                        				} } else { } 
-                        			?>
-                                        
-                                        <div class="animation_drag_area_indi_layer" id="bgm_work_area">
-        									<div class="animation_drag_area_indi_layer_title" style="width: 200px;padding: 5px 10px; border: 1px solid #ececec; border-left: none; border-right: none;border-bottom: none;padding-top: 12px;font-size: 24px;font-weight: 700;display: inline-block;">
-        										<span style="font-weight: 600; font-size: 17px;">BGM  <span id="bgm_audio_title" style="font-weight:normal;"> </span></span>
-        										<span id="bgm_audio_choose" style="<?php if($status_layers_legendary_bgm) { ?> display:none; <?php } else { } ?>font-size: 20px;font-weight: normal;margin-left: 160px;">Drag & Drop an Audio file</span>
-        										<!--<span id="bgm_audio_btn_remove" style="padding: 3px; border-radius: 4px;float: right;cursor:pointer;display:none;">-->
-        										<!--    <i class="fa fa-trash" aria-hidden="true" style="font-size: 24px;"></i>-->
-        										<!--</span>-->
-        									</div>
-        									<div style="height: 40px;display:inline-block;width: auto;<?php if($status_layers_legendary_bgm) { ?> display:inline-block; <?php } else { ?> display:none; <?php } ?>" id="bgm_audio_div">
-        										<div id="bgm_audio" style="width:<?= $layer_length_legendary_bgm; ?>px;border-left:10px solid gray;border-left:16px double gray;border-right:16px double gray;border-top:1px solid gray;border-bottom:1px solid gray;border-radius:5px;">
-        											<img src="images-main/audio/0.jpg" alt="" style="height: 36px;object-fit:fill;width:100%;cursor:pointer;" />
-        										</div>
-        									</div>
-    									</div>
-                                <!-- 
-                                        <div class="animation_drag_area_indi_layer" id="voice_work_area">
-        									<div class="animation_drag_area_indi_layer_title" style="width: 200px;padding: 5px 10px; border: 1px solid #ececec; border-left: none; border-right: none;border-bottom: none;padding-top: 12px;font-size: 24px;font-weight: 700;display: inline-block;">
-        										<span  style="font-weight: 600; font-size: 17px;">Voice</span>
-        										<span id="speech_audio_choose" style="font-size: 20px;font-weight: normal;margin-left: 155px;">Drag & Drop an Audio file</span>
-        										<span id="speech_audio_btn_remove" style="padding: 3px; border-radius: 4px;float: right;cursor:pointer;display:none;">
-        										    <i class="fa fa-trash" aria-hidden="true" style="font-size: 24px;"></i>
-        										</span>
-        									</div>
-        									<div style="height: 40px;display:inline-block;width: auto;display:none;" id="speech_audio_div">
-        										<div id="speech_audio" style="width:415px;border-left:10px solid gray;border-left:16px double gray;border-right:16px double gray;border-top:1px solid gray;border-bottom:1px solid gray;border-radius:5px;">
-        											<img src="images-main/audio/0.jpg" alt=""  style="height: 36px;object-fit:fill;width:100%;cursor:pointer;" />
-        										</div>
-        									</div>
-                                        </div>
-                                -->
-
-    									
-                                    </div>
-
 								</div>
 							</div>
 						</div>
@@ -633,42 +231,57 @@ body {
 		    </div>
 		   
 		   
-		  <div style="width: 100%; height: auto; background: white; position: fixed; bottom: 0%; border-radius: 0px 5px 5px 0px; 
-					  box-shadow: 2px 0px 2px 1px rgb(0 0 0 / 20%);">
-			<div id="bottom_player_btn" style="width: 79px; background: white; border-radius: 5px 5px 5px 0px; 
-						margin-top: -6px; height: 20px; box-shadow: 0px -2px 2px 1px rgb(0 0 0 / 20%); margin-left: 45%;cursor:pointer;">
-				<i class="fa fa-chevron-up" id="screens_slider_btn" aria-hidden="true" 
-				   style="color: black; font-size: 22px; cursor: pointer; margin-left: 43%;"></i>
+			<div id="bottom_player_div" style="width: 100%; height: auto; background: linear-gradient(to top, rgb(92, 154, 228) 0%, rgb(76, 175, 80) 100%); position: fixed; bottom: 0%; border-radius: 0px 5px 5px 0px; box-shadow: 2px 0px 2px 1px rgb(0 0 0 / 20%);">
+				<div id="bottom_player_btn" class="" style="z-index: 9; color: white; cursor: pointer; transform: rotate(270deg); left: 45%; top: -78%; position: absolute;">
+					<svg width="15" height="96" viewBox="0 0 15 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="SUDcEg" style="fill: #53a692;">
+						<path
+							d="M0 0H3V1.00588C3.0011 4.42584 3.9102 9.97716 7.27295 13.2873C7.45088 13.4625 7.62629 13.6347 7.79957 13.8048L7.85959 13.8637C9.89318 15.8599 11.6678 17.602 12.9234 19.7206C14.0939 21.6956 14.792 23.9527 14.9602 27H15V68C15 71.7381 14.3125 74.3685 13.0144 76.6235C11.7533 78.8142 9.94312 80.5911 7.86152 82.6344L7.79905 82.6957C7.62594 82.8656 7.4507 83.0377 7.27295 83.2127C3.9102 86.5228 3.0011 92.0739 3 95.4938V96H0V0Z"
+							class="vu-d0A"
+						></path>
+						<path
+							d="M3 0H2V1.00619C2.0011 4.50696 2.9164 10.4021 6.57143 14C6.74993 14.1757 6.92582 14.3484 7.09903 14.5184C11.2616 18.6046 13.8752 21.1704 13.9957 28H14V68C14 75.2071 11.3611 77.7976 7.09857 81.9821L7.07621 82.004C6.91037 82.1668 6.7421 82.332 6.57143 82.5C2.9164 86.0979 2.0011 91.993 2 95.4938V96H3V95.4938C3.0011 92.0739 3.9102 86.5228 7.27295 83.2127C7.4507 83.0377 7.62594 82.8656 7.79905 82.6957L7.86152 82.6344C9.94312 80.5911 11.7533 78.8142 13.0144 76.6235C14.3125 74.3685 15 71.7381 15 68V27H14.9602C14.792 23.9527 14.0939 21.6956 12.9234 19.7206C11.6678 17.602 9.89318 15.8599 7.85959 13.8637L7.79957 13.8048C7.62629 13.6347 7.45088 13.4625 7.27295 13.2873C3.9102 9.97716 3.0011 4.42584 3 1.00588V0Z"
+							class="mcI_jw"
+						></path>
+					</svg>
+					<span aria-hidden="true" class="" style="position: absolute; top: 45%; left: 20%;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+							<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.25" d="M7 3.17 4.88 5.3a1 1 0 0 0 0 1.42L7 8.83" style="fill: white;"></path>
+						</svg>
+					</span>
+				</div>
+
+				<div style="height: 70px; display: block;">
+					<div style="width: auto; display: inline-block; vertical-align: top; padding: 1%;">
+						<i class="fas fa-play-circle" style="font-size: 45px; color: red;" aria-hidden="true"></i>
+					</div>
+					<div style="width: auto; display: inline-block; text-align: left; height: 80px; vertical-align: top; padding: 1.5% 1%;">
+						<i class="fa fa-plus-square-o new_scene_btn" aria-hidden="true" style="cursor:pointer;font-size: 30px;color:white;"></i>
+					</div>
+					<div class="all_scenes" style="width: 80%; display: inline-block; padding: 0.5% 1% 1% 1%;">
+						
+					<?php	
+						$sql_scene = "SELECT * FROM video_maker_scene WHERE p_id = '$v_m_id'";
+						$result_scene = $conn->query($sql_scene);
+						if ($result_scene->num_rows > 0) {   
+							$scene_count = 1;
+						while($row_scene = $result_scene->fetch_assoc()) {
+							$scene_id =  $row_scene["id"];
+							$scene_background = $row_scene["background"];
+							$scene_duration = $row_scene["duration"];
+							$animation_drag_area_width = ($scene_duration*197)+77;
+					?>
+
+						<div class="scene_tab scene_tab_<?= $scene_count; ?>" data-sceneid="<?= $scene_id; ?>" style="cursor:pointer;width: 8%; display: inline-block; margin-right: 1%;">
+							<div class="scene_tab_child" style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
+							<p style="font-size: 10px; font-weight: normal; color: white; text-align: center;margin:0;">screen #<?= $scene_count; ?></p>
+						</div>
+
+					<?php $scene_count++; } } else { }  ?>
+					
+					</div>
+				</div>
 			</div>
-			  
-			<div id="bottom_player_div" style="height:70px;display:block;">
-				<div style="width: 6%;display: inline-block;vertical-align: text-bottom;padding-top: 7px;">
-					<img src="../images/others/vdofy-mini.png" style="width: 75px;padding: 0px 10px 10px 10px;">
-				</div>
-				<div style="width: 4%; display: inline-block; text-align: left;height: 80px; vertical-align: middle;">
-					<i class="fa fa-plus-square-o" aria-hidden="true" style="font-size: 30px;"></i>
-				</div>
-				<div style="width: 87%; display: inline-block;">
-					
-					<div class="scene_tab scene_tab_one" data-sceneid="1" style="width: 8%;display: inline-block;margin-right: 1%;">
-						<div style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
-						<p style="font-size: 10px; font-weight: normal; color: #a0a0a0; text-align: center;">screen #1</p>
-					</div>
-					
-					<div class="scene_tab" data-sceneid="2" style="width: 8%;display: inline-block;margin-right: 1%;">
-						<div style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
-						<p style="font-size: 10px; font-weight: normal; color: #a0a0a0; text-align: center;">screen #1</p>
-					</div>
-					
-					<div class="scene_tab" data-sceneid="3" style="width: 8%;display: inline-block;margin-right: 1%;">
-						<div style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
-						<p style="font-size: 10px; font-weight: normal; color: #a0a0a0; text-align: center;">screen #1</p>
-					</div>
-					
-				</div>
-		  </div>
-			  
-		</div>
+
 
 
 

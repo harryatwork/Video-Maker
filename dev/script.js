@@ -170,15 +170,18 @@ $(".close_popups").on("click", function() {
 //-- Bottom Slide Static div Display/Block ------------------------------------------------------------------------------------------------------------------------------------------>
 
 $("#bottom_player_btn").click(function() {
-	$("#bottom_player_div").slideToggle(500);
+    if($("#bottom_player_div").hasClass("hidden")) {
+        $("#bottom_player_div").css("bottom","0%");
+        $("#bottom_player_div").removeClass("hidden");
+    } else {
+        $("#bottom_player_div").css("bottom","-12%");
+        $("#bottom_player_div").addClass("hidden");
+    }
 });
-$(document).ready(function() {
-  dragger();
-//   dragger_voice();
-  dragger_bgm();
-  dragger_bgm_track();
 
-  $(".scene_tab_one").click();
+$(document).ready(function() {
+
+  $(".scene_tab_1").click();
 
   setTimeout(function() {
  	$("#screens_slider_btn").click();
@@ -223,8 +226,7 @@ $(document).on("click","#card-title-layers",function() {
 			
 //-- Animation Timeline Display/Block -------------------------------------------------------------------------------------------------------------------------------------->
 
-
-$("#slide_timeline_btn").click(function() {
+$(document).on("click","#slide_timeline_btn",function() {
 	$("#slide_timeline_div").slideToggle(1000);
 // 	$("#bottom_player_btn").click(); 
 });
@@ -248,7 +250,7 @@ $("#speech_audio_btn_remove").on("click", function() {
 
 // Draggable Audio & Timeline Animation Link ------------------------------------>		   
 
-$(function(){
+function animation_draggables(){
 	$('#bgm_audio')
 		.draggable({ 
 		axis: "x",
@@ -284,7 +286,7 @@ $(function(){
             ICZoom.panImage(top, left);
     		},
     	});
-});
+}
 
 //-- Draggable Animation Link Ends -------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -733,7 +735,7 @@ $(document).on("click", ".close_left_menu_detail_btn", function() {
 //-- Screen time incre and Decre ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->						 
 
 
-$("#slide_time_plus").on("click", function() {
+$(document).on("click","#slide_time_plus",function() {
 	$("#slide_time_minus").attr("disabled", false);
 	let slide_time = parseInt($("#slide_time").text());
 	let slide_time_p = slide_time+1;
@@ -765,7 +767,7 @@ $("#slide_time_plus").on("click", function() {
 	   
 	}
 });
-$("#slide_time_minus").on("click", function() {
+$(document).on("click","#slide_time_minus",function() {
 	$("#slide_time_plus").attr("disabled", false);
 	let slide_time = parseInt($("#slide_time").text());
 	let slide_time_m = slide_time-1;
@@ -792,6 +794,7 @@ $("#slide_time_minus").on("click", function() {
           },
          function(result) {
             save_btn()
+            console.log(scene_id);
          }
 	   );
 		
@@ -6554,10 +6557,12 @@ $(".bgm_audio_crop_btn").on("click",function() {
 $(".slide_preview_btn").on("click",function() {
     $("#overlay2,.slide_preview_div").css("display","block");
     let v_m_id = $("#v_m_id").val();
+    let scene_id = $("#scene_id").val();
     $.post(
      'database_functions/slide_preview.php',
       {
-         project_id: v_m_id
+         project_id: v_m_id,
+         scene_id : scene_id
       },
       function(result){ 
          $(".slide_preview_content_div").html(result);
@@ -6581,8 +6586,11 @@ $(".slide_preview_btn").on("click",function() {
 
 
 //------Left Hand Side Menu Details Load Dynamically Starts ---------------------------------------------------------------------------------------------------------->
+$(document).on("click",".scene_tab",function() {
+    $(".scene_tab_child").css("box-shadow","none");
+    $(this).find(".scene_tab_child").css("box-shadow","inset 0px 0px 8px 3px rgb(91 154 223)");
 
-$(".scene_tab").on("click",function() {
+// Left hand side stuff -----------------------------
     let scene_id = $(this).attr("data-sceneid");
     let v_m_id = $("#v_m_id").val();
     $.post('left_menu_detail.php', 
@@ -6593,30 +6601,78 @@ $(".scene_tab").on("click",function() {
         $("#scene_id").val(scene_id);
         $(".left_bar_menu_div").html(result);
     });
+
+// Work Area Stuff ----------------------------------
+
+    $.post('work_area_load.php',
+    {
+        scene_id : scene_id,
+        v_m_id : v_m_id
+    }, function(result) {
+        $("#work_area_div_sub").html(result);
+    });
+
+// Bottom Animattion Panel Stuff --------------------
+
+    $.post('animation_panel_load.php',
+    {
+        scene_id : scene_id,
+        v_m_id : v_m_id
+    }, function(result) {
+        $(".animation_dragger_panel").html(result);
+    });
+
+// Scene Action Buttons ---------------------------
+
+    $.post('scene_action_buttons.php',
+    {
+        scene_id : scene_id,
+        v_m_id : v_m_id
+    }, function(result){
+        $(".scene_action_buttons").html(result);
+    })
+
+    setTimeout(function() {
+        dragger();
+        //   dragger_voice();
+        dragger_bgm();
+        dragger_bgm_track();
+        animation_draggables();
+        layers_sort();
+    }, 3000);
 });
 
 //------Left Hand Side Menu Details Load Dynamically Ends ---------------------------------------------------------------------------------------------------------->
 
+
+//------ New Slide -------------------------------------------------------------------->
+$(".new_scene_btn").on("click",function() {
+    let v_m_id = $("#v_m_id").val(); 
+    let u_id = $("#u_id").val(); 
+    $.post('database_functions/add_scene.php',
+    {
+        v_m_id: v_m_id,
+        u_id: u_id
+    }, function(result){
+        $(".all_scenes").append(result);
+        save_btn();
+    });
+});
 
 
 //-- Layer Sorting Starts -------------------------------------------------------------------------------------------------------------------------------------------->
 
 
 
-$(function() {
-    $( "#sortable" ).sortable();
-});
-
-
-$(document).ready(function () {
+function layers_sort() {
     $('#sortable').sortable({
-      opacity: 0.325,
-      tolerance: 'pointer',
-      cursor: 'move',
-      update: function(event, ui) {
+        opacity: 0.325,
+        tolerance: 'pointer',
+        cursor: 'move',
+        update: function(event, ui) {
         var post = $(this).sortable('toArray');
         var ids = $(this).sortable('toArray', {attribute: 'data-myattr'});
-
+    
         let project_id = $("#v_m_id").val();
         let order_id = $('.layer_tab_order').length;
         $('.layer_tab_order').each(function(){
@@ -6627,22 +6683,25 @@ $(document).ready(function () {
         });
         // console.log(ids);
         
-
-         $.post(
-            	'database_functions/sort_layers.php',
-              {
-                 sort_layer: post,
-                 sort_layer_ids: ids,
-                 project_id : project_id
-              },
-             function(result){
+    
+            $.post(
+                'database_functions/sort_layers.php',
+                {
+                    sort_layer: post,
+                    sort_layer_ids: ids,
+                    project_id : project_id
+                },
+                function(result){
                 save_btn();
             }
-         );
+            );
+    
+        }
+    });
+};
 
-      }
-   });
-});
+
+
 
 
 //-- Layer Sorting Ends --------------------------------------------------------------------------------------------------------------------------------------------->
