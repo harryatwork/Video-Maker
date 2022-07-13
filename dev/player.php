@@ -271,8 +271,12 @@ body {
 							$animation_drag_area_width = ($scene_duration*197)+77;
 					?>
 
-						<div class="scene_tab scene_tab_<?= $scene_count; ?>" data-sceneid="<?= $scene_id; ?>" style="cursor:pointer;width: 8%; display: inline-block; margin-right: 1%;">
-							<div class="scene_tab_child" style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
+						<div class="scene_tab scene_tab_<?= $scene_count; ?>" data-scenetab="<?= $scene_count; ?>" data-sceneid="<?= $scene_id; ?>" style="cursor:pointer;width: 8%; display: inline-block; margin-right: 1%;">
+							<div class="scene_tab_child" style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;">
+							<?php if($scene_count == 1) { } else { ?>
+								<i class="fa fa-times-circle remove_scene scene_with_id_<?= $scene_id; ?>" data-sceneremoveiconid="<?= $scene_id; ?>" aria-hidden="true" style="display:none;font-size: 14px;color: black;cursor: pointer;position: relative;margin-left: 88%;margin-top: -5%;"></i>
+							<?php } ?>
+							</div>
 							<p style="font-size: 10px; font-weight: normal; color: white; text-align: center;margin:0;">screen #<?= $scene_count; ?></p>
 						</div>
 

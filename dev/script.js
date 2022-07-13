@@ -6659,6 +6659,31 @@ $(".new_scene_btn").on("click",function() {
     });
 });
 
+$(document).on("click",".remove_scene",function() {
+    let scene_id = $(this).attr("data-sceneremoveiconid");
+    let scene_tab = parseInt($('[data-sceneid="'+scene_id+'"]').attr("data-scenetab"));
+        scene_tab = scene_tab - 1;
+    $.post('database_functions/remove_scene.php',
+    {
+        scene_id : scene_id
+    }, function(result){
+        $('[data-sceneid="'+scene_id+'"]').remove();
+        $(".scene_tab_"+scene_tab).click();
+    });
+});
+
+$(document).on("mouseenter",".scene_tab", function(){
+    let scene_id = $(this).attr("data-sceneid");
+    console.log(scene_id);
+    $(".remove_scene").css("display","none");
+    $(".scene_with_id_"+scene_id).css("display","block");
+});
+
+$(document).on("mouseleave",".scene_tab", function(){
+    $(".remove_scene").css("display","none");
+});
+
+
 
 //-- Layer Sorting Starts -------------------------------------------------------------------------------------------------------------------------------------------->
 

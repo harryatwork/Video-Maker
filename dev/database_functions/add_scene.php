@@ -18,8 +18,10 @@
               VALUES ('$v_m_id', '$u_id', '$duration', '$date')";
     if ($con->query($sql2) === TRUE) { 
         $last_id = $con->insert_id;
-        echo '<div class="scene_tab scene_tab_'.$scene_count.'" data-sceneid="'.$last_id.'" style="cursor:pointer;width: 8%; display: inline-block; margin-right: 1%;">
-                <div class="scene_tab_child" style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;"></div>
+        echo '<div class="scene_tab scene_tab_'.$scene_count.'" data-scenetab="'.$scene_count.'" data-sceneid="'.$last_id.'" style="cursor:pointer;width: 8%; display: inline-block; margin-right: 1%;">
+                <div class="scene_tab_child" style="height: 47px; background: #f7f7f7; border: 1px solid #dddd;">
+                    <i class="fa fa-times-circle remove_scene scene_with_id_'.$last_id.'" data-sceneremoveiconid="'.$last_id.'" aria-hidden="true" style="display:none;font-size: 14px;color: black;cursor: pointer;position: relative;margin-left: 88%;margin-top: -5%;"></i>
+                </div>
                 <p style="font-size: 10px; font-weight: normal; color: white; text-align: center;margin:0;">screen #'.$scene_count.'</p>
               </div>';
     } else { } 

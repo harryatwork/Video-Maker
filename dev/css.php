@@ -409,7 +409,7 @@ input:checked + .slider:before {
   }
 }
 @keyframes color {
-  0% {
+  0% { 
     stroke: #ffffff;
   }
   40% {
