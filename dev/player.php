@@ -295,7 +295,7 @@ body {
 
 </div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.0/cropper.js'></script>
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c08261462acba8afd37dae25-|49" defer="">
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>

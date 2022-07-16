@@ -6640,6 +6640,19 @@ $(document).on("click",".scene_tab",function() {
         animation_draggables();
         layers_sort();
     }, 3000);
+
+
+// Scene Screenshot shit -------------------------
+
+    // Not WOrking ..... evne if it works, its in canvas. Can't save it.. pointless
+    // let div = document.getElementById('work_area_div_sub');
+    // html2canvas(div).then(function(canvas) {
+    //     document.getElementById('work_area_div_sub').appendChild(canvas);
+    //     $(this).find(".scene_tab_child").html(canvas);
+    //     console.log(canvas);
+    // });
+
+
 });
 
 //------Left Hand Side Menu Details Load Dynamically Ends ---------------------------------------------------------------------------------------------------------->
@@ -6674,7 +6687,7 @@ $(document).on("click",".remove_scene",function() {
 
 $(document).on("mouseenter",".scene_tab", function(){
     let scene_id = $(this).attr("data-sceneid");
-    console.log(scene_id);
+    // console.log(scene_id);
     $(".remove_scene").css("display","none");
     $(".scene_with_id_"+scene_id).css("display","block");
 });
