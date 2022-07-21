@@ -86,6 +86,9 @@ body {
                 <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
                     New Design
                 </div>
+				<div class="file_options create_template_btn" data-templateid="0" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
+                    Create Template
+                </div>
                 <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
                     Save
                 </div>

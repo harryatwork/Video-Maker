@@ -6696,11 +6696,74 @@ $(document).on("mouseleave",".scene_tab", function(){
     $(".remove_scene").css("display","none");
 });
 
+//-- New Slide Ends ------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+//-- Create Templates Starts ---------------------------------------------------------------------------------------------------------------------------------------->
+$(".create_template_btn").on("click",function() {
+    let template_id = parseInt($(this).attr("data-templateid"));
+    let scene_id = $("#scene_id").val();
+    $(this).text("Creating Template...");
+    $(this).css({"background":"#5b9dd3","color":"white"});
+
+    if(template_id == 0) {
+        //Insert as a Template
+        $.post('database_functions/create_template.php',
+        {
+            scene_id : scene_id
+        }, function(result){
+            save_btn();
+            $(".create_template_btn").attr("data-templateid", result);
+            $(".create_template_btn").text("Template Created");
+            $(".create_template_btn").css({"background":"#51a97e","color":"white"});
+        });
+    } else {
+        //Update existing Template
+        $.post('database_functions/update_template.php',
+        {
+            scene_id : scene_id
+        }, function(result){
+
+        });
+    }
+
+});
+
+//-- Create Templates Ends ------------------------------------------------------------------------------------------------------------------------------------------->
+
+//-- Load Template Starts -------------------------------------------------------------------------------------------------------------------------------------------->
+
+// $(".load_template_btn").on("click",function() {
+$(document).on("click",".load_template_btn",function() {
+    let templatesceneid = $(this).attr("data-templatesceneid");
+    let scene_id = $("#scene_id").val();
+    let p_id = $("#v_m_id").val();
+    let u_id = $("#u_id").val();
+    
+    $.post('database_functions/load_template.php',
+        {
+            scene_id : scene_id,
+            templatesceneid : templatesceneid,
+            p_id : p_id,
+            u_id : u_id
+        }, function(result){
+            console.log(2);
+            $(".scene_tab:last").click();
+            save_btn();
+        });
+});
+
+
+
+
+
+
+
+
 
 
 //-- Layer Sorting Starts -------------------------------------------------------------------------------------------------------------------------------------------->
-
-
 
 function layers_sort() {
     $('#sortable').sortable({
@@ -6737,9 +6800,6 @@ function layers_sort() {
         }
     });
 };
-
-
-
 
 
 //-- Layer Sorting Ends --------------------------------------------------------------------------------------------------------------------------------------------->

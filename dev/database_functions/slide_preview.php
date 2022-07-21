@@ -2,11 +2,12 @@
     include("../db.php"); 
     $p_id = $_POST["project_id"];
 	$scene_id = $_POST["scene_id"];
-    
-    $main_array_start;
-    $main_array_end;
-    $main_array_animation;
-    $main_array_speed;
+
+    $main_array_start = '';
+    $main_array_end = '';
+    $main_array_animation = '';
+    $main_array_speed = '';
+	
 
     $sql_slide_preview_work_layers = "SELECT * FROM video_maker_layers WHERE p_id = '$p_id' AND scene_id = '$scene_id'";
 	$result_slide_preview_work_layers = $conn->query($sql_slide_preview_work_layers);
@@ -19,7 +20,7 @@
 	    $layer_slide_preview_work_layers = $row_slide_preview_work_layers["layer"];
 	    $content_slide_preview_work_layers = $row_slide_preview_work_layers["content"];
 
-        $child_array_start;
+		$child_array_start;
 	    $child_array_end;
 	    $child_array_animation;
         $child_array_speed;
@@ -364,7 +365,9 @@
 			
 		
                             
-		} else { }
+		} else { 
+			
+		}
     
         echo $layer_data_slide_preview;
         

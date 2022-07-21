@@ -161,15 +161,17 @@
 				Library
 			</div>
 			<div class="data_library_templates">
-				<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
+			<?php
+			    $sql_templates_scene = "SELECT * FROM video_maker_scene_templates";
+				$result_templates_scene = $conn->query($sql_templates_scene);
+				if ($result_templates_scene->num_rows > 0) {   
+				while($row_templates_scene = $result_templates_scene->fetch_assoc()) { 
+					$template_scene_id = $row_templates_scene["id"];
+			?>
+				<div class="load_template_btn" data-templatesceneid="<?= $template_scene_id; ?>" style="cursor:pointer;width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
 					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
 				</div>
-				<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
-					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
-				</div>
-				<div style="width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
-					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
-				</div>
+			<?php } } else { } ?>
 			</div>
 		</div>
 		
