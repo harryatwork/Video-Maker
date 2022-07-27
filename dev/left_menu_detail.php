@@ -156,11 +156,11 @@
 	<div class="card-body2" id="card-body2" style="display: none;">
 		
 		<div class="media-div" id="templates-indi-div" style="display: none;">
-			<div class="media_child_library_btn" data-library="templates"
+			<div class="media_child_library_btn" data-library="scene_templates"
 				style="width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);">
-				Library
+				Scene Library
 			</div>
-			<div class="data_library_templates">
+			<div class="data_library_scene_templates">
 			<?php
 			    $sql_templates_scene = "SELECT * FROM video_maker_scene_templates";
 				$result_templates_scene = $conn->query($sql_templates_scene);
@@ -168,11 +168,30 @@
 				while($row_templates_scene = $result_templates_scene->fetch_assoc()) { 
 					$template_scene_id = $row_templates_scene["id"];
 			?>
-				<div class="load_template_btn" data-templatesceneid="<?= $template_scene_id; ?>" style="cursor:pointer;width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
+				<div class="load_scene_template_btn" data-templatesceneid="<?= $template_scene_id; ?>" style="cursor:pointer;width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
 					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
 				</div>
 			<?php } } else { } ?>
 			</div>
+
+			<div class="media_child_library_btn" data-library="project_templates"
+				style="width: 100%; display: inline-block; text-align: left;padding: 0.4rem 2.25rem;font-size: 12px;margin-bottom: 0px; font-weight: 600;cursor: pointer;background: linear-gradient(to top, #5895d9 0%, #5895d7 100%);color: white;border-radius: 5px;box-shadow: 0px 3px 2px 1px rgb(0 0 0 / 20%);margin-top: 2%;">
+				Project Library
+			</div>
+			<div class="data_library_project_templates" style="display:none;">
+			<?php
+			    $sql_templates_project = "SELECT * FROM video_maker_templates";
+				$result_templates_project = $conn->query($sql_templates_project);
+				if ($result_templates_project->num_rows > 0) {   
+				while($row_templates_project = $result_templates_project->fetch_assoc()) { 
+					$template_project_id = $row_templates_project["id"];
+			?>
+				<div class="load_project_template_btn" data-templateprojectid="<?= $template_project_id; ?>" style="cursor:pointer;width: 45%;display: inline-block;margin: 5px;padding: 5px;height: auto;border: 1px solid white;border-radius:5px;">
+					<img src="images-main/layout.png" style="width:100%;object-fit: cover;" />
+				</div>
+			<?php } } else { } ?>
+			</div>
+
 		</div>
 		
 	<!-- ----------------------------------------------------- -->

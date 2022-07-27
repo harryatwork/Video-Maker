@@ -708,6 +708,11 @@ $(document).on("click", ".media_child_library_btn", function() {
         $(this).css({"background":"linear-gradient(to top, #5b9ae2 0%, #b9d9ff 100%)","color":"white"});
         $(".data_uploads_common").css("display","none");
         $(".data_library_"+media_child_data_div).css("display","block");
+        if(media_child_data_div == 'scene_templates') {
+            $(".data_library_project_templates").css("display","none");
+        } else if(media_child_data_div == 'project_templates') {
+            $(".data_library_scene_templates").css("display","none");
+        } else { }
 });
 
 
@@ -6700,27 +6705,27 @@ $(document).on("mouseleave",".scene_tab", function(){
 
 
 
-//-- Create Templates Starts ---------------------------------------------------------------------------------------------------------------------------------------->
-$(".create_template_btn").on("click",function() {
-    let template_id = parseInt($(this).attr("data-templateid"));
+//-- Create Scene Templates Starts ---------------------------------------------------------------------------------------------------------------------------------------->
+$(".create_scene_template_btn").on("click",function() {
+    let template_id = parseInt($(this).attr("data-scenetemplateid"));
     let scene_id = $("#scene_id").val();
     $(this).text("Creating Template...");
     $(this).css({"background":"#5b9dd3","color":"white"});
 
     if(template_id == 0) {
         //Insert as a Template
-        $.post('database_functions/create_template.php',
+        $.post('database_functions/create_scene_template.php',
         {
             scene_id : scene_id
         }, function(result){
             save_btn();
-            $(".create_template_btn").attr("data-templateid", result);
-            $(".create_template_btn").text("Template Created");
-            $(".create_template_btn").css({"background":"#51a97e","color":"white"});
+            $(".create_scene_template_btn").attr("data-scenetemplateid", result);
+            $(".create_scene_template_btn").text("Template Created");
+            $(".create_scene_template_btn").css({"background":"#51a97e","color":"white"});
         });
     } else {
         //Update existing Template
-        $.post('database_functions/update_template.php',
+        $.post('database_functions/update_scene_template.php',
         {
             scene_id : scene_id
         }, function(result){
@@ -6730,18 +6735,55 @@ $(".create_template_btn").on("click",function() {
 
 });
 
-//-- Create Templates Ends ------------------------------------------------------------------------------------------------------------------------------------------->
+//-- Create Scene Templates Ends ------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+//-- Create Project Templates Starts ---------------------------------------------------------------------------------------------------------------------------------------->
+$(".create_project_template_btn").on("click",function() {
+    let template_id = parseInt($(this).attr("data-projecttemplateid"));
+    let p_id = $("#v_m_id").val();
+    let p_title = $("#v_m_title").val();
+    $(this).text("Creating Template...");
+    $(this).css({"background":"#5b9dd3","color":"white"});
+
+    if(template_id == 0) {
+        //Insert as a Template
+        $.post('database_functions/create_project_template.php',
+        {
+            p_id : p_id
+        }, function(result){
+            save_btn();
+            $(".create_project_template_btn").attr("data-projecttemplateid", result);
+            $(".create_project_template_btn").text("Template Created");
+            $(".create_project_template_btn").css({"background":"#51a97e","color":"white"});
+        });
+    } else {
+        //Update existing Template
+        $.post('database_functions/update_project_template.php',
+        {
+            p_id : p_id
+        }, function(result){
+
+        });
+    }
+
+});
+
+//-- Create Project Templates Ends ------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
 
 //-- Load Template Starts -------------------------------------------------------------------------------------------------------------------------------------------->
 
-// $(".load_template_btn").on("click",function() {
-$(document).on("click",".load_template_btn",function() {
+//-- Load Scene Template Starts -------------------------------------------------------------------------------------------------------------------------------------------->
+$(document).on("click",".load_scene_template_btn",function() {
     let templatesceneid = $(this).attr("data-templatesceneid");
     let scene_id = $("#scene_id").val();
     let p_id = $("#v_m_id").val();
     let u_id = $("#u_id").val();
     
-    $.post('database_functions/load_template.php',
+    $.post('database_functions/load_scene_template.php',
         {
             scene_id : scene_id,
             templatesceneid : templatesceneid,
@@ -6755,7 +6797,22 @@ $(document).on("click",".load_template_btn",function() {
 });
 
 
-
+//-- Load Project Template Starts -------------------------------------------------------------------------------------------------------------------------------------------->
+$(document).on("click",".load_project_template_btn",function() {
+        let templateprojectid = $(this).attr("data-templateprojectid");
+        let p_id = $("#v_m_id").val();
+        let u_id = $("#u_id").val();
+        
+        $.post('database_functions/load_project_template.php',
+            {
+                templateprojectid : templateprojectid,
+                p_id : p_id,
+                u_id : u_id
+            }, function(result){
+                save_btn();
+                location.reload();
+            });
+    });
 
 
 

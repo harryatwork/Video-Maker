@@ -86,15 +86,30 @@ body {
                 <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
                     New Design
                 </div>
-				<div class="file_options create_template_btn" data-templateid="0" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
-                    Create Template
+				<div class="file_options create_scene_template_btn" data-scenetemplateid="0" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
+                    Create Scene Template
                 </div>
-                <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
+			<?php	
+				$sql_project_templates = "SELECT * FROM video_maker_templates WHERE p_id = '$v_m_id'";
+				$result_project_templates = $conn->query($sql_project_templates);
+				if ($result_project_templates->num_rows > 0) {   
+				while($row_project_templates = $result_project_templates->fetch_assoc()) {
+					$p_id_templates = $row_project_templates["id"];
+					$project_template_text = 'Update Project Template';
+				} } else { 
+					$p_id_templates = 0;
+					$project_template_text = 'Create Project Template';
+				} 
+			?>
+				<div class="file_options create_project_template_btn" data-projecttemplateid="<?= $p_id_templates; ?>" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 8%;border-bottom: 1px solid #dbdbdb;">
+                    <?= $project_template_text; ?>
+                </div>
+                <!-- <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
                     Save
-                </div>
-                <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
+                </div> -->
+                <!-- <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
                     Download
-                </div>
+                </div> -->
                 <div class="file_options" style="display:inline-block;width:100%;font-weight:400;color:#818181;font-size: 18px;padding: 6% 12%;border-bottom: 1px solid #dbdbdb;">
                     Reset
                 </div>
