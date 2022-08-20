@@ -546,7 +546,7 @@
                                   <div class="video_customizations_icon video_contrast_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
                                     <i class="fas fa-sun icon" style="font-size: 26px;color: #797979;padding: 14px;border-radius: 12px;"></i>
                                   </div>
-                                  <div class="video_customizations_icon video_bg_remove_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
+                                  <div class="video_customizations_icon video_trim_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
                                     <i class="fas fa-cut icon" style="font-size: 26px;color: #797979;padding: 14px;border-radius: 12px;"></i>
                                   </div>
                                   <div class="video_customizations_icon video_border_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
@@ -1573,29 +1573,29 @@
         						
         						<br/>
         						
-        						<!--<div class="row form-group">-->
-        						<!--    <div class="col-md-12" style="text-align:left;"> -->
-        						<!--        <label for="options-layer-line-height" style="color: #797979;font-size: 20px;font-weight: 700;">Width: <span class="shape_resize_width_div_span" style="font-weight:normal;">40%</span> </label> -->
-        						<!--    </div>-->
-        						<!--	<div class="col-md-12"> -->
-        						<!--		<input type="range" class="option-control" value="40" min="5" max="200" step="1" id="shape_layer_width" style="cursor:pointer;" /> -->
-        						<!--	</div>-->
-        						<!--</div>-->
+        						<div class="row form-group">
+        						   <div class="col-md-12" style="text-align:left;">
+        						       <label for="options-layer-line-height" style="color: #797979;font-size: 20px;font-weight: 700;">Width: <span class="shape_resize_width_div_span" style="font-weight:normal;">40%</span> </label>
+        						   </div>
+        							<div class="col-md-12">
+        								<input type="range" class="option-control" value="40" min="5" max="200" step="1" id="shape_layer_width" style="cursor:pointer;" />
+        							</div>
+        						</div>
         						
-        						<!--<span class="shape_layer_height_lock_span">-->
-        						<!--    <i class="fas fa-lock shape_layer_height_lock" style="font-size: 40px;"></i>-->
-        						<!--</span>-->
+        						<span class="shape_layer_height_lock_span">
+        						   <i class="fas fa-lock shape_layer_height_lock" style="font-size: 40px;"></i>
+        						</span>
         						
-        						<!--<div class="row form-group">-->
-        						<!--    <div class="col-md-12" style="text-align:left;"> -->
-        						<!--        <label for="options-layer-line-height" style="color: #797979;font-size: 20px;font-weight: 700;">Height: <span class="shape_resize_height_div_span" style="font-weight:normal;cursor:pointer;">Auto</span> </label> -->
-        						<!--    </div>-->
-        						<!--	<div class="col-md-12"> -->
-        						<!--		<input type="range" disabled="true" class="option-control" value="500" min="100" max="2000" step="10" id="shape_layer_height" style="cursor:pointer;" /> -->
-        						<!--	</div>-->
-        						<!--</div>-->
+        						<div class="row form-group">
+        						   <div class="col-md-12" style="text-align:left;">
+        						       <label for="options-layer-line-height" style="color: #797979;font-size: 20px;font-weight: 700;">Height: <span class="shape_resize_height_div_span" style="font-weight:normal;cursor:pointer;">Auto</span> </label>
+        						   </div>
+        							<div class="col-md-12">
+        								<input type="range" disabled="true" class="option-control" value="500" min="100" max="2000" step="10" id="shape_layer_height" style="cursor:pointer;" />
+        							</div>
+        						</div>
         						
-        						<!--<br/>-->
+        						<!--<br/>
 
                                 <div class="row form-group">
         						    <div class="col-md-12"> 

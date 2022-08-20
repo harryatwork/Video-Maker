@@ -322,11 +322,7 @@
 
             
         </div>
-        
-        <!--<div class="bgm_trim_audio_ruling" style="width: 800px; margin: auto; border-radius: 4px; height: 16px; position: relative;">-->
 
-        <!--</div>-->
-        
     </div>
     <div style="position: absolute; width: 100%; bottom: 8%; margin: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: white; font-size: 14px; text-align: center;">
         <a class="button-layer-remove audio_trimming_modal_close_btn bgm_layer" style="cursor:pointer;width: 40%; display: inline-block; padding: 1%; text-align: center; background: #ec9100; border-radius: 4px;">Cancel</a>
@@ -337,5 +333,143 @@
 
 <!----- Audio Trimming Modal Ends ---------------------->
 
+
+<!----- Video Trimming Modal Starts ---------------------->
+
+
+<div class="video_trim_modal_2"
+     style="
+        position: fixed;
+        top: -20%;
+        display:none;
+        left: 52%;
+        transform: translate(-50%, 50%);
+        width: 1000px;
+        height: 450px;
+        background: white;
+        box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 20%);
+        border-radius: 4px;
+        z-index:99;
+        background: linear-gradient(to top, #4caf50 0%, #5c9ae4 100%);">
+    <div class="button-layer-remove video_trimming_modal_close_btn" style="float: right; padding: 2%;">
+        <i class="fa fa-times-circle" aria-hidden="true" style="font-size: 24px; color: #efefef; cursor: pointer;"></i>
+    </div>
+
+    <div>
+        <p style="text-align: center; color: white; font-size: 16px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Crop Video</p>
+        
+        <div class="video_track" style="width: 800px; margin: auto; border-radius: 4px; background: #2b4354; height: 36px; position: relative;">
+          
+            <div style="position: absolute;left: -10%;padding-top: 5px;">
+                <i class="fas fa-play-circle video_play" onClick="trim_video_play()" style="cursor:pointer;font-size: 64px;color: #ffffff;" aria-hidden="true"></i>
+                <!-- <video id="trim_video" src="" style="display:none"; ></video> -->
+                <i class="fa fa-pause video_pause" onClick="trim_video_play()" style="display:none;cursor:pointer;font-size: 64px;color: #ffffff;" aria-hidden="true"></i>
+            </div>
+          
+            <div class="video_track_work_area" style="width: 100%; margin: auto; border-radius: 4px; background: transparent; height: 46px; position: relative;">
+                    
+                <div class="draggable_video_track" style="width: 98%;height: 36px;position: absolute;background: rgba(82, 167, 135, 0.28);border-width: 1px 9px;border-style: solid;border-color: white rgb(247, 247, 247);border-image: initial;border-radius: 3px;right: 0px;top: 0px;left: 0;">
+                        
+                    <div class="video_trim_dragger_left" style="font-family: monospace; color: black; background: white; border-radius: 4px; padding: 2px 5px; width: fit-content; margin-top: -20px; margin-left: -26px;">00:00</div>
+
+                    <div class="video_track_tracker" style="font-family: monospace; color: black; background: transparent; border-radius: 2px; padding: 6px 3px; width: fit-content; height: 84%; margin-left: 0px;">
+                        <div style="border-radius: 2px; background: white; position: absolute; padding: 6px 6px; top: -1px;"></div>
+                        <div style="border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 10px solid #ffffff; transform: rotateX(180deg); margin-left: 0px; margin-top: 4px;"></div>
+                        <p style="height: 100%; width: 1.5px; background: red; margin-top: -12px; margin-left: 5.2px; border-radius: 5px;"></p>
+                    </div>
+                        
+                    <div class="video_trim_dragger_right" style="font-family: monospace; color: black; background: white; border-radius: 4px; padding: 2px 5px; width: fit-content; margin-top: -20px; margin-right: -26px; float: right;">00:00</div>
+
+                </div>
+            </div>
+            
+            <!-- <img src="images-main/audio_track.png" alt="" style="display: inline-block; width: 200px; height: 100%;" />
+            <img src="images-main/audio_track.png" alt="" style="width: 200px; display: inline-block; height: 100%;" />
+            <img src="images-main/audio_track.png" alt="" style="width: 200px; display: inline-block; height: 100%;" /> -->
+            <!-- <img src="images-main/audio_track.png" alt="" style="width: 190px; display: inline-block; height: 100%;" /> -->
+            
+            <div style="margin-top: -5px;">
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 15px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+                <span style="width: 10px; font-size: 8px; font-family: monospace; display: inline-block; text-align: center; vertical-align: top;">|</span>
+            </div>
+
+
+            <video id="trim_video" style="width: 50%;object-fit: fill;height: 200px;margin-left: 20%;" oncontextmenu="false" disablepictureinpicture="true" controlslist="nodownload" disableplaybackspeed="true">
+                <source src="images-main/videos/_I could take the Phoenix Club and turn it into my ping-pong room_ – The Social Network.mp4" type="video/mp4">
+            </video>
+
+            
+        </div>
+        
+    </div>
+    <div style="position: absolute; width: 100%; bottom: 8%; margin: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: white; font-size: 14px; text-align: center;">
+        <a class="video_trimming_modal_close_btn" style="cursor:pointer;width: 40%; display: inline-block; padding: 1%; text-align: center; background: #ec9100; border-radius: 4px;">Cancel</a>
+        <a class="video_crop_btn" style="cursor:pointer;width: 40%; display: inline-block; padding: 1%; text-align: center; background: #000000; border-radius: 4px;">Crop Video</a>
+    </div>
+</div>
+
+
+<!----- Video Trimming Modal Ends ---------------------->
 
 <!-- Popups Ends --->

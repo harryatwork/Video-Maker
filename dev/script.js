@@ -1146,7 +1146,7 @@ function dragger() {
                 if((ui.draggable).hasClass('Sqaure')) {
                     
                     let shape_id = ui.draggable.attr('shape-id');
-                    ui.draggable.clone().appendTo($(this)).draggable().removeClass("draggable").addClass("draggable2 shape").css({"width": "auto","height": "auto","min-height":"fit-content","position": "absolute","top":"40%","left":"40%"}).html(`<svg version="1.1" class="svg_rect" xmlns="http://www.w3.org/2000/svg" style="height: 220px;width: 220px;"><rect class="rect" x="10" y="10" width="200" height="200" stroke="black" fill="transparent" stroke-width="5"></rect></svg>`);
+                    ui.draggable.clone().appendTo($(this)).draggable().removeClass("draggable").addClass("draggable2 shape").css({"width": "auto","height": "auto","min-height":"fit-content","position": "absolute","top":"40%","left":"40%"}).html(`<svg version="1.1" class="svg_rect" xmlns="http://www.w3.org/2000/svg" style="height: 220px;width: 220px;"><rect class="rect" x="10" y="10" style="width:200px;height:200px;" stroke="black" fill="transparent" stroke-width="5"></rect></svg>`);
                     
                     // $(".draggable2").resizable({
                     //   handles: "n, e, s, w"
@@ -1155,7 +1155,7 @@ function dragger() {
                 } else if((ui.draggable).hasClass('Sqaure_Round')) {
                     
                     let shape_id = ui.draggable.attr('shape-id');
-                    ui.draggable.clone().appendTo($(this)).draggable().removeClass("draggable").addClass("draggable2 shape").css({"width": "auto","height": "auto","min-height":"fit-content","position": "absolute","top":"40%","left":"40%"}).html(`<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 220px;width: 220px;"><rect x="10" y="10" rx="30" ry="30" width="200" height="200" stroke="black" fill="transparent" stroke-width="5"/></svg>`);
+                    ui.draggable.clone().appendTo($(this)).draggable().removeClass("draggable").addClass("draggable2 shape").css({"width": "auto","height": "auto","min-height":"fit-content","position": "absolute","top":"40%","left":"40%"}).html(`<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 220px;width: 220px;"><rect x="10" y="10" rx="30" ry="30" style="width:200px;height:200px;" stroke="black" fill="transparent" stroke-width="5"/></svg>`);
                     
                     // $(".draggable2").resizable({
                     //   handles: "n, e, s, w"
@@ -2426,13 +2426,13 @@ $(document).on("click", ".video_contrast_icon", function(){
     $(".video_customization_div").css("display","none");
     $(".video_contrast_div").css("display","block");
 });
-$(document).on("click", ".video_bg_remove_icon", function(){
+$(document).on("click", ".video_trim_icon", function(){
     $(".video_customizations_icon").css({"background":"white"});
     $(".video_customizations_icon").find(".icon").css({"color":"#797979"});
     $(this).css({"background":"#5c9ae4"});
     $(this).find(".icon").css({"color":"white"});
     $(".video_customization_div").css("display","none");
-    $(".video_bg_remove_div").css("display","block");
+    $(".video_trim_modal_2, #overlay").css("display","block");
 });
 $(document).on("click", ".video_border_icon", function(){
     $(".video_customizations_icon").css({"background":"white"});
@@ -5351,23 +5351,33 @@ $('#font_layer_options_animations_speed_input').on('change', _.debounce(function
 // Shape Layer Width/ height ---------------------------------------------------
 
 $('#shape_layer_width').on('input',function(){
-    let shape_layer_width = $('#shape_layer_width').val();
+    let shape_layer_width = parseInt($('#shape_layer_width').val());
     if($('#shape_layer_height').prop('disabled')) {
         $('[data-status="selected"]').width(shape_layer_width+"%");
         $('[data-status="selected"]').height(shape_layer_width+"%");
         $('.svg_rect').css({"width":"100%","height":"100%"});
-        $('.rect').width("100%");
-        $('.rect').height("100%");
+        let dynamic_indi_px = ((shape_layer_width+97)-shape_layer_width)-(shape_layer_width/100);
+        // console.log(shape_layer_width);
+        $('.svg_rect rect').css({"width":dynamic_indi_px+"%","height":dynamic_indi_px+"%"});
+        // $('.rect').width("100%");
+        // $('.rect').height("100%");
         $(".shape_resize_width_div_span").html(shape_layer_width+"%");
     } else {
         $('[data-status="selected"]').width((shape_layer_width*10)+"px");
         $(".shape_resize_width_div_span").html((shape_layer_width*10)+"px");
+        $('.svg_rect').css({"width":"100%","height":"100%"});
+        let dynamic_indi_px = ((shape_layer_width+97)-shape_layer_width)-(shape_layer_width/100);
+        $('.svg_rect rect').css({"width":dynamic_indi_px+"%"});
+        // console.log(shape_layer_width);
     }
 });
 $('#shape_layer_height').on('input',function(){
-    let shape_layer_height = $('#shape_layer_height').val();
+    let shape_layer_height = parseInt($('#shape_layer_height').val());
     $('[data-status="selected"]').height(shape_layer_height+"px");
     $(".shape_resize_height_div_span").html(shape_layer_height+"px");
+    $('.svg_rect').css({"width":"100%","height":"100%"});
+    let dynamic_indi_px = ((shape_layer_height+97)-shape_layer_height)-(shape_layer_height/100);
+    $('.svg_rect rect').css({"height":dynamic_indi_px+"%"});
 });
 
 $(document).on("click", ".shape_layer_height_lock", function(){
@@ -6552,6 +6562,160 @@ $(".bgm_audio_crop_btn").on("click",function() {
 
 
 //--  BGM Audio Trim  Ends ---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+//-- Video Trim Starts -------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+var draggable_video_track_run;
+var current_video_time_interval;
+var video_track_tracker = $(".video_track_tracker");
+
+$(".draggable_video_track").mousedown(function() {
+    let draggable_video_track_total_width = 782;
+    let video_length = parseInt($(".draggable_video_track").attr("data-length"));
+    
+    var video_start = $(".video_trim_dragger_left").text();
+    var video_end = $(".video_trim_dragger_right").text();
+    var start_in_seconds = video_start.split(':'); 
+        start_in_seconds = ((+start_in_seconds[0]) * 60 + (+start_in_seconds[1])); 
+    var atrim_video = document.getElementById('trim_video');
+    trim_video.currentTime = start_in_seconds;
+    trim_video.pause();
+    clearInterval(current_video_time_interval);
+    console.log('paused');
+    $(".video_pause").css("display","none");
+    $(".video_play").css("display","block");
+    video_track_tracker.css("margin-left","0px");
+    
+    draggable_video_track_run = setInterval(function() { 
+        
+        let draggable_video_track_width = $(".draggable_video_track").css("width");
+            draggable_video_track_width = draggable_video_track_width.replace("px", ""); 
+        let draggable_video_track_width_for_sec = (draggable_video_track_total_width/video_length).toFixed(2);         // length of each sec in px;
+        let current_video_track_length = parseInt((draggable_video_track_width/draggable_video_track_width_for_sec).toFixed(2)); //cropped _bgm_track_length in secs;
+        
+        let draggable_video_track_left = $(".draggable_video_track").css("left");
+            draggable_video_track_left = draggable_video_track_left.replace("px", ""); 
+        let current_video_track_starting_time =  parseInt((draggable_video_track_left/draggable_video_track_width_for_sec).toFixed(2)); //cropped bgm start position in secs;
+        
+        let current_video_track_starting_time_echo = (secondsTimeSpanToHMS(current_video_track_starting_time));
+        let current_video_track_ending_time = parseInt(current_video_track_starting_time + current_video_track_length);
+        let current_video_track_ending_time_echo = (secondsTimeSpanToHMS(current_video_track_ending_time));
+        
+        function secondsTimeSpanToHMS(s) {
+          var h = Math.floor(s / 3600); //Get whole hours
+          s -= h * 3600;
+          var m = Math.floor(s / 60); //Get remaining minutes
+          s -= m * 60;
+          return (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s); //zero padding on minutes and seconds
+        }
+        
+        // console.log('end_part '+current_bgm_track_ending_time);
+        // console.log('left_part '+current_bgm_track_starting_time);
+        
+        $(".video_trim_dragger_left").text(current_video_track_starting_time_echo);
+        $(".video_trim_dragger_right").text(current_video_track_ending_time_echo);
+        $(".video_trim_dragger_left").attr("video_start_time_in_secs",current_video_track_starting_time);
+        $(".video_trim_dragger_right").attr("video_end_time_in_secs",current_video_track_ending_time);
+    }, 5);
+    
+});
+
+$(".draggable_video_track").mouseup(function() {
+    console.log('release');
+    clearInterval(draggable_video_track_run);
+    let video_start = $(".video_trim_dragger_left").text();
+    let video_end = $(".video_trim_dragger_right").text();
+    let trim_video_src = $("#trim_video").attr("data-source");
+        trim_video_src = trim_video_src+'#t='+video_start+','+video_end;
+    $("#trim_video").attr("src",trim_video_src);
+    video_track_tracker.css("margin-left","0px");
+    
+});
+
+$(".video_play").on("click",function() {
+    let video_title = $(this).attr("video-title");
+    $(this).css("display","none");
+    $(".video_audio_pause").css("display","block");
+});
+
+$(".video_pause").on("click",function() {
+    $(this).css("display","none");
+    $(".video_play").css("display","block");
+});
+
+
+
+function trim_video_play() {
+    var video_start = $(".video_trim_dragger_left").text();
+    var video_end = $(".video_trim_dragger_right").text();
+    var start_in_seconds = video_start.split(':'); 
+        start_in_seconds = ((+start_in_seconds[0]) * 60 + (+start_in_seconds[1])); 
+    
+    var atrim_video = document.getElementById('trim_video');
+    if (trim_video.paused) {
+        trim_video.play();
+        var video_track_tracker_counter = 1;
+        current_video_time_interval = setInterval(function() { 
+            let current_video_time = Math.round(trim_video.currentTime);
+            
+            let end_in_seconds = bgm_video_end.split(':'); 
+                end_in_seconds = ((+end_in_seconds[0]) * 60 + (+end_in_seconds[1]));
+                
+                console.log(current_video_time);
+                console.log(end_in_seconds);
+                
+                video_track_tracker.animate({'margin-left': video_track_tracker_counter}, 'slow');
+
+            if(current_video_time >= end_in_seconds) {
+                trim_video.currentTime = start_in_seconds;
+                trim_video.pause();
+                clearInterval(current_video_time_interval);
+                $(".video_pause").css("display","none");
+                $(".video_play").css("display","block");
+                video_track_tracker.css("margin-left","0px");
+            } else { }
+            video_track_tracker_counter++;
+        }, 1000);
+    } else {
+        trim_video.currentTime = start_in_seconds;
+        trim_video.pause();
+        clearInterval(current_video_time_interval);
+        console.log('paused');
+        $(".video_pause").css("display","none");
+        $(".video_play").css("display","block");
+        video_track_tracker.css("margin-left","0px");
+    }
+}
+
+
+$(".video_crop_btn").on("click",function() {
+    let video_start_time = $(".video_trim_dragger_left").attr("video_start_time_in_secs");
+    let video_end_time = $(".video_trim_dragger_right").attr("video_end_time_in_secs");
+    let draggable_layer_id = $(this).attr("draggable_layer_id");
+    $.post('database_functions/crop_video.php',
+        {
+            draggable_layer_id : draggable_layer_id,
+            video_start_time : video_start_time,
+            video_end_time : video_end_time
+            
+        }, function(result) {
+            $("#video_audio").css("width",result+"px");
+            $(".video_trim_modal_2, #overlay").css("display","none");
+            console.log(result);
+        } 
+    );
+    
+});
+
+$(".video_trimming_modal_close_btn").on("click",function() {
+    $(".video_trim_modal_2,#overlay").css("display","none");
+});
+
+
+//-- Video Trim Ends ---------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 
 
