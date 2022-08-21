@@ -3436,6 +3436,65 @@ $(document).on("click", "#image_crop_submit_btn", function(){
     });
 });
 
+// Image Crop Ends ----------------------------------------------------------------------------------------------------------------->
+
+
+
+// Image Replae Starts -------------------------------------------------------------------------------------------------------------->
+
+$(".image_replace_icon").on("click",()=> {
+    let image_layer_id_of_selected = $('[data-status="selected"]').attr('data-myattr');
+    let v_m_id = $("#v_m_id").val();
+    $(".layer_id_of_selected").html(image_layer_id_of_selected);
+    $(".image_replace_div,#overlay").css("display","block");
+    $.post("database_functions/load_assets.php", {
+            v_m_id : v_m_id
+        },function(result) { 
+        $(".image_replace_div_sub").html(result);
+    });
+});
+
+$(document).on("click",".replace_image_select",function() {
+    let new_image_layer_id = $(this).attr("layer-type-id");
+    let new_image_layer_src = $(this).find("img").attr("src");
+    $(".new_image_layer_id").html(new_image_layer_id);
+    $(".new_image_layer_src").html(new_image_layer_src);
+    $(".replace_image_btn_pre").addClass("replace_image_btn");
+    $(".replace_image_btn").removeClass("replace_image_btn_pre");
+    $(".replace_image_btn").css("background","black");
+    
+    $(".replace_image_select").css("background","transparent");
+    $(this).css("background","black");
+});
+
+$(".replace_image_modal_close_btn").on("click",()=> {
+    $(".image_replace_div,#overlay").css("display","none");
+    $(".replace_image_btn").addClass("replace_image_btn_pre");
+    $(".replace_image_btn_pre").removeClass("replace_image_btn");
+    $(".replace_image_btn").css("background","gray");
+});
+
+$(document).on("click",".replace_image_btn",()=> {
+    let layer_id_of_selected = $(".layer_id_of_selected").html();
+    let new_image_layer_id = $(".new_image_layer_id").html();
+    var new_image_layer_src =  $(".new_image_layer_src").html();
+
+    $.post('database_functions/replace_assets.php', {
+        layer_id_of_selected : layer_id_of_selected,
+        new_image_layer_id : new_image_layer_id
+    }, function(result) {
+        if(result == 'updated') {
+            $('[data-status="selected"] img').attr("src", new_image_layer_src);
+            $(".replace_image_modal_close_btn").click();
+            save_btn();
+        }
+    });
+});
+
+
+// Image Replae Ends -------------------------------------------------------------------------------------------------------------->
+
+
 
 
 //-- Image Customizations Functions Ends ---------------------------------------------------------------------------------------------------------------------------->

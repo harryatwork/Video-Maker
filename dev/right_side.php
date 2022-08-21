@@ -46,8 +46,8 @@
                                   <div class="image_customizations_icon image_contrast_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
                                     <i class="fas fa-sun icon" style="font-size: 26px;color: #797979;padding: 14px;border-radius: 12px;"></i>
                                   </div>
-                                  <div class="image_customizations_icon image_bg_remove_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
-                                    <i class="fas fa-cut icon" style="font-size: 26px;color: #797979;padding: 14px;border-radius: 12px;"></i>
+                                  <div class="image_customizations_icon image_replace_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
+                                    <i class="fas fa-refresh icon" style="font-size: 26px;color: #797979;padding: 14px;border-radius: 12px;"></i>
                                   </div>
                                   <div class="image_customizations_icon image_border_icon" style="display: inline-block;box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 20%);border-radius: 12px;margin: 1% 4% 4% 4%;cursor:pointer;">
                                     <i class="far fa-list-alt icon" style="font-size: 26px;color: #797979;padding: 14px;border-radius: 12px;"></i>

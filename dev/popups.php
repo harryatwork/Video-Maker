@@ -472,4 +472,41 @@
 
 <!----- Video Trimming Modal Ends ---------------------->
 
+
+
+<!-- Image Replace Popup Starts ---------------------------------------------------------->
+
+<div class="image_replace_div"
+     style="
+        position: fixed;
+        top: -40%;
+        display:none;
+        left: 52%;
+        transform: translate(-50%, 50%);
+        width: 1000px;
+        height: 550px;
+        background: white;
+        box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 20%);
+        border-radius: 4px;
+        z-index:99;
+        background: linear-gradient(to top, #4caf50 0%, #5c9ae4 100%);">
+    <span class="layer_id_of_selected" style="display:none;"></span>
+    <span class="new_image_layer_id" style="display:none;"></span>
+    <span class="new_image_layer_src" style="display:none;"></span>
+    <div class="image_replace_div_sub" style="padding:2%;overflow-y: scroll;height:80%;"></div>
+
+    <div style="position: absolute; width: 100%; bottom: 2%; margin: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: white; font-size: 14px; text-align: center;">
+        <a class="replace_image_modal_close_btn" style="cursor:pointer;width: 40%; display: inline-block; padding: 1%; text-align: center; background: #ec9100; border-radius: 4px;">Cancel</a>
+        <a class="replace_image_btn_pre" style="cursor:pointer;width: 40%; display: inline-block; padding: 1%; text-align: center; background: gray; border-radius: 4px;">Replace</a>
+    </div>
+
+</div>
+
+
+<!-- Image Replace Popup Ends ---------------------------------------------------------->
+
+
+
+
+
 <!-- Popups Ends --->
