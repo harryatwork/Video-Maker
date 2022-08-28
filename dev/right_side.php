@@ -420,6 +420,8 @@
                       </div>
                   
         <!-- Image layer stuff Ends --------------------------------------->    
+
+		<!-- Background layer stuff Starts --------------------------------------->    
                       
                       <div class="layer_options" id="background_layer_options" style="display:none;">
                           
@@ -528,6 +530,35 @@
                       </div>
                       
     <!-- Background Layer stuff Ends -------------------------------------------------------->
+
+
+	<!-- BGM Layer stuff Starts -------------------------------------------------------->
+
+
+	<div class="layer_options" id="bgm_layer_options" style="display:none;">
+                          
+		<div class="row form-group">
+			<div class="col-md-12"> 
+				<label for="options-layer-line-height" style="color: #797979;font-size: 20px;font-weight: 600;">BGM Volume</label> 
+			</div>
+			<div style="width: 100%;">
+				<img src="images-main/general/audio_control.PNG" alt="" style="width:100%;">
+			</div>
+			<div class="col-md-12"> 
+				<input type="range" class="option-control" value="1" min="0.1" max="1" step="0.1" id="bgm_volume_control_input" data-bgmlayerid = "" style="cursor:pointer;" /> 
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- BGM Layer stuff Ends -------------------------------------------------------->
+
+
+
+
+	<!-- Video Layer stuff Starts -------------------------------------------------------->
+
                       
                       <div class="layer_options" id="video_layer_options" style="display:none;">
                           
@@ -1595,7 +1626,7 @@
         							</div>
         						</div>
         						
-        						<!--<br/>
+        						<br/>
 
                                 <div class="row form-group">
         						    <div class="col-md-12"> 

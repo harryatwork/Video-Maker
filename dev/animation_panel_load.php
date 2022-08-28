@@ -87,16 +87,15 @@
                 $layer_length_legendary_bgm = $row_layers_legendary_bgm_draggable["layer_length"];
             } } else { } 
             
-        } } else { } 
+        } } else {
+            $status_layers_legendary_bgm = false;
+        } 
     ?>
         
         <div class="animation_drag_area_indi_layer" id="bgm_work_area">
             <div class="animation_drag_area_indi_layer_title" style="width: 200px;padding: 5px 10px; border: 1px solid #ececec; border-left: none; border-right: none;border-bottom: none;padding-top: 12px;font-size: 24px;font-weight: 700;display: inline-block;">
                 <span style="font-weight: 600; font-size: 17px;">BGM  <span id="bgm_audio_title" style="font-weight:normal;"> </span></span>
                 <span id="bgm_audio_choose" style="<?php if($status_layers_legendary_bgm) { ?> display:none; <?php } else { } ?>font-size: 20px;font-weight: normal;margin-left: 160px;">Drag & Drop an Audio file</span>
-                <!--<span id="bgm_audio_btn_remove" style="padding: 3px; border-radius: 4px;float: right;cursor:pointer;display:none;">-->
-                <!--    <i class="fa fa-trash" aria-hidden="true" style="font-size: 24px;"></i>-->
-                <!--</span>-->
             </div>
             <div style="height: 40px;display:inline-block;width: auto;<?php if($status_layers_legendary_bgm) { ?> display:inline-block; <?php } else { ?> display:none; <?php } ?>" id="bgm_audio_div">
                 <div id="bgm_audio" style="width:<?= $layer_length_legendary_bgm; ?>px;border-left:10px solid gray;border-left:16px double gray;border-right:16px double gray;border-top:1px solid gray;border-bottom:1px solid gray;border-radius:5px;">

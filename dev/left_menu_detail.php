@@ -119,9 +119,16 @@
 					$layer_id_layers_legendary_bgm = $row_layers_legendary_bgm["layer_id"];
 					$layer_count_layers_legendary_bgm = $row_layers_legendary_bgm["layer_count"];
 					$layer_layers_legendary_bgm = $row_layers_legendary_bgm["layer"];
+
+					$sql_layers_legendary_bgm_draggable = "SELECT * FROM video_maker_draggable_layers WHERE main_layer_id = '$id_layers_legendary_bgm'";
+					$result_layers_legendary_bgm_draggable = $conn->query($sql_layers_legendary_bgm_draggable);
+					if ($result_layers_legendary_bgm_draggable->num_rows > 0) {   
+					while($row_layers_legendary_bgm_draggable = $result_layers_legendary_bgm_draggable->fetch_assoc()) { 
+						$volume_layers_legendary_bgm_draggable = $row_layers_legendary_bgm_draggable["volume"];
+					} } else { } 
 			?>
 			
-		        <div class="card card-sm show-on-hover-parent mb-3 ui-sortable-handle layer_tab_layer layer_tab_order" data-myattr="<?= $id_layers_legendary_bgm; ?>" layer_id="<?= $layer_count_layers_legendary_bgm; ?>" id="layer_tab_layer<?= $layer_count_layers_legendary_bgm; ?>"  order-id="<?= $layer_count_layers_legendary_bgm; ?>" style="margin-bottom: 5px !important;cursor: pointer;bottom: 6%;position: absolute;width: 90%;">
+		        <div class="card card-sm show-on-hover-parent mb-3 ui-sortable-handle layer_tab_layer layer_tab_order BGM_layer_menu" data-myattr="<?= $id_layers_legendary_bgm; ?>" layer_id="<?= $layer_count_layers_legendary_bgm; ?>" id="layer_tab_layer<?= $layer_count_layers_legendary_bgm; ?>"  order-id="<?= $layer_count_layers_legendary_bgm; ?>" layer-volume="<?= $volume_layers_legendary_bgm_draggable; ?>" style="margin-bottom: 5px !important;cursor: pointer;bottom: 6%;position: absolute;width: 90%;">
     				<div class="card-body p-2" style="padding: 5px !important;">
     					<div class="row">
     						<div class="col-2 col-sm-2 col-md-1 placeholder-icon">

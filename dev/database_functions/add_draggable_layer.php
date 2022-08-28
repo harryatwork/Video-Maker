@@ -6,6 +6,7 @@
     $project_id = $_POST['project_id'];
     $u_id = $_POST['u_id'];
     $main_layer_id = $_POST['main_layer_id'];
+    $scene_length = $_POST['scene_length'];
     
     if(isset($_POST['layer_length'])) {
         $layer_length = $_POST['layer_length'];
@@ -16,8 +17,8 @@
     $date = date_default_timezone_set('Asia/Kolkata');
     $date = date('Y-m-d H:i:s');
 
-        $sql2 = "INSERT INTO video_maker_draggable_layers (main_layer_id, p_id, u_id, layer, title, layer_count, layer_length, date)
-            VALUES ('$main_layer_id','$project_id', '$u_id', '$layer', '$title', '$layer_count', '$layer_length', '$date')";
+        $sql2 = "INSERT INTO video_maker_draggable_layers (main_layer_id, p_id, u_id, layer, title, layer_count, layer_length, end_time_sec, date)
+            VALUES ('$main_layer_id','$project_id', '$u_id', '$layer', '$title', '$layer_count', '$layer_length', '$scene_length', '$date')";
         if ($con->query($sql2) === TRUE) { 
             $last_id = $con->insert_id;
             

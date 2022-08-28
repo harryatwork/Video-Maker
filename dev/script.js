@@ -898,7 +898,7 @@ function dragger_bgm() {
         // 			$('[data-layercount="'+layer_count+'"]').attr('data-myattr', main_layer_id);
 
         			// Adding Draggable Timeline Layer - BGM --------------------------------------------------------------------------------
-          
+                    var scene_length = parseInt($("#slide_time").text());
                     $.post(
                     	'database_functions/add_draggable_layer.php',
                       {
@@ -908,7 +908,8 @@ function dragger_bgm() {
                          main_layer_id: main_layer_id,
                          project_id : project_id,
                          u_id : u_id,
-                         layer_length : bgm_length
+                         layer_length : bgm_length,
+                         scene_length :scene_length
                       },
                      function(result) {
                         $(".bgm_audio_crop_btn").attr("draggable_layer_id",result);
@@ -6621,6 +6622,41 @@ $(".bgm_audio_crop_btn").on("click",function() {
 
 
 //--  BGM Audio Trim  Ends ---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+//-- BGM Audio Volume Control Starts ------------------------------------------------------------------------------------------------------------------------------>
+$(document).on("click",".BGM_layer_menu",function() {
+    let layer_id = $(this).attr("data-myattr");
+    let layer_volume = parseFloat($(this).attr("layer-volume"));
+    $("#bgm_volume_control_input").attr('data-bgmlayerid',layer_id);
+    $("#bgm_volume_control_input").val(layer_volume);
+    $(".layer_options,.layer_options_default,.layer_options_default,.layer_options_heading").css("display","none");
+    $("#bgm_layer_options").css("display","block");
+});
+
+$("#bgm_volume_control_input").change(function() {
+
+});
+$('#bgm_volume_control_input').on('change', _.debounce(function() {
+    let bgm_volume_control_input = $("#bgm_volume_control_input").val();
+    let layer_id = $("#bgm_volume_control_input").attr('data-bgmlayerid');
+    
+    $.post(
+        'database_functions/volume_control.php',
+            {
+                layer_id: layer_id,
+                volume: bgm_volume_control_input
+            },
+            function(result){ 
+            save_btn();
+            }
+        );
+    
+}, 300));
+
+
+//-- BGM Audio Volume Control Ends ------------------------------------------------------------------------------------------------------------------------------>
+
 
 
 //-- Video Trim Starts -------------------------------------------------------------------------------------------------------------------------------------------->
