@@ -1,4 +1,8 @@
 <?php include("db.php"); ?>
+<?php if (isset($_SESSION["email"])) { } else {
+	header ("Location: ../sign/index");
+}
+?>
 
 <?php include("css.php"); ?>
 

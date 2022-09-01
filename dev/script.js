@@ -1906,7 +1906,7 @@ $(document).on("click", ".draggable2", function() {
     $("#card-title-layers").click();
     let data_layercount = $(this).data("layercount");
     $(".layer_tab_layer").css("background","#fff");
-    $("#layer_tab_layer"+data_layercount+"").css("background","#efefef");
+    $("#layer_tab_layer"+data_layercount+"").css("background","rgb(255 174 157)");
 
     let current_left = $(this).css("left");
     let current_top = $(this).css("top");
@@ -6846,6 +6846,10 @@ $(".slide_preview_btn").on("click",function() {
 
 
 //------Slider Preview Stuff Ends ------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
 
 
 

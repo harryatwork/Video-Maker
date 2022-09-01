@@ -190,6 +190,8 @@
 		  margin-top: -75px !important;
 		}
  }
+
+
 </style>
 
 
@@ -217,19 +219,15 @@
 							
 							 <div class="row">
 								<div class="column col-lg-12 col-md-12 col-sm-12">
-								   <ul class="accordion-box">
-									 
-									   
-									   <li class="accordion block" style="margin-bottom:0px;background:transparent;box-shadow:none;">
-										 <div class="acc-btn" style="padding: 25px 10px !important;">
-											
-											<p style="display: inline-block;width: 15%;">Vd No: </p>
-											<p style="display: inline-block;width: 15%;">Title:</p>
-											<p class="desktop_inline" style="width: 15%;">Vd Dt:</p>
-											<p style="display: inline-block;float: right;">Action</p>
-											 
-										 </div>
-										</li>
+
+								<div class="acc-btn" style="padding: 25px 10px !important;background:#00c5cf;color:white;">
+								
+									<p style="display: inline-block;width: 15%;">Vd No: </p>
+									<p style="display: inline-block;width: 15%;">Title:</p>
+									<p class="desktop_inline" style="width: 15%;">Vd Dt:</p>
+									<p style="display: inline-block;float: right;">Action</p>
+									
+								</div>
 
 					
 						
@@ -255,7 +253,6 @@
 					?>
 					
 					   
-									   <li class="accordion block" >
 										 <div class="acc-btn" style="padding: 25px 10px !important;" onclick="acc_btn()">
 											
 											<p style="display: inline-block;width: 15%;font-weight: normal;padding-left: 3%;"><?= $sl; ?></p>
@@ -264,13 +261,11 @@
 											<p style="display: inline-block;float: right;"><a href="player_id_set?id=<?= $vd_id; ?>&u_id=<?= $u_id; ?>&scene_id=<?= $scene_id; ?>" style="color:#6973ed;">View/Edit Video</a></p>
 
 										 </div>
-										</li>
 
 					<?php $sl++; } } else {  } ?>
 									   
 					<?php } } else {  }  ?>
 									 
-								   </ul>
 								</div>
 							 </div>
 						  </div>
