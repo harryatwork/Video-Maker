@@ -44,8 +44,16 @@
                 $style_value_work_layers_image_styles_child = $row_work_layers_image_styles_child["value"];
                 $style_work_layers_image_styles_child = $style_work_layers_image_styles_child.$style_title_work_layers_image_styles_child.':'.$style_value_work_layers_image_styles_child.';';
             } } else { } 
+
+            $animatons_work_layers_image = 'none';
+            $sql_work_layers_image_animatons = "SELECT * FROM video_maker_layer_animations WHERE layer_id = '$id_work_layers'";
+            $result_work_layers_image_animatons = $conn->query($sql_work_layers_image_animatons);
+            if ($result_work_layers_image_animatons->num_rows > 0) {   
+            while($row_work_layers_image_animatons = $result_work_layers_image_animatons->fetch_assoc()) { 
+                $animatons_work_layers_image = $row_work_layers_image_animatons["animation"];
+            } } else { } 
             
-            $layer_data = '<div class="image ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_image_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="image" data-status="idle">
+            $layer_data = '<div class="image ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_image_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="image" data-status="idle" data-animationindi="'.$animatons_work_layers_image.'">
                                 <img style="width: 99%; height: 99%; object-fit: fill;'.$style_work_layers_image_styles_child.'" src="images-main/images/'.$image_work_layers_image.'" >
                                 <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
                                 <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
@@ -85,8 +93,16 @@
                 $style_value_work_layers_video_styles_child = $row_work_layers_video_styles_child["value"];
                 $style_work_layers_video_styles_child = $style_work_layers_video_styles_child.$style_title_work_layers_video_styles_child.':'.$style_value_work_layers_video_styles_child.';';
             } } else { } 
+
+            $animatons_work_layers_video = 'none';
+            $sql_work_layers_video_animatons = "SELECT * FROM video_maker_layer_animations WHERE layer_id = '$id_work_layers'";
+            $result_work_layers_video_animatons = $conn->query($sql_work_layers_video_animatons);
+            if ($result_work_layers_video_animatons->num_rows > 0) {   
+            while($row_work_layers_video_animatons = $result_work_layers_video_animatons->fetch_assoc()) { 
+                $animatons_work_layers_video = $row_work_layers_video_animatons["animation"];
+            } } else { } 
             
-            $layer_data = '<div class="video ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_video_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="video" data-status="idle">
+            $layer_data = '<div class="video ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_video_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="video" data-status="idle" data-animationindi="'.$animatons_work_layers_video.'">
                                 <video style="width: 99%; object-fit: fill; height: 99%;'.$style_work_layers_video_styles_child.'" controls="controls" oncontextmenu="false" disablepictureinpicture="true" controlslist="nodownload" disableplaybackspeed="true">
                                     <source src="images-main/videos/'.$image_work_layers_video.'" type="video/mp4">
                                 </video>
@@ -129,7 +145,15 @@
                 $style_work_layers_background_styles_child = $style_work_layers_background_styles_child.$style_title_work_layers_background_styles_child.':'.$style_value_work_layers_background_styles_child.';';
             } } else { } 
             
-            $layer_data = '<div class="background ui-draggable ui-draggable-handle draggable2 ui-resizable ui-resizable-disabled" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_background_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="background" data-status="idle">
+            $animatons_work_layers_background = 'none';
+            $sql_work_layers_background_animatons = "SELECT * FROM video_maker_layer_animations WHERE layer_id = '$id_work_layers'";
+            $result_work_layers_background_animatons = $conn->query($sql_work_layers_background_animatons);
+            if ($result_work_layers_background_animatons->num_rows > 0) {   
+            while($row_work_layers_background_animatons = $result_work_layers_background_animatons->fetch_assoc()) { 
+                $animatons_work_layers_background = $row_work_layers_background_animatons["animation"];
+            } } else { } 
+
+            $layer_data = '<div class="background ui-draggable ui-draggable-handle draggable2 ui-resizable ui-resizable-disabled" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_background_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="background" data-status="idle" data-animationindi="'.$animatons_work_layers_background.'">
                                 <img style="width: 100%; height: 100%; object-fit: cover;'.$style_work_layers_background_styles_child.'" src="images-main/backgrounds/'.$image_work_layers_background.'">
                                 <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
                                 <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
@@ -172,7 +196,15 @@
                 $style_work_layers_font_styles_child = $style_work_layers_font_styles_child.$style_title_work_layers_font_styles_child.':'.$style_value_work_layers_font_styles_child.';';
             } } else { } 
             
-            $layer_data = '<div class="font ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" font-id="'.$name_work_layers_font.'" style="'.$style_work_layers_font_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="font" data-status="selected">
+            $animatons_work_layers_font = 'none';
+            $sql_work_layers_font_animatons = "SELECT * FROM video_maker_layer_animations WHERE layer_id = '$id_work_layers'";
+            $result_work_layers_font_animatons = $conn->query($sql_work_layers_font_animatons);
+            if ($result_work_layers_font_animatons->num_rows > 0) {   
+            while($row_work_layers_font_animatons = $result_work_layers_font_animatons->fetch_assoc()) { 
+                $animatons_work_layers_font = $row_work_layers_font_animatons["animation"];
+            } } else { } 
+
+            $layer_data = '<div class="font ui-draggable ui-draggable-handle draggable2 ui-resizable" layer-type-id="'.$layer_id_work_layers.'" font-id="'.$name_work_layers_font.'" style="'.$style_work_layers_font_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="font" data-status="selected" data-animationindi="'.$animatons_work_layers_font.'">
                                 <i class="fa fa-arrows font-arrow-mover" aria-hidden="true" style="position: absolute; top: -35%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; display: block;"></i>
                                 <textarea type="text" class="font-input" style="font-family:'.$name_work_layers_font.';font-size:100px;text-align:center;width:100%;height:100%;overflow:hidden;background: transparent;resize: none;'.$style_work_layers_font_styles_child.'" spellcheck="false">'.$content_work_layers.'</textarea>
                                 <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
@@ -228,6 +260,14 @@
             
                 
             } } else { } 
+
+            $animatons_work_layers_shape = 'none';
+            $sql_work_layers_shape_animatons = "SELECT * FROM video_maker_layer_animations WHERE layer_id = '$id_work_layers'";
+            $result_work_layers_shape_animatons = $conn->query($sql_work_layers_shape_animatons);
+            if ($result_work_layers_shape_animatons->num_rows > 0) {   
+            while($row_work_layers_shape_animatons = $result_work_layers_shape_animatons->fetch_assoc()) { 
+                $animatons_work_layers_shape = $row_work_layers_shape_animatons["animation"];
+            } } else { } 
             
             if($title_work_layers_shape == 'Sqaure') {
                 
@@ -259,7 +299,7 @@
                 
             } else { }
             
-            $layer_data =  '<div class="shape '.$title_work_layers_shape.' ui-draggable ui-draggable-handle draggable2" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_shape_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="shape" data-status="selected">
+            $layer_data =  '<div class="shape '.$title_work_layers_shape.' ui-draggable ui-draggable-handle draggable2" layer-type-id="'.$layer_id_work_layers.'" style="'.$style_work_layers_shape_styles_main.' z-index: '.$layer_count_work_layers.';" data-layercount="'.$layer_count_work_layers.'" data-myattr="'.$id_work_layers.'" data-layer="shape" data-status="selected" data-animationindi="'.$animatons_work_layers_shape.'">
                                 <svg version="1.1" class="svg_rect" xmlns="http://www.w3.org/2000/svg" style="'.$style_work_layers_shape_styles_child.'">
                                     '.$layer_shape_data.'
                                 </svg>

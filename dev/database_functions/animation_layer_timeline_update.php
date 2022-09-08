@@ -14,6 +14,11 @@
     $start_minutes = floor($start_seconds / 60);
     $start_seconds -= $start_minutes * 60;
     $start_time =  "00:".lz($start_minutes).":".lz($start_seconds);
+    if($start_time == '00:00:00') {
+        $start_time = '00:00:01'; 
+    } else {
+        $start_time = $start_time;
+    }
 
     $end_time_deci = ($animationdraggablelayer_width/$sec);
     $end_time_deci = round($end_time_deci, 1);

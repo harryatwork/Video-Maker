@@ -1912,7 +1912,13 @@ $(document).on("click", ".draggable2", function() {
     let current_top = $(this).css("top");
     let current_width = $(this).css("width");
     let current_height = $(this).css("height");
-    
+
+    let animationindi = $('[data-status="selected"]').attr("data-animationindi");
+    $(".image_layer_animation_video").css("border","1px solid #b5b5b5");
+    $('[data-animation="'+animationindi+'"]').css("border","4px solid #5c9ae4");
+    $(".image_layer_animation_video").attr("data-image-animation-status","0")
+    $('[data-animation="'+animationindi+'"]').attr("data-image-animation-status","1")
+
     $(".current_left").val(current_left);
     $(".current_top").val(current_top);
     $(".current_width").val(current_width);
@@ -2019,6 +2025,7 @@ $(document).on("click", "#audio_upload_submit_btn", function(){
     var files = $('#audio_upload_input_file')[0].files;
     var u_id = $("#u_id").val();
     var v_m_id = $("#v_m_id").val();
+    var scene_id = $("#scene_id").val();
     
     fd.append('audio_upload_input_file',files[0]);
     fd.append('u_id',u_id);
@@ -2033,13 +2040,13 @@ $(document).on("click", "#audio_upload_submit_btn", function(){
         success:function(response){
             if(response == 'yep'){
                 $("#audio_upload_btn_custom").html('<img src="images-main/general/tick.gif" alt="" style="width: 75px;" /><br />Uploaded');
-                $.ajax({
-                    url: 'https://vdofy.harryatwork.com/dev/left_menu_detail.php', 
-                    success: function(data) {
-                      $('.left_bar_menu_div').html(data);
-                    },
-                    
-                });
+                $.post('left_menu_detail.php',
+                    {
+                        v_m_id : v_m_id,
+                        scene_id : scene_id
+                    }, function(result){
+                        $('.left_bar_menu_div').html(result);
+                    });
             
                 setTimeout(function(){ 
                     $("#audio_upload_div").css("display","none");
@@ -2057,7 +2064,15 @@ $(document).on("click", "#audio_upload_submit_btn", function(){
                 	$("#audio-indi-div-library").css("display","none");
                     $("#media_child_library_btn").css({"background":"#f7f7f7","color":"black"});
                     $("#media_child_uploads_btn").css({"background":"#5c9ae4","color":"white"});
-                    
+                    $(".data_uploads_audios").css("display","block");
+
+                    dragger();
+                    //   dragger_voice();
+                    dragger_bgm();
+                    dragger_bgm_track();
+                    animation_draggables();
+                    layers_sort();
+
                 }, 2000);
             }else{ }
         }
@@ -2098,6 +2113,7 @@ $(document).on("click", "#video_upload_submit_btn", function(){
     var files = $('#video_upload_input_file')[0].files;
     var u_id = $("#u_id").val();
     var v_m_id = $("#v_m_id").val();
+    var scene_id = $("#scene_id").val();
     
     fd.append('video_upload_input_file',files[0]);
     fd.append('u_id',u_id);
@@ -2112,12 +2128,13 @@ $(document).on("click", "#video_upload_submit_btn", function(){
         success:function(response){
             if(response == 'yep'){
                 $("#video_upload_div_content_preview").html('<img src="images-main/general/tick.gif" alt="" style="width: 75px;" /><br /> Uploaded');
-                $.ajax({
-                    url: 'https://vdofy.harryatwork.com/dev/left_menu_detail.php', 
-                    success: function(data) {
-                      $('.left_bar_menu_div').html(data);
-                    },
-                });
+                $.post('left_menu_detail.php',
+                    {
+                        v_m_id : v_m_id,
+                        scene_id : scene_id
+                    }, function(result){
+                        $('.left_bar_menu_div').html(result);
+                    });
             
                 setTimeout(function(){ 
                     $("#video_upload_div").css("display","none");
@@ -2139,7 +2156,15 @@ $(document).on("click", "#video_upload_submit_btn", function(){
                 	$("#videos-indi-div-library").css("display","none");
                     $("#media_child_library_btn").css({"background":"#f7f7f7","color":"black"});
                     $("#media_child_uploads_btn").css({"background":"#5c9ae4","color":"white"});
-                    
+                    $(".data_uploads_videos").css("display","block");
+
+                    dragger();
+                    //   dragger_voice();
+                    dragger_bgm();
+                    dragger_bgm_track();
+                    animation_draggables();
+                    layers_sort();
+
                 }, 2000);
             }else{ }
         }
@@ -2188,6 +2213,7 @@ $(document).on("click", "#image_upload_submit_btn", function(){
     var files = $('#image_upload_input_file')[0].files;
     var u_id = $("#u_id").val();
     var v_m_id = $("#v_m_id").val();
+    var scene_id = $("#scene_id").val();
     
     fd.append('image_upload_input_file',files[0]);
     fd.append('u_id',u_id);
@@ -2202,13 +2228,14 @@ $(document).on("click", "#image_upload_submit_btn", function(){
         success:function(response){
             if(response == 'yep'){
                 $("#image_upload_div_content_preview").html('<img src="images-main/general/tick.gif" alt="" style="width: 75px;" /><br /> Uploaded');
-                $.ajax({
-                    url: 'https://vdofy.harryatwork.com/dev/left_menu_detail.php', 
-                    success: function(data) {
-                      $('.left_bar_menu_div').html(data);
-                    },
-                });
-            
+                $.post('left_menu_detail.php',
+                    {
+                        v_m_id : v_m_id,
+                        scene_id : scene_id
+                    }, function(result){
+                        $('.left_bar_menu_div').html(result);
+                    });
+
                 setTimeout(function(){ 
                     $("#image_upload_div").css("display","none");
                     $("#image_upload_div_content").css("display","block");
@@ -2228,7 +2255,15 @@ $(document).on("click", "#image_upload_submit_btn", function(){
                 	$("#images-indi-div-library").css("display","none");
                     $("#media_child_library_btn").css({"background":"#f7f7f7","color":"black"});
                     $("#media_child_uploads_btn").css({"background":"#5c9ae4","color":"white"});
+                    $(".data_uploads_images").css("display","block");
                     
+                    dragger();
+                    //   dragger_voice();
+                    dragger_bgm();
+                    dragger_bgm_track();
+                    animation_draggables();
+                    layers_sort();
+
                 }, 2000);
             }else{ }
         }
@@ -2261,6 +2296,7 @@ $(document).on("click", "#background_upload_submit_btn", function(){
     var files = $('#background_upload_input_file')[0].files;
     var u_id = $("#u_id").val();
     var v_m_id = $("#v_m_id").val();
+    var scene_id = $("#scene_id").val();
     
     fd.append('background_upload_input_file',files[0]);
     fd.append('u_id',u_id);
@@ -2275,12 +2311,13 @@ $(document).on("click", "#background_upload_submit_btn", function(){
         success:function(response){
             if(response == 'yep'){
                 $("#background_upload_div_content_preview").html('<img src="images-main/general/tick.gif" alt="" style="width: 75px;" /><br /> Uploaded');
-                $.ajax({
-                    url: 'https://vdofy.harryatwork.com/dev/left_menu_detail.php', 
-                    success: function(data) {
-                      $('.left_bar_menu_div').html(data);
-                    },
-                });
+                $.post('left_menu_detail.php',
+                    {
+                        v_m_id : v_m_id,
+                        scene_id : scene_id
+                    }, function(result){
+                        $('.left_bar_menu_div').html(result);
+                    });
             
                 setTimeout(function(){ 
                     $("#background_upload_div").css("display","none");
@@ -2301,7 +2338,15 @@ $(document).on("click", "#background_upload_submit_btn", function(){
                 	$("#backgrounds-indi-div-library").css("display","none");
                     $("#media_child_library_btn").css({"background":"#f7f7f7","color":"black"});
                     $("#media_child_uploads_btn").css({"background":"#5c9ae4","color":"white"});
-                    
+                    $(".data_uploads_backgrounds").css("display","block");
+
+                    dragger();
+                    //   dragger_voice();
+                    dragger_bgm();
+                    dragger_bgm_track();
+                    animation_draggables();
+                    layers_sort();
+
                 }, 2000);
             }else{ }
         }
@@ -3567,6 +3612,8 @@ $(document).on("click", ".image_layer_animation_video", function() {
     
     let layer_id = $('[data-status="selected"]').attr('data-myattr');
     let layer_type = $('[data-status="selected"]').attr('data-layer');
+
+    $('[data-status="selected"]').attr("data-animationindi",data_value);
     
     if(data_value == 'none') { } else { 
         
