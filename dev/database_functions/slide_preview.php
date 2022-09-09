@@ -434,7 +434,7 @@ function slide_preview_play() {
     
     	var startTime = Date.now();
 
-            interval = setInterval(function() {
+	interval = setInterval(function() {
         var elapsedTime = Date.now() - startTime;
         let final_time = (elapsedTime / 1000).toFixed(2);
         
@@ -452,7 +452,7 @@ function slide_preview_play() {
         if(final_time == initial || final_time == initial_after) {
             
             slide_preview_reset();
-            clearTimeout(interval);
+            clearInterval(interval);
 
 			if($('#bgm_palyer').length) {
 				$('.bgm_palyer').get(0).pause();
@@ -472,12 +472,15 @@ function slide_preview_play() {
 							if(current_bgm_time >= playstop) {
 								$('.bgm_palyer').currentTime = 0;
 								$('.bgm_palyer').get(0).pause();
+								current_bgm_time = 0;
+								clearInterval(interval);
 							} else {
 								$('.bgm_palyer').currentTime = 0;
 								$('.bgm_palyer').get(0).play();
+								console.log('playing-1');
 							}
 						}
-                        // console.log(current_bgm_time);
+                        console.log(current_bgm_time);
                     }
                     
                     if(final_time == child_indi_multi_array_start) {
@@ -497,6 +500,8 @@ function slide_preview_play() {
                             $('[data-slidepreviewmyattr="'+start_layer_id+'"]').css("display","block");
                             $('.bgm_palyer').currentTime = 0;
                             $('[data-slidepreviewmyattr="'+start_layer_id+'"]').get(0).play();
+							console.log('playing-2');
+							var bgm_player_volume = parseFloat($(".bgm_palyer").attr("data-volume"));
 							bgm_palyer.volume = bgm_player_volume;
                         } else if(animation == 'fadein') {
                             $('[data-slidepreviewmyattr="'+start_layer_id+'"]').css("display","none");
@@ -582,9 +587,13 @@ function slide_preview_play() {
         if($('#bgm_palyer').length) {
 			if(current_bgm_time >= playstop) {
 				// bgm_palyer.currentTime = playstart;
+				console.log('playover');
 				bgm_palyer.pause();
+				current_bgm_time = 0;
+				clearInterval(interval);
 			}
 		}
+		console.log(current_bgm_time);
 
     }, 10);
     
@@ -592,7 +601,27 @@ function slide_preview_play() {
 
 var slide_preview_state;
 
-$("#overlay2,.slide_preview_overlay").on("click",function() {
+function slide_preview_reset() {
+    $(".slide_preview_overlay").css("background","rgba(0, 0, 0, 0.48)");
+    $('.slide_preview_play').css("left","50%");
+    $('.slide_preview_play').fadeIn({queue: false, duration: 'fast'});
+    $('.slide_preview_play').animate({'zoom': 1}, 300);
+    $(".slide_preview_repeat").css("display","block");
+    $('.slide_preview_repeat').css("display","none");
+    slide_preview_state = 'paused';
+    $(".slide_preview_layer").css("display","none");
+    clearInterval(interval);
+	if($('#bgm_palyer').length) {
+		$('.bgm_palyer').get(0).pause();
+		let bgm_html = $('.bgm_palyer').html();
+		$('.bgm_palyer').html("");
+		$('.bgm_palyer').html(bgm_html);
+		$('.bgm_palyer').currentTime = playstart;
+		current_bgm_time = 0;
+	}
+}
+
+$("#overlay2").on("click",function() {
     $("#overlay2,.slide_preview_div").css("display","none");
     $(".slide_preview_content_div").html("");
     $(".slide_preview_content_div").css("display","none");
@@ -600,39 +629,42 @@ $("#overlay2,.slide_preview_overlay").on("click",function() {
     $(".slide_preview_overlay").css("background","#0000007a");
     $(".slide_preview_loading_div").css("display","block");
     $(".slide_preview_overlay_another").css("display","none");
+	slide_preview_state = 'paused';
     slide_preview_reset();
-    clearTimeout(interval);
+    clearInterval(interval);
 });
 
-$(".slide_preview_overlay,.slide_preview_overlay_another").on("click",function() {
-    if(slide_preview_state == 'playing') {
-        slide_preview_reset();
-        clearTimeout(interval);
-        slide_preview_state = 'paused';
-		if($('#bgm_palyer').length) {
-			var bgm_palyer = document.getElementById('bgm_palyer');
-			var bgm_player_volume = parseFloat($(".bgm_palyer").attr("data-volume"));
-			bgm_palyer.volume = bgm_player_volume;
-			$('.bgm_palyer').get(0).pause();
-			$('.bgm_palyer').currentTime = playstart;
-		}
-    } else {
-        $(".slide_preview_overlay").css("background","transparent");
-        $('.slide_preview_play').fadeOut({queue: false, duration: 'fast'});
-        $('.slide_preview_play').animate({'zoom': 2}, 300);
-        // $(".slide_preview_repeat").css("display","none");
-        // $('.slide_preview_repeat').css("zoom","1");
-        slide_preview_state = 'playing';
-        $(".slide_preview_layer").css("display","none");
-        slide_preview_play();
-		if($('#bgm_palyer').length) {
-			$('.bgm_palyer').currentTime = 0;
-			var bgm_palyer = document.getElementById('bgm_palyer');
-			var bgm_player_volume = parseFloat($(".bgm_palyer").attr("data-volume"));
-			bgm_palyer.volume = bgm_player_volume;
-			$('.bgm_palyer').get(0).play();
-		}
-    }
+$(".slide_preview_play").on("click",function() {
+	clearInterval(interval);
+	$(".slide_preview_overlay").css("background","transparent");
+	$('.slide_preview_play').fadeOut({queue: false, duration: 'fast'});
+	$('.slide_preview_play').animate({'zoom': 2}, 300);
+	slide_preview_state = 'playing';
+	$(".slide_preview_layer").css("display","none");
+	slide_preview_play();
+	if($('#bgm_palyer').length) {
+		$('.bgm_palyer').currentTime = 0;
+		var bgm_palyer = document.getElementById('bgm_palyer');
+		var bgm_player_volume = parseFloat($(".bgm_palyer").attr("data-volume"));
+		bgm_palyer.volume = bgm_player_volume;
+		$('.bgm_palyer').get(0).play();
+		console.log('playing-3');
+		var some = $('.bgm_palyer').get(0);
+		console.log(some);
+	}
+});
+
+$(".slide_preview_overlay").on("click",function() {
+	slide_preview_reset();
+	clearInterval(interval);
+	slide_preview_state = 'paused';
+	if($('#bgm_palyer').length) {
+		var bgm_palyer = document.getElementById('bgm_palyer');
+		var bgm_player_volume = parseFloat($(".bgm_palyer").attr("data-volume"));
+		bgm_palyer.volume = bgm_player_volume;
+		$('.bgm_palyer').get(0).pause();
+		$('.bgm_palyer').currentTime = playstart;
+	}
 });
 
 $(".slide_preview_repeat").on("click",function() {
@@ -644,24 +676,7 @@ $(".slide_preview_repeat").on("click",function() {
     slide_preview_state = 'paused';
 });
 
-function slide_preview_reset() {
-    $(".slide_preview_overlay").css("background","#0000007a");
-    $('.slide_preview_play').css("left","50%");
-    $('.slide_preview_play').fadeIn({queue: false, duration: 'fast'});
-    $('.slide_preview_play').animate({'zoom': 1}, 300);
-    $(".slide_preview_repeat").css("display","block");
-    $('.slide_preview_repeat').css("display","none");
-    slide_preview_state = 'paused';
-    $(".slide_preview_layer").css("display","none");
-    // clearTimeout(interval);
-	if($('#bgm_palyer').length) {
-		$('.bgm_palyer').get(0).pause();
-		let bgm_html = $('.bgm_palyer').html();
-		$('.bgm_palyer').html("");
-		$('.bgm_palyer').html(bgm_html);
-		$('.bgm_palyer').currentTime = playstart;
-	}
-}
+
 
 
 

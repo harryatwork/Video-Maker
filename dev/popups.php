@@ -145,14 +145,12 @@
             <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#ffffff" stroke-width="3" />
         </svg>
     </div>
-    <div class="slide_preview_overlay" style="display:none;cursor:pointer;height: 100%;width: 100%;background: #0000007a;position:absolute;z-index:9;">
-        <!--<i class="fa fa-repeat slide_preview_repeat" style="display:none;cursor:pointer;font-size: 200px;color: #ffffff;position: absolute;top: 50%;left: 35%;transform: translate(-50%, -50%);" aria-hidden="true"></i>-->
-        <i class="fas fa-play-circle slide_preview_play" style="cursor:pointer;font-size: 200px;color: #ffffff;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);" aria-hidden="true"></i>
+    <div class="slide_preview_overlay" style="display:none;cursor:pointer;height: 100%;width: 100%;background: #0000007a;position:absolute;z-index:999;">
     </div>
-    <div class="slide_preview_overlay_another" style="display: none;cursor: pointer;height: 100%;width: 100%;background: transparent;position: absolute;z-index: 9999999;box-shadow: 0px 0px 20px 800px rgb(0 0 0);">
-        
-    </div>
-    <div class="slide_preview_content_div" style="position:absolute;display:none;height: 100%;width: 100%;background: <?= $scene_background; ?>;">
+    <i class="fas fa-play-circle slide_preview_play" style="z-index:9999;cursor:pointer;font-size: 200px;color: #ffffff;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);" aria-hidden="true"></i>
+    <!-- <div class="slide_preview_overlay_another" style="display: none;cursor: pointer;height: 100%;width: 100%;background: transparent;position: absolute;z-index: 9999999;">
+    </div> -->
+    <div class="slide_preview_content_div" style="position:absolute;display:none;height: 100%;width: 100%;overflow:hidden;background: <?= $scene_background; ?>;">
         
     </div>
 </div>
