@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Sep 01, 2022 at 08:34 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Host: localhost:3306
+-- Generation Time: Sep 14, 2022 at 02:28 PM
+-- Server version: 5.7.39
+-- PHP Version: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `vid-dev`
+-- Database: `tharunat_vid_editor`
 --
 
 -- --------------------------------------------------------
@@ -32,29 +33,29 @@ CREATE TABLE `users` (
   `fname` varchar(255) DEFAULT NULL,
   `lname` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `password` longtext DEFAULT NULL,
+  `password` longtext,
   `bname` varchar(255) DEFAULT NULL,
   `mobile` varchar(255) DEFAULT NULL,
   `whatsapp` varchar(255) DEFAULT NULL,
-  `address` longtext DEFAULT NULL,
-  `address2` longtext DEFAULT NULL,
+  `address` longtext,
+  `address2` longtext,
   `city` varchar(255) DEFAULT 'city',
   `state` varchar(255) DEFAULT 'Andhra Pradesh',
   `country` varchar(255) NOT NULL DEFAULT 'India',
   `pincode` int(11) DEFAULT NULL,
-  `gst` longtext DEFAULT NULL,
+  `gst` longtext,
   `pan` varchar(255) DEFAULT NULL,
   `vendor_code` varchar(255) DEFAULT NULL,
   `date` varchar(255) DEFAULT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'Signed',
-  `temp` longtext DEFAULT NULL,
+  `temp` longtext,
   `tts_plan` varchar(255) NOT NULL DEFAULT 'Free',
   `tts_date_start` date DEFAULT NULL,
   `tts_date_end` date DEFAULT NULL,
-  `tts_std_counter` int(11) NOT NULL DEFAULT 0,
-  `tts_wvnet_counter` int(11) NOT NULL DEFAULT 0,
-  `tts_all_counter` int(11) NOT NULL DEFAULT 0,
-  `tts_all_sum` int(11) NOT NULL DEFAULT 0
+  `tts_std_counter` int(11) NOT NULL DEFAULT '0',
+  `tts_wvnet_counter` int(11) NOT NULL DEFAULT '0',
+  `tts_all_counter` int(11) NOT NULL DEFAULT '0',
+  `tts_all_sum` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -87,7 +88,11 @@ INSERT INTO `video_maker` (`id`, `u_id`, `title`, `date`) VALUES
 (9, 46, 'StickMan\'s Life', '2022-06-14'),
 (10, 1, 'The Project', '2022-07-21'),
 (11, 1, 'The Project', '2022-07-27'),
-(12, 1, 'somek', '2022-07-27');
+(12, 1, 'somek', '2022-07-27'),
+(13, 1, 'Rupam-1', '2022-09-02'),
+(14, 46, 'The Project', '2022-09-09'),
+(15, 1, 'Rupam-2', '2022-09-10'),
+(16, 1, 'The Project', '2022-09-13');
 
 -- --------------------------------------------------------
 
@@ -99,7 +104,7 @@ CREATE TABLE `video_maker_audios` (
   `id` int(11) NOT NULL,
   `u_id` int(11) DEFAULT NULL,
   `v_m_id` int(11) DEFAULT NULL,
-  `title` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` longtext COLLATE utf8_unicode_ci,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -111,7 +116,9 @@ INSERT INTO `video_maker_audios` (`id`, `u_id`, `v_m_id`, `title`, `date`) VALUE
 (35, 46, 1, 'file_example_MP3_700KB.mp3', '2021-09-23'),
 (36, 46, 1, 'Kalimba.mp3', '2021-10-29'),
 (37, 46, 9, '27sec_test_audio.mp3', '2022-06-22'),
-(38, 1, 10, '27sec_test_audio.mp3', '2022-07-21');
+(38, 1, 10, '27sec_test_audio.mp3', '2022-07-21'),
+(39, 46, 14, 'sample_audio.mp3', '2022-09-09'),
+(40, 46, 14, 'count10.wav', '2022-09-09');
 
 -- --------------------------------------------------------
 
@@ -123,7 +130,7 @@ CREATE TABLE `video_maker_backgrounds` (
   `id` int(11) NOT NULL,
   `u_id` int(11) DEFAULT NULL,
   `v_m_id` int(11) DEFAULT NULL,
-  `title` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` longtext COLLATE utf8_unicode_ci,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -242,13 +249,23 @@ INSERT INTO `video_maker_draggable_layers` (`id`, `main_layer_id`, `p_id`, `u_id
 (224, 497, 11, 1, 'BGM', 'BGM Layer-0', 0, '828', '3', '7', '1', '2022-07-27 11:46:05'),
 (223, 496, 11, 1, 'image', 'IM-B&W', 2, '0', '0', '0', '1', '2022-07-27 11:46:05'),
 (270, 543, 1, 46, 'image', 'meh', 6, '0', '0', '', '1', '2022-09-01 11:13:15'),
-(269, 542, 1, 46, 'BGM', 'BGM Layer-0', 0, '2070', '0', '10', '1', '2022-08-29 10:59:26'),
-(268, 541, 1, 46, 'BGM', 'BGM Layer-0', 0, '5589', '0', '8', '1', '2022-08-29 10:55:07'),
+(312, 585, 14, 46, 'BGM', 'BGM Layer-0', 0, '2484', '4', '16', '1', '2022-09-13 21:34:12'),
 (271, 544, 1, 46, 'image', 'spects', 7, '0', '0', '', '1', '2022-09-01 11:13:23'),
 (272, 545, 1, 46, 'image', 'fire', 8, '0', '0', '', '1', '2022-09-01 11:13:27'),
 (273, 546, 1, 46, 'image', 'meh', 1, '0', '0', '', '1', '2022-09-01 11:20:35'),
 (274, 547, 1, 46, 'image', 'fire', 2, '0', '0', '', '1', '2022-09-01 11:20:40'),
-(275, 548, 1, 46, 'image', 'spects', 3, '0', '0', '', '1', '2022-09-01 11:20:42');
+(275, 548, 1, 46, 'image', 'spects', 3, '0', '0', '', '1', '2022-09-01 11:20:42'),
+(288, 561, 14, 46, 'image', 'Image Layer-1', 1, '0', '0', '', '1', '2022-09-09 17:56:56'),
+(304, 577, 13, 1, 'shape', 'Yello bo', 3, '0', '0', '', '1', '2022-09-10 18:17:08'),
+(305, 578, 15, 1, 'image', 'Image Layer-1', 1, '0', '0', '', '1', '2022-09-10 18:32:37'),
+(302, 575, 13, 1, 'image', 'BG Image', 1, '0', '0', '', '1', '2022-09-10 18:15:57'),
+(303, 576, 13, 1, 'image', 'Logo', 2, '0', '0', '', '1', '2022-09-10 18:16:53'),
+(289, 562, 14, 46, 'image', 'Image Layer-2', 2, '0', '0', '', '1', '2022-09-09 17:56:57'),
+(290, 563, 14, 46, 'image', 'Image Layer-3', 3, '0', '0', '', '1', '2022-09-09 19:15:53'),
+(293, 566, 14, 46, 'BGM', 'BGM Layer-0', 0, 'NaN', '0', '5', '1', '2022-09-09 20:17:21'),
+(306, 579, 15, 1, 'font', 'Font Layer-2', 2, '0', '0', '', '1', '2022-09-10 18:39:44'),
+(309, 582, 15, 1, 'shape', 'Shape Layer-5', 5, '0', '0', '', '1', '2022-09-10 18:44:38'),
+(310, 583, 15, 1, 'shape', 'Shape Layer-6', 6, '0', '0', '', '1', '2022-09-10 18:46:18');
 
 -- --------------------------------------------------------
 
@@ -291,8 +308,8 @@ INSERT INTO `video_maker_draggable_layers_templates` (`id`, `main_layer_id`, `p_
 CREATE TABLE `video_maker_fonts` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `font` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `file_name` longtext COLLATE utf8_unicode_ci DEFAULT NULL
+  `font` longtext COLLATE utf8_unicode_ci,
+  `file_name` longtext COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -316,7 +333,7 @@ CREATE TABLE `video_maker_images` (
   `id` int(11) NOT NULL,
   `u_id` int(11) DEFAULT NULL,
   `v_m_id` int(11) DEFAULT NULL,
-  `title` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` longtext COLLATE utf8_unicode_ci,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -373,7 +390,21 @@ INSERT INTO `video_maker_images` (`id`, `u_id`, `v_m_id`, `title`, `date`) VALUE
 (47, 46, 9, 'ambulance.gif', '2022-06-15'),
 (48, 46, 1, 'tv.png', '2022-06-22'),
 (49, 1, 10, 'iron-man-wallpaper-29-610x343.jpg', '2022-07-21'),
-(50, 1, 10, 'coffee_mug.png', '2022-07-21');
+(50, 1, 10, 'coffee_mug.png', '2022-07-21'),
+(51, 1, 13, 'images.jpg', '2022-09-02'),
+(52, 1, 13, 'images.jpg', '2022-09-02'),
+(53, 1, 13, 'pngtree-headphones-png-image_2452681.jpg', '2022-09-02'),
+(54, 1, 13, 'hd-1.jpg', '2022-09-02'),
+(55, 46, 14, '01.png', '2022-09-09'),
+(56, 46, 14, '2.png', '2022-09-09'),
+(57, 46, 14, '01.png', '2022-09-09'),
+(58, 46, 14, '2.png', '2022-09-09'),
+(59, 1, 13, 'logo-2.png', '2022-09-10'),
+(60, 1, 13, 'logo-2.png', '2022-09-10'),
+(61, 1, 13, 'images.jfif', '2022-09-10'),
+(62, 1, 13, 'download.jfif', '2022-09-10'),
+(63, 1, 13, 'VDOfy LOGO PNG-white.png', '2022-09-10'),
+(64, 1, 15, 'VDOfy LOGO PNG-white.png', '2022-09-10');
 
 -- --------------------------------------------------------
 
@@ -390,7 +421,7 @@ CREATE TABLE `video_maker_layers` (
   `layer` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `layer_id` int(11) DEFAULT NULL,
   `layer_count` int(11) DEFAULT NULL,
-  `content` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `content` longtext COLLATE utf8_unicode_ci,
   `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -477,14 +508,23 @@ INSERT INTO `video_maker_layers` (`id`, `title`, `p_id`, `u_id`, `scene_id`, `la
 (511, 'IM-B&W', 12, 1, 38, 'image', 49, 2, 'Preview', '2022-07-27 12:11:22'),
 (512, 'Coffee Message', 12, 1, 38, 'image', 50, 3, 'Preview', '2022-07-27 12:11:22'),
 (513, 'BGM Layer-0', 12, 1, 38, 'BGM', 38, 0, 'Preview', '2022-07-27 12:11:22'),
-(541, 'BGM Layer-0', 1, 46, 1, 'BGM', 35, 0, 'Preview', '2022-08-29 10:55:07'),
-(542, 'BGM Layer-0', 1, 46, 1, 'BGM', 35, 0, 'Preview', '2022-08-29 10:59:26'),
 (543, 'meh', 1, 46, 40, 'image', 15, 2, 'Preview', '2022-09-01 11:13:15'),
 (544, 'spects', 1, 46, 40, 'image', 9, 3, 'Preview', '2022-09-01 11:13:23'),
 (545, 'fire', 1, 46, 40, 'image', 8, 1, 'Preview', '2022-09-01 11:13:27'),
 (546, 'meh', 1, 46, 41, 'image', 15, 2, 'Preview', '2022-09-01 11:20:35'),
 (547, 'fire', 1, 46, 41, 'image', 8, 1, 'Preview', '2022-09-01 11:20:40'),
-(548, 'spects', 1, 46, 41, 'image', 9, 3, 'Preview', '2022-09-01 11:20:42');
+(548, 'spects', 1, 46, 41, 'image', 9, 3, 'Preview', '2022-09-01 11:20:42'),
+(561, 'Image Layer-1', 14, 46, 43, 'image', 55, 1, 'Preview', '2022-09-09 17:56:55'),
+(562, 'Image Layer-2', 14, 46, 43, 'image', 56, 2, 'Preview', '2022-09-09 17:56:56'),
+(563, 'Image Layer-3', 14, 46, 43, 'image', 55, 3, 'Preview', '2022-09-09 19:15:51'),
+(575, 'BG Image', 13, 1, 42, 'image', 62, 1, 'Preview', '2022-09-10 18:15:56'),
+(576, 'Logo', 13, 1, 42, 'image', 63, 2, 'Preview', '2022-09-10 18:16:52'),
+(577, 'Yello bo', 13, 1, 42, 'shape', 1, 3, 'Preview', '2022-09-10 18:17:08'),
+(578, 'Image Layer-1', 15, 1, 44, 'image', 64, 1, 'Preview', '2022-09-10 18:32:36'),
+(579, 'Font Layer-2', 15, 1, 44, 'font', 1, 2, 'Preview', '2022-09-10 18:39:44'),
+(582, 'Shape Layer-5', 15, 1, 44, 'shape', 5, 5, 'Preview', '2022-09-10 18:44:37'),
+(583, 'Shape Layer-6', 15, 1, 44, 'shape', 1, 6, 'Preview', '2022-09-10 18:46:18'),
+(585, 'BGM Layer-0', 14, 46, 43, 'BGM', 39, 0, 'Preview', '2022-09-13 21:34:12');
 
 -- --------------------------------------------------------
 
@@ -501,7 +541,7 @@ CREATE TABLE `video_maker_layers_templates` (
   `layer` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `layer_id` int(11) DEFAULT NULL,
   `layer_count` int(11) DEFAULT NULL,
-  `content` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `content` longtext COLLATE utf8_unicode_ci,
   `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -529,11 +569,11 @@ CREATE TABLE `video_maker_layer_animations` (
   `type` varchar(255) DEFAULT NULL,
   `animation` varchar(255) DEFAULT NULL,
   `speed` varchar(255) DEFAULT '1500',
-  `start` time NOT NULL DEFAULT '00:00:00',
+  `start` time NOT NULL DEFAULT '00:00:10',
   `end` time NOT NULL DEFAULT '00:03:00',
   `margin_left` varchar(255) DEFAULT '0',
   `width` varchar(255) DEFAULT '415',
-  `reverse` int(11) NOT NULL DEFAULT 0,
+  `reverse` int(11) NOT NULL DEFAULT '0',
   `date` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -547,9 +587,9 @@ INSERT INTO `video_maker_layer_animations` (`id`, `layer_id`, `type`, `animation
 (26, 329, 'image', 'none', '1500', '00:00:00', '00:03:00', '0', '415', 1, '2022-06-14 17:46:36'),
 (27, 330, 'image', 'slideleft', '2500', '00:03:24', '00:09:48', '709.08', '1337.92', 1, '2022-06-14 17:46:56'),
 (62, 365, 'image', 'fadein', '1500', '00:00:12', '00:07:48', '32.0004', '1588.99', 1, '2022-06-22 19:06:26'),
-(60, 363, 'font', 'riseup', '1500', '00:02:54', '00:07:42', '600.111', '1006.93', 1, '2022-06-22 18:53:04'),
+(60, 363, 'font', 'riseup', '1500', '00:00:01', '00:04:12', '0.010457', '868.945', 1, '2022-06-22 18:53:04'),
 (58, 361, 'font', 'riseup', '1500', '00:01:12', '00:07:48', '245.104', '1375.89', 1, '2022-06-22 18:52:47'),
-(61, 364, 'font', 'risedown', '1000', '00:05:06', '00:08:00', '1052.11', '600.903', 1, '2022-06-22 19:02:05'),
+(61, 364, 'font', 'risedown', '1000', '00:05:06', '00:08:00', '1052.11', '600.885', 1, '2022-06-22 19:02:05'),
 (30, 333, 'image', 'none', '1500', '00:00:00', '00:03:24', '0', '712.014', 0, '2022-06-14 17:54:34'),
 (31, 334, 'font', 'none', '1500', '00:03:00', '00:04:54', '620.111', '400.017', 0, '2022-06-14 18:19:57'),
 (32, 335, 'image', 'none', '1500', '00:04:54', '00:07:12', '1017.11', '479.132', 0, '2022-06-14 18:23:20'),
@@ -634,13 +674,22 @@ INSERT INTO `video_maker_layer_animations` (`id`, `layer_id`, `type`, `animation
 (235, 537, 'BGM', 'none', '1500', '00:00:00', '00:00:00', '0', '72036', 0, '2022-08-27 18:14:13'),
 (236, 538, 'BGM', 'none', '1500', '00:00:00', '00:26:54', '0', '5589', 0, '2022-08-27 18:14:29'),
 (237, 539, 'BGM', 'none', '1500', '00:00:00', '00:00:00', '0', '72036', 0, '2022-08-27 18:14:54'),
-(240, 542, 'BGM', 'none', '1500', '00:00:00', '00:26:54', '0', '5589', 0, '2022-08-29 10:59:26'),
-(239, 541, 'BGM', 'none', '1500', '00:00:00', '00:26:54', '0', '5589', 0, '2022-08-29 10:55:07'),
+(283, 585, 'BGM', 'none', '1500', '00:00:10', '00:03:00', '0', '415', 0, '2022-09-13 21:34:12'),
 (242, 544, 'image', 'riseup', '1500', '00:02:00', '00:06:24', '413.111', '918.021', 0, '2022-09-01 11:13:23'),
 (243, 545, 'image', 'fadein', '2000', '00:04:00', '00:06:24', '823.111', '507.031', 0, '2022-09-01 11:13:27'),
 (244, 546, 'image', 'fadein', '2000', '00:00:30', '00:06:54', '114.111', '1322.01', 0, '2022-09-01 11:20:35'),
 (245, 547, 'image', 'fadein', '2000', '00:04:00', '00:07:00', '823.111', '621.007', 0, '2022-09-01 11:20:40'),
-(246, 548, 'image', 'riseup', '2000', '00:01:54', '00:06:54', '403.111', '1042.03', 0, '2022-09-01 11:20:42');
+(246, 548, 'image', 'riseup', '2000', '00:01:54', '00:06:54', '403.111', '1042.03', 0, '2022-09-01 11:20:42'),
+(273, 575, 'image', 'none', '1500', '00:00:10', '00:05:54', '0.00380701', '1227.03', 0, '2022-09-10 18:15:57'),
+(274, 576, 'image', 'slideleft', '2000', '00:01:30', '00:05:54', '319.212', '907.822', 0, '2022-09-10 18:16:53'),
+(275, 577, 'shape', 'slideleft', '1000', '00:00:10', '00:02:06', '13.1111', '415', 0, '2022-09-10 18:17:08'),
+(276, 578, 'image', 'slideleft', '2000', '00:00:10', '00:03:00', '0', '415', 0, '2022-09-10 18:32:37'),
+(260, 562, 'image', 'slideleft', '2000', '00:00:12', '00:04:12', '31.9896', '826.745', 0, '2022-09-09 17:56:57'),
+(280, 582, 'shape', 'none', '1500', '00:00:10', '00:03:00', '0', '415', 0, '2022-09-10 18:44:38'),
+(261, 563, 'image', 'fadein', '1500', '00:00:01', '00:04:30', '0.005208', '939.01', 0, '2022-09-09 19:15:53'),
+(259, 561, 'image', 'riseup', '1500', '00:00:01', '00:03:00', '2.00117e-05', '623.034', 0, '2022-09-09 17:56:56'),
+(277, 579, 'font', 'slideright', '1500', '00:00:10', '00:03:00', '0', '415', 0, '2022-09-10 18:39:44'),
+(281, 583, 'shape', 'riseup', '2000', '00:00:10', '00:03:00', '0', '415', 0, '2022-09-10 18:46:18');
 
 -- --------------------------------------------------------
 
@@ -658,7 +707,7 @@ CREATE TABLE `video_maker_layer_animations_templates` (
   `end` time NOT NULL DEFAULT '00:03:00',
   `margin_left` varchar(255) DEFAULT '0',
   `width` varchar(255) DEFAULT '415',
-  `reverse` int(11) NOT NULL DEFAULT 0,
+  `reverse` int(11) NOT NULL DEFAULT '0',
   `date` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -686,7 +735,7 @@ CREATE TABLE `video_maker_scene` (
   `u_id` int(11) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   `background` varchar(255) NOT NULL DEFAULT '#ffffff',
-  `duration` int(11) NOT NULL DEFAULT 10,
+  `duration` int(11) NOT NULL DEFAULT '10',
   `date` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -702,7 +751,11 @@ INSERT INTO `video_maker_scene` (`id`, `p_id`, `u_id`, `title`, `background`, `d
 (39, 12, 1, '', '#ffffff', 10, '2022-07-27 12:09:48'),
 (38, 12, 1, '', '#ffffff', 10, '2022-07-27 12:09:48'),
 (36, 11, 1, '', '#ffffff', 10, '2022-07-27 11:46:05'),
-(35, 11, 1, '', '#CAE1E0', 10, '2022-07-27 11:46:05');
+(35, 11, 1, '', '#CAE1E0', 10, '2022-07-27 11:46:05'),
+(42, 13, 1, NULL, '#E8E4DD', 6, '2022-09-02 00:00:00'),
+(43, 14, 46, NULL, '#ffffff', 12, '2022-09-09 00:00:00'),
+(44, 15, 1, NULL, '#000000', 10, '2022-09-10 00:00:00'),
+(45, 16, 1, NULL, '#ffffff', 10, '2022-09-13 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -716,7 +769,7 @@ CREATE TABLE `video_maker_scene_templates` (
   `u_id` int(11) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   `background` varchar(255) NOT NULL DEFAULT '#ffffff',
-  `duration` int(11) NOT NULL DEFAULT 10,
+  `duration` int(11) NOT NULL DEFAULT '10',
   `date` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -737,8 +790,8 @@ INSERT INTO `video_maker_scene_templates` (`id`, `p_id`, `u_id`, `title`, `backg
 CREATE TABLE `video_maker_shapes` (
   `id` int(11) NOT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `shape` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
-  `style` longtext COLLATE utf8_unicode_ci DEFAULT NULL
+  `shape` longtext COLLATE utf8_unicode_ci,
+  `style` longtext COLLATE utf8_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -1204,8 +1257,8 @@ INSERT INTO `video_maker_styles` (`id`, `layer_id`, `type`, `style`, `value`, `d
 (3352, 363, 'parent', 'text-align', 'center', '2022-06-22 18:53:03'),
 (3353, 363, 'parent', 'position', 'absolute', '2022-06-22 18:53:03'),
 (3354, 363, 'parent', 'border-radius', '5px', '2022-06-22 18:53:03'),
-(3355, 363, 'parent', 'top', '424.71063232421875px', '2022-06-22 18:53:03'),
-(3356, 363, 'parent', 'left', '805.3530883789062px', '2022-06-22 18:53:03'),
+(3355, 363, 'parent', 'top', '436.6319885253906px', '2022-06-22 18:53:03'),
+(3356, 363, 'parent', 'left', '886.3136596679688px', '2022-06-22 18:53:03'),
 (3357, 363, 'parent', 'margin-bottom', '5px', '2022-06-22 18:53:03'),
 (3358, 363, 'parent', 'min-height', 'fit-content', '2022-06-22 18:53:03'),
 (3359, 363, 'parent', 'transform', 'rotate(0deg)', '2022-06-22 18:53:03'),
@@ -1224,8 +1277,8 @@ INSERT INTO `video_maker_styles` (`id`, `layer_id`, `type`, `style`, `value`, `d
 (3374, 364, 'parent', 'text-align', 'center', '2022-06-22 19:02:05'),
 (3375, 364, 'parent', 'position', 'absolute', '2022-06-22 19:02:05'),
 (3376, 364, 'parent', 'border-radius', '5px', '2022-06-22 19:02:05'),
-(3377, 364, 'parent', 'top', '852.7488403320312px', '2022-06-22 19:02:05'),
-(3378, 364, 'parent', 'left', '85.879638671875px', '2022-06-22 19:02:05'),
+(3377, 364, 'parent', 'top', '849.7106628417969px', '2022-06-22 19:02:05'),
+(3378, 364, 'parent', 'left', '87.87615966796875px', '2022-06-22 19:02:05'),
 (3379, 364, 'parent', 'margin-bottom', '5px', '2022-06-22 19:02:05'),
 (3380, 364, 'parent', 'min-height', 'fit-content', '2022-06-22 19:02:05'),
 (3381, 364, 'parent', 'transform', 'rotate(0deg)', '2022-06-22 19:02:05'),
@@ -1240,7 +1293,7 @@ INSERT INTO `video_maker_styles` (`id`, `layer_id`, `type`, `style`, `value`, `d
 (3390, 365, 'parent', 'position', 'absolute', '2022-06-22 19:06:24'),
 (3391, 365, 'parent', 'top', '100.6324462890625px', '2022-06-22 19:06:24'),
 (3392, 365, 'parent', 'left', '30.65478515625px', '2022-06-22 19:06:24'),
-(3393, 365, 'parent', 'transform', 'rotate(0deg)', '2022-06-22 19:06:24'),
+(3393, 365, 'parent', 'transform', 'scaleX(-1)', '2022-06-22 19:06:24'),
 (3876, 426, 'parent', 'width', '40%', '2022-07-05 12:48:54'),
 (3877, 426, 'parent', 'height', 'auto', '2022-07-05 12:48:54'),
 (3878, 426, 'parent', 'display', 'inline-block', '2022-07-05 12:48:54'),
@@ -1273,7 +1326,7 @@ INSERT INTO `video_maker_styles` (`id`, `layer_id`, `type`, `style`, `value`, `d
 (3913, 430, 'parent', 'padding', '0px 0px 5px', '2022-07-12 12:51:28'),
 (3914, 430, 'parent', 'position', 'absolute', '2022-07-12 12:51:28'),
 (3915, 430, 'parent', 'top', '0px', '2022-07-12 12:51:28'),
-(3916, 430, 'parent', 'left', '0px', '2022-07-12 12:51:28'),
+(3916, 430, 'parent', 'left', '-9.982666015625px', '2022-07-12 12:51:28'),
 (3917, 430, 'parent', 'transform', 'rotate(0deg)', '2022-07-12 12:51:28'),
 (3918, 431, 'parent', 'width', '40%', '2022-07-13 12:19:58'),
 (3919, 431, 'parent', 'height', 'auto', '2022-07-13 12:19:58'),
@@ -1804,22 +1857,6 @@ INSERT INTO `video_maker_styles` (`id`, `layer_id`, `type`, `style`, `value`, `d
 (4935, 539, 'parent', 'top', '30%', '2022-08-27 18:14:54'),
 (4936, 539, 'parent', 'left', '30%', '2022-08-27 18:14:54'),
 (4937, 539, 'parent', 'transform', 'rotate(0deg)', '2022-08-27 18:14:54'),
-(4946, 541, 'parent', 'width', '40%', '2022-08-29 10:55:07'),
-(4947, 541, 'parent', 'height', 'auto', '2022-08-29 10:55:07'),
-(4948, 541, 'parent', 'display', 'inline-block', '2022-08-29 10:55:07'),
-(4949, 541, 'parent', 'padding', '0px 0px 5px', '2022-08-29 10:55:07'),
-(4950, 541, 'parent', 'position', 'absolute', '2022-08-29 10:55:07'),
-(4951, 541, 'parent', 'top', '30%', '2022-08-29 10:55:07'),
-(4952, 541, 'parent', 'left', '30%', '2022-08-29 10:55:07'),
-(4953, 541, 'parent', 'transform', 'rotate(0deg)', '2022-08-29 10:55:07'),
-(4954, 542, 'parent', 'width', '40%', '2022-08-29 10:59:26'),
-(4955, 542, 'parent', 'height', 'auto', '2022-08-29 10:59:26'),
-(4956, 542, 'parent', 'display', 'inline-block', '2022-08-29 10:59:26'),
-(4957, 542, 'parent', 'padding', '0px 0px 5px', '2022-08-29 10:59:26'),
-(4958, 542, 'parent', 'position', 'absolute', '2022-08-29 10:59:26'),
-(4959, 542, 'parent', 'top', '30%', '2022-08-29 10:59:26'),
-(4960, 542, 'parent', 'left', '30%', '2022-08-29 10:59:26'),
-(4961, 542, 'parent', 'transform', 'rotate(0deg)', '2022-08-29 10:59:26'),
 (4962, 543, 'parent', 'width', '27%', '2022-09-01 11:13:15'),
 (4963, 543, 'parent', 'height', 'auto', '2022-09-01 11:13:15'),
 (4964, 543, 'parent', 'display', 'inline-block', '2022-09-01 11:13:15'),
@@ -1867,7 +1904,150 @@ INSERT INTO `video_maker_styles` (`id`, `layer_id`, `type`, `style`, `value`, `d
 (5006, 548, 'parent', 'position', 'absolute', '2022-09-01 11:20:42'),
 (5007, 548, 'parent', 'top', '178.83184814453125px', '2022-09-01 11:20:42'),
 (5008, 548, 'parent', 'left', '569.7916259765625px', '2022-09-01 11:20:42'),
-(5009, 548, 'parent', 'transform', 'rotate(0deg)', '2022-09-01 11:20:42');
+(5009, 548, 'parent', 'transform', 'rotate(0deg)', '2022-09-01 11:20:42'),
+(5077, 0, 'child', 'font-size', '175pxpx', '2022-09-02 21:15:37'),
+(5124, 561, 'parent', 'width', '40%', '2022-09-09 17:56:55'),
+(5125, 561, 'parent', 'height', 'auto', '2022-09-09 17:56:55'),
+(5126, 561, 'parent', 'display', 'inline-block', '2022-09-09 17:56:55'),
+(5127, 561, 'parent', 'padding', '0px 0px 5px', '2022-09-09 17:56:55'),
+(5128, 561, 'parent', 'position', 'absolute', '2022-09-09 17:56:55'),
+(5129, 561, 'parent', 'top', '117.93838500976562px', '2022-09-09 17:56:55'),
+(5130, 561, 'parent', 'left', '94.93487548828125px', '2022-09-09 17:56:55'),
+(5131, 561, 'parent', 'transform', 'rotate(0deg)', '2022-09-09 17:56:55'),
+(5132, 562, 'parent', 'width', '40%', '2022-09-09 17:56:56'),
+(5133, 562, 'parent', 'height', 'auto', '2022-09-09 17:56:56'),
+(5134, 562, 'parent', 'display', 'inline-block', '2022-09-09 17:56:56'),
+(5135, 562, 'parent', 'padding', '0px 0px 5px', '2022-09-09 17:56:56'),
+(5136, 562, 'parent', 'position', 'absolute', '2022-09-09 17:56:56'),
+(5137, 562, 'parent', 'top', '627.9427795410156px', '2022-09-09 17:56:56'),
+(5138, 562, 'parent', 'left', '1013.9453735351562px', '2022-09-09 17:56:56'),
+(5139, 562, 'parent', 'transform', 'rotate(0deg)', '2022-09-09 17:56:56'),
+(5140, 563, 'parent', 'width', '40%', '2022-09-09 19:15:51'),
+(5141, 563, 'parent', 'height', 'auto', '2022-09-09 19:15:51'),
+(5142, 563, 'parent', 'display', 'inline-block', '2022-09-09 19:15:51'),
+(5143, 563, 'parent', 'padding', '0px 0px 5px', '2022-09-09 19:15:51'),
+(5144, 563, 'parent', 'position', 'absolute', '2022-09-09 19:15:51'),
+(5145, 563, 'parent', 'top', '395.9418640136719px', '2022-09-09 19:15:51'),
+(5146, 563, 'parent', 'left', '472.89495849609375px', '2022-09-09 19:15:51'),
+(5147, 563, 'parent', 'transform', 'rotate(0deg)', '2022-09-09 19:15:51'),
+(5164, 566, 'parent', 'width', '40%', '2022-09-09 20:17:18'),
+(5165, 566, 'parent', 'height', 'auto', '2022-09-09 20:17:18'),
+(5166, 566, 'parent', 'display', 'inline-block', '2022-09-09 20:17:18'),
+(5167, 566, 'parent', 'padding', '0px 0px 5px', '2022-09-09 20:17:18'),
+(5168, 566, 'parent', 'position', 'absolute', '2022-09-09 20:17:18'),
+(5169, 566, 'parent', 'top', '30%', '2022-09-09 20:17:18'),
+(5170, 566, 'parent', 'left', '30%', '2022-09-09 20:17:18'),
+(5171, 566, 'parent', 'transform', 'rotate(0deg)', '2022-09-09 20:17:18'),
+(5236, 575, 'parent', 'width', '1939.93px', '2022-09-10 18:15:56'),
+(5237, 575, 'parent', 'height', '1196.81px', '2022-09-10 18:15:56'),
+(5238, 575, 'parent', 'display', 'inline-block', '2022-09-10 18:15:56'),
+(5239, 575, 'parent', 'padding', '0px 0px 5px', '2022-09-10 18:15:56'),
+(5240, 575, 'parent', 'position', 'absolute', '2022-09-10 18:15:56'),
+(5241, 575, 'parent', 'top', '-43.95294189453125px', '2022-09-10 18:15:56'),
+(5242, 575, 'parent', 'left', '-7.0211181640625px', '2022-09-10 18:15:56'),
+(5243, 575, 'parent', 'transform', 'rotate(0deg)', '2022-09-10 18:15:56'),
+(5244, 576, 'parent', 'width', '40%', '2022-09-10 18:16:52'),
+(5245, 576, 'parent', 'height', 'auto', '2022-09-10 18:16:52'),
+(5246, 576, 'parent', 'display', 'inline-block', '2022-09-10 18:16:52'),
+(5247, 576, 'parent', 'padding', '0px 0px 5px', '2022-09-10 18:16:52'),
+(5248, 576, 'parent', 'position', 'absolute', '2022-09-10 18:16:52'),
+(5249, 576, 'parent', 'top', '340.8603820800781px', '2022-09-10 18:16:52'),
+(5250, 576, 'parent', 'left', '612.897705078125px', '2022-09-10 18:16:52'),
+(5251, 576, 'parent', 'transform', 'rotate(0deg)', '2022-09-10 18:16:52'),
+(5252, 577, 'parent', 'width', '429.956px', '2022-09-10 18:17:08'),
+(5253, 577, 'parent', 'height', '429.956px', '2022-09-10 18:17:08'),
+(5254, 577, 'parent', 'display', 'inline-block', '2022-09-10 18:17:08'),
+(5255, 577, 'parent', 'padding', '0px 0px 5px', '2022-09-10 18:17:08'),
+(5256, 577, 'parent', 'vertical-align', 'super', '2022-09-10 18:17:08'),
+(5257, 577, 'parent', 'position', 'absolute', '2022-09-10 18:17:08'),
+(5258, 577, 'parent', 'min-height', 'fit-content', '2022-09-10 18:17:08'),
+(5259, 577, 'parent', 'top', '283.74371337890625px', '2022-09-10 18:17:08'),
+(5260, 577, 'parent', 'left', '229.70330810546875px', '2022-09-10 18:17:08'),
+(5261, 577, 'parent', 'border', '6px dashed transparent', '2022-09-10 18:17:08'),
+(5262, 577, 'parent', 'transform', 'rotate(0deg)', '2022-09-10 18:17:08'),
+(5263, 577, 'child', 'height', '435px', '2022-09-10 18:17:08'),
+(5264, 577, 'child', 'width', '435px', '2022-09-10 18:17:08'),
+(5265, 577, 'grandchild', 'x', '10', '2022-09-10 18:17:08'),
+(5266, 577, 'grandchild', 'y', '10', '2022-09-10 18:17:08'),
+(5267, 577, 'grandchild', 'width', '415px', '2022-09-10 18:17:08'),
+(5268, 577, 'grandchild', 'height', '415px', '2022-09-10 18:17:08'),
+(5269, 577, 'grandchild', 'stroke', 'black', '2022-09-10 18:17:08'),
+(5270, 577, 'grandchild', 'fill', '#ffbb00', '2022-09-10 18:17:08'),
+(5271, 577, 'grandchild', 'stroke-width', '1', '2022-09-10 18:17:08'),
+(5272, 576, 'child', 'border', 'none', '2022-09-10 18:17:35'),
+(5273, 578, 'parent', 'width', '767.979px', '2022-09-10 18:32:36'),
+(5274, 578, 'parent', 'height', '253.815px', '2022-09-10 18:32:36'),
+(5275, 578, 'parent', 'display', 'inline-block', '2022-09-10 18:32:36'),
+(5276, 578, 'parent', 'padding', '0px 0px 5px', '2022-09-10 18:32:36'),
+(5277, 578, 'parent', 'position', 'absolute', '2022-09-10 18:32:36'),
+(5278, 578, 'parent', 'top', '319.8376159667969px', '2022-09-10 18:32:36'),
+(5279, 578, 'parent', 'left', '629.821533203125px', '2022-09-10 18:32:36'),
+(5280, 578, 'parent', 'transform', 'rotate(0deg)', '2022-09-10 18:32:36'),
+(5281, 579, 'parent', 'width', '800.933px', '2022-09-10 18:39:44'),
+(5282, 579, 'parent', 'height', '129.992px', '2022-09-10 18:39:44'),
+(5283, 579, 'parent', 'display', 'inline-block', '2022-09-10 18:39:44'),
+(5284, 579, 'parent', 'padding', '0px 18px 20px 4px', '2022-09-10 18:39:44'),
+(5285, 579, 'parent', 'text-align', 'center', '2022-09-10 18:39:44'),
+(5286, 579, 'parent', 'position', 'absolute', '2022-09-10 18:39:44'),
+(5287, 579, 'parent', 'border-radius', '5px', '2022-09-10 18:39:44'),
+(5288, 579, 'parent', 'top', '590.9415588378906px', '2022-09-10 18:39:44'),
+(5289, 579, 'parent', 'left', '767.93017578125px', '2022-09-10 18:39:44'),
+(5290, 579, 'parent', 'margin-bottom', '5px', '2022-09-10 18:39:44'),
+(5291, 579, 'parent', 'min-height', 'fit-content', '2022-09-10 18:39:44'),
+(5292, 579, 'parent', 'transform', 'rotate(0deg)', '2022-09-10 18:39:44'),
+(5293, 579, 'child', 'font-family', 'Impact, Charcoal, sans-serif', '2022-09-10 18:41:31'),
+(5294, 579, 'child', 'border', 'none', '2022-09-10 18:41:56'),
+(5295, 579, 'child', '-webkit-text-stroke', '2px #ff0000', '2022-09-10 18:42:24'),
+(5296, 579, 'parent', 'opacity', '0.8', '2022-09-10 18:42:44'),
+(5297, 579, 'child', 'font-size', '80px', '2022-09-10 18:42:49'),
+(5337, 582, 'parent', 'width', 'auto', '2022-09-10 18:44:37'),
+(5338, 582, 'parent', 'height', 'auto', '2022-09-10 18:44:37'),
+(5339, 582, 'parent', 'display', 'inline-block', '2022-09-10 18:44:37'),
+(5340, 582, 'parent', 'padding', '0px 0px 5px', '2022-09-10 18:44:37'),
+(5341, 582, 'parent', 'vertical-align', 'super', '2022-09-10 18:44:37'),
+(5342, 582, 'parent', 'position', 'absolute', '2022-09-10 18:44:37'),
+(5343, 582, 'parent', 'min-height', 'fit-content', '2022-09-10 18:44:37'),
+(5344, 582, 'parent', 'top', '406.4209899902344px', '2022-09-10 18:44:37'),
+(5345, 582, 'parent', 'left', '850.3740234375px', '2022-09-10 18:44:37'),
+(5346, 582, 'parent', 'border', '6px dashed transparent', '2022-09-10 18:44:37'),
+(5347, 582, 'parent', 'transform', 'rotate(135deg)', '2022-09-10 18:44:37'),
+(5348, 582, 'child', 'height', '465px', '2022-09-10 18:44:37'),
+(5349, 582, 'child', 'width', '465px', '2022-09-10 18:44:37'),
+(5350, 582, 'grandchild', 'x1', '10', '2022-09-10 18:44:37'),
+(5351, 582, 'grandchild', 'x2', '455px', '2022-09-10 18:44:37'),
+(5352, 582, 'grandchild', 'y1', '10', '2022-09-10 18:44:37'),
+(5353, 582, 'grandchild', 'y2', '455px', '2022-09-10 18:44:37'),
+(5354, 582, 'grandchild', 'stroke', 'black', '2022-09-10 18:44:37'),
+(5355, 582, 'grandchild', 'stroke-width', '5', '2022-09-10 18:44:37'),
+(5356, 583, 'parent', 'width', 'auto', '2022-09-10 18:46:18'),
+(5357, 583, 'parent', 'height', 'auto', '2022-09-10 18:46:18'),
+(5358, 583, 'parent', 'display', 'inline-block', '2022-09-10 18:46:18'),
+(5359, 583, 'parent', 'padding', '0px 0px 5px', '2022-09-10 18:46:18'),
+(5360, 583, 'parent', 'vertical-align', 'super', '2022-09-10 18:46:18'),
+(5361, 583, 'parent', 'position', 'absolute', '2022-09-10 18:46:18'),
+(5362, 583, 'parent', 'min-height', 'fit-content', '2022-09-10 18:46:18'),
+(5363, 583, 'parent', 'top', '-26.022735595703125px', '2022-09-10 18:46:18'),
+(5364, 583, 'parent', 'left', '225.8441162109375px', '2022-09-10 18:46:18'),
+(5365, 583, 'parent', 'border', '6px dashed transparent', '2022-09-10 18:46:18'),
+(5366, 583, 'parent', 'transform', 'rotate(0deg)', '2022-09-10 18:46:18'),
+(5367, 583, 'child', 'height', '220px', '2022-09-10 18:46:18'),
+(5368, 583, 'child', 'width', '220px', '2022-09-10 18:46:18'),
+(5369, 583, 'grandchild', 'x', '10', '2022-09-10 18:46:18'),
+(5370, 583, 'grandchild', 'y', '10', '2022-09-10 18:46:18'),
+(5371, 583, 'grandchild', 'width', '205px', '2022-09-10 18:46:18'),
+(5372, 583, 'grandchild', 'height', '205px', '2022-09-10 18:46:18'),
+(5373, 583, 'grandchild', 'stroke', 'black', '2022-09-10 18:46:18'),
+(5374, 583, 'grandchild', 'fill', '#ff0000', '2022-09-10 18:46:18'),
+(5375, 583, 'grandchild', 'stroke-width', '1', '2022-09-10 18:46:18'),
+(5376, 583, 'child', 'box-shadow', 'none', '2022-09-10 18:46:46'),
+(5385, 585, 'parent', 'width', '40%', '2022-09-13 21:34:12'),
+(5386, 585, 'parent', 'height', 'auto', '2022-09-13 21:34:12'),
+(5387, 585, 'parent', 'display', 'inline-block', '2022-09-13 21:34:12'),
+(5388, 585, 'parent', 'padding', '0px 0px 5px', '2022-09-13 21:34:12'),
+(5389, 585, 'parent', 'position', 'absolute', '2022-09-13 21:34:12'),
+(5390, 585, 'parent', 'top', '30%', '2022-09-13 21:34:12'),
+(5391, 585, 'parent', 'left', '30%', '2022-09-13 21:34:12'),
+(5392, 585, 'parent', 'transform', 'rotate(0deg)', '2022-09-13 21:34:12');
 
 -- --------------------------------------------------------
 
@@ -1971,7 +2151,7 @@ CREATE TABLE `video_maker_videos` (
   `id` int(11) NOT NULL,
   `u_id` int(11) DEFAULT NULL,
   `v_m_id` int(11) DEFAULT NULL,
-  `title` longtext COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` longtext COLLATE utf8_unicode_ci,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -1980,11 +2160,11 @@ CREATE TABLE `video_maker_videos` (
 --
 
 INSERT INTO `video_maker_videos` (`id`, `u_id`, `v_m_id`, `title`, `date`) VALUES
-(1, 46, 1, '_I could take the Phoenix Club and turn it into my ping-pong room_ – The Social Network.mp4', '2021-09-22'),
-(2, 46, 1, '_I could take the Phoenix Club and turn it into my ping-pong room_ – The Social Network.mp4', '2021-09-22'),
-(3, 46, 1, '_I could take the Phoenix Club and turn it into my ping-pong room_ – The Social Network.mp4', '2021-09-22'),
+(1, 46, 1, 'tobe.mp4', '2021-09-22'),
+(2, 46, 1, 'tobe.mp4', '2021-09-22'),
+(3, 46, 1, 'tobe.mp4', '2021-09-22'),
 (4, 46, 1, 'tobe.mp4', '2021-09-22'),
-(5, 46, 3, '_I could take the Phoenix Club and turn it into my ping-pong room_ – The Social Network.mp4', '2021-09-25');
+(5, 46, 3, 'tobe.mp4', '2021-09-25');
 
 --
 -- Indexes for dumped tables
@@ -2118,13 +2298,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `video_maker`
 --
 ALTER TABLE `video_maker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `video_maker_audios`
 --
 ALTER TABLE `video_maker_audios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `video_maker_backgrounds`
@@ -2136,7 +2316,7 @@ ALTER TABLE `video_maker_backgrounds`
 -- AUTO_INCREMENT for table `video_maker_draggable_layers`
 --
 ALTER TABLE `video_maker_draggable_layers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=276;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=313;
 
 --
 -- AUTO_INCREMENT for table `video_maker_draggable_layers_templates`
@@ -2154,13 +2334,13 @@ ALTER TABLE `video_maker_fonts`
 -- AUTO_INCREMENT for table `video_maker_images`
 --
 ALTER TABLE `video_maker_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `video_maker_layers`
 --
 ALTER TABLE `video_maker_layers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=549;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=586;
 
 --
 -- AUTO_INCREMENT for table `video_maker_layers_templates`
@@ -2172,7 +2352,7 @@ ALTER TABLE `video_maker_layers_templates`
 -- AUTO_INCREMENT for table `video_maker_layer_animations`
 --
 ALTER TABLE `video_maker_layer_animations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=247;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=284;
 
 --
 -- AUTO_INCREMENT for table `video_maker_layer_animations_templates`
@@ -2184,7 +2364,7 @@ ALTER TABLE `video_maker_layer_animations_templates`
 -- AUTO_INCREMENT for table `video_maker_scene`
 --
 ALTER TABLE `video_maker_scene`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `video_maker_scene_templates`
@@ -2202,7 +2382,7 @@ ALTER TABLE `video_maker_shapes`
 -- AUTO_INCREMENT for table `video_maker_styles`
 --
 ALTER TABLE `video_maker_styles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5010;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5393;
 
 --
 -- AUTO_INCREMENT for table `video_maker_styles_templates`

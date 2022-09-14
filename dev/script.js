@@ -6867,6 +6867,7 @@ $(".video_trimming_modal_close_btn").on("click",function() {
 
 $(".slide_preview_btn").on("click",function() {
     $("#overlay2,.slide_preview_div").css("display","block");
+    $(".slide_preview_play").css("display","none");
     let v_m_id = $("#v_m_id").val();
     let scene_id = $("#scene_id").val();
     $.post(
@@ -6878,18 +6879,14 @@ $(".slide_preview_btn").on("click",function() {
       function(result){ 
          $(".slide_preview_content_div").html(result);
          setTimeout(function(){
-         	$(".slide_preview_loading_div").css("display","none");
-         	$(".slide_preview_overlay").css("display","block");
-         	$(".slide_preview_overlay_another").css("display","block");
-         	$(".slide_preview_content_div").css("display","block");
-         }, 3000);
+            $(".slide_preview_content_div,.slide_preview_overlay,.slide_preview_play").css("display","block");
+            // $(".slide_preview_play").click();
+            $(".slide_preview_loading_div").css("display","none");
+         }, 6000);
          save_btn();
       }
     );
 });
-
-
-
 
 
 //------Slider Preview Stuff Ends ------------------------------------------------------------------------------------------------------------------------------------>

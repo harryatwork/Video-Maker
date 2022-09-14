@@ -342,14 +342,14 @@
                                     <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="slideright" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="image_layer_animation_video" id="image_layer_animation_slideright" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
                                     <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Fly from  Right</p>
                                 </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="image_layer_animation_video" id="image_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>
-                                </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="image_layer_animation_video" id="image_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>
-                                </div>
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="image_layer_animation_video" id="image_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>-->
+                                <!--</div>-->
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="image_layer_animation_video" id="image_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>-->
+                                <!--</div>-->
     					      
     					    </div>
     					    
@@ -869,14 +869,14 @@
                                     <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="slideright" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="video_layer_animation_video" id="video_layer_animation_slideright" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
                                     <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Fly from  Right</p>
                                 </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="video_layer_animation_video" id="video_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>
-                                </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="video_layer_animation_video" id="video_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>
-                                </div>
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="video_layer_animation_video" id="video_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>-->
+                                <!--</div>-->
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="video_layer_animation_video" id="video_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>-->
+                                <!--</div>-->
     					      
     					    </div>
     					    
@@ -1469,14 +1469,14 @@
                                     <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="slideright" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="font_layer_animation_video" id="font_layer_animation_slideright" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
                                     <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Fly from  Right</p>
                                 </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="font_layer_animation_video" id="font_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>
-                                </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="font_layer_animation_video" id="font_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>
-                                </div>
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="font_layer_animation_video" id="font_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>-->
+                                <!--</div>-->
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="font_layer_animation_video" id="font_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>-->
+                                <!--</div>-->
     					      
     					    </div>
     					    
@@ -1820,14 +1820,14 @@
                                     <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="slideright" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="shape_layer_animation_video" id="shape_layer_animation_slideright" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
                                     <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Fly from  Right</p>
                                 </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="shape_layer_animation_video" id="shape_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>
-                                </div>
-                                <div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">
-                                    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="shape_layer_animation_video" id="shape_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>
-                                    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>
-                                </div>
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-image-animation-status="0" data-animation="zoomin" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="shape_layer_animation_video" id="shape_layer_animation_zoomin" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom In</p>-->
+                                <!--</div>-->
+                                <!--<div style="text-align: center;width: 46%;display: inline-block;align-items: center;margin: 1%;">-->
+                                <!--    <video src="https://static.canva.com/web/images/cd66b4e88adeba9e8c94c5e221f25e2f.mp4" data-status="0" data-animation="zoomout" poster="https://static.canva.com/web/images/60473d5eaf5c3908c7daa3e5c7c58df0.png" class="shape_layer_animation_video" id="shape_layer_animation_zoomout" loop="" playsinline="" preload="metadata" style="display: flex;border: 1px solid #b5b5b5;border-radius: 8px;width: 160px;cursor:pointer;margin: auto;"></video>-->
+                                <!--    <p style="width: 100%;font-size: 18px;display: inline-block;margin-bottom: 0;">Zoom Out</p>-->
+                                <!--</div>-->
     					      
     					    </div>
     					    
